@@ -22,7 +22,7 @@ schemes:
 - https
 - http
 paths:
-  /nft:
+  /nfts:
     get:
       tags:
       - get nft
@@ -47,7 +47,7 @@ paths:
             $ref: '#/definitions/NFT'
         "400":
           description: Invalid input
-  /nft/mint:
+  /nfts/mint:
     post:
       tags:
       - mint
@@ -73,7 +73,7 @@ paths:
             $ref: '#/definitions/ApiResponse'
         "400":
           description: Invalid input
-  /nft/transfer:
+  /nfts/transfer:
     post:
       tags:
       - transfer
@@ -103,7 +103,7 @@ paths:
             $ref: '#/definitions/ApiResponse'
         "400":
           description: Invalid input
-  /nft/burn:
+  /nfts/burn:
     post:
       tags:
       - burn
@@ -128,7 +128,7 @@ paths:
             $ref: '#/definitions/ApiResponse'
         "400":
           description: Invalid input
-  /nft/royalty:
+  /nfts/royalty:
     get:
       tags:
       - royalty
