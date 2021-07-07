@@ -1,28 +1,28 @@
 ---
 swagger: "2.0"
 info:
-  description: "This is a sample Petstore server.  You can find \nout more about Swagger at \n[http://swagger.io](http://swagger.io) or on \n[irc.freenode.net, #swagger](http://swagger.io/irc/).\n"
+  # description: "This is a sample Petstore server.  You can find \nout more about Swagger at \n[http://swagger.io](http://swagger.io) or on \n[irc.freenode.net, #swagger](http://swagger.io/irc/).\n"
   version: 1.0.0
-  title: Swagger Petstore
-  termsOfService: http://swagger.io/terms/
-  contact:
-    email: apiteam@swagger.io
-  license:
-    name: Apache 2.0
-    url: http://www.apache.org/licenses/LICENSE-2.0.html
-host: virtserver.swaggerhub.com
-basePath: /0xHokusai/HokusaiAPI/1.0.0
+  title: Hokusai API
+  # termsOfService: http://swagger.io/terms/ 
+  # contact:
+  #   email: apiteam@swagger.io
+  # license:
+  #   name: Apache 2.0
+  #   url: http://www.apache.org/licenses/LICENSE-2.0.html
+# host: virtserver.swaggerhub.com
+basePath: /v1
 tags:
 - name: NFT
   description: Manage NFTs
-  externalDocs:
-    description: Find out more
-    url: http://swagger.io
+  # externalDocs:
+  #   description: Find out more
+  #   url: http://swagger.io
 schemes:
 - https
 - http
 paths:
-  /nft:
+  /nfts:
     get:
       tags:
       - get nft
@@ -47,7 +47,7 @@ paths:
             $ref: '#/definitions/NFT'
         "400":
           description: Invalid input
-  /nft/mint:
+  /nfts/mint:
     post:
       tags:
       - mint
@@ -73,7 +73,7 @@ paths:
             $ref: '#/definitions/ApiResponse'
         "400":
           description: Invalid input
-  /nft/transfer:
+  /nfts/transfer:
     post:
       tags:
       - transfer
@@ -103,7 +103,7 @@ paths:
             $ref: '#/definitions/ApiResponse'
         "400":
           description: Invalid input
-  /nft/burn:
+  /nfts/burn:
     post:
       tags:
       - burn
@@ -128,7 +128,7 @@ paths:
             $ref: '#/definitions/ApiResponse'
         "400":
           description: Invalid input
-  /nft/royalty:
+  /nfts/royalty:
     get:
       tags:
       - royalty
@@ -224,6 +224,6 @@ definitions:
       txHash:
         type: string
         description: A transaction hash of the transaction.
-externalDocs:
-  description: Find out more about Swagger
-  url: http://swagger.io
+# externalDocs:
+#   description: Find out more about Swagger
+#   url: http://swagger.io
