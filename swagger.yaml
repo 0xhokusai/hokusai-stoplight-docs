@@ -26,9 +26,6 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/NFT"
-            application/xml:
-              schema:
-                $ref: "#/components/schemas/NFT"
         "400":
           description: Invalid input
   /nfts/mint:
@@ -42,9 +39,6 @@ paths:
           application/json:
             schema:
               $ref: "#/components/schemas/NFT"
-          application/xml:
-            schema:
-              $ref: "#/components/schemas/NFT"
         description: NFT object to mint.
         required: true
       responses:
@@ -52,9 +46,6 @@ paths:
           description: Success
           content:
             application/json:
-              schema:
-                $ref: "#/components/schemas/ApiResponse"
-            application/xml:
               schema:
                 $ref: "#/components/schemas/ApiResponse"
         "400":
@@ -85,9 +76,6 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ApiResponse"
-            application/xml:
-              schema:
-                $ref: "#/components/schemas/ApiResponse"
         "400":
           description: Invalid input
   /nfts/burn:
@@ -108,9 +96,6 @@ paths:
           description: Success
           content:
             application/json:
-              schema:
-                $ref: "#/components/schemas/ApiResponse"
-            application/xml:
               schema:
                 $ref: "#/components/schemas/ApiResponse"
         "400":
@@ -135,9 +120,6 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Royalty"
-            application/xml:
-              schema:
-                $ref: "#/components/schemas/Royalty"
         "400":
           description: Invalid input
     post:
@@ -150,9 +132,6 @@ paths:
           application/json:
             schema:
               $ref: "#/components/schemas/Royalty"
-          application/xml:
-            schema:
-              $ref: "#/components/schemas/Royalty"
         description: NFT royalty to set.
         required: true
       responses:
@@ -160,9 +139,6 @@ paths:
           description: Success
           content:
             application/json:
-              schema:
-                $ref: "#/components/schemas/ApiResponse"
-            application/xml:
               schema:
                 $ref: "#/components/schemas/ApiResponse"
         "400":
