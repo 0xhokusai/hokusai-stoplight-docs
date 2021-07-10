@@ -6,17 +6,17 @@ tags:
   - name: NFT
     description: Manage NFTs
 paths:
-  /nfts:
+  /nfts/${tokenId}:
     get:
       tags:
         - get nft
       summary: Get information of the NFT.
       operationId: getNFT
       parameters:
-        - name: tokenId
-          in: query
-          description: TokenID of the NFT to get.
+        - in: path
+          name: tokenId
           required: true
+          description: TokenID of the NFT to get.
           schema:
             type: string
       responses:
