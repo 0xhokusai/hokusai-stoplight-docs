@@ -1,229 +1,219 @@
----
-swagger: "2.0"
+openapi: 3.0.0
 info:
-  # description: "This is a sample Petstore server.  You can find \nout more about Swagger at \n[http://swagger.io](http://swagger.io) or on \n[irc.freenode.net, #swagger](http://swagger.io/irc/).\n"
   version: 1.0.0
   title: Hokusai API
-  # termsOfService: http://swagger.io/terms/ 
-  # contact:
-  #   email: apiteam@swagger.io
-  # license:
-  #   name: Apache 2.0
-  #   url: http://www.apache.org/licenses/LICENSE-2.0.html
-# host: virtserver.swaggerhub.com
-basePath: /v1
 tags:
-- name: NFT
-  description: Manage NFTs
-  # externalDocs:
-  #   description: Find out more
-  #   url: http://swagger.io
-schemes:
-- https
-- http
+  - name: NFT
+    description: Manage NFTs
 paths:
   /nfts:
     get:
       tags:
-      - get nft
+        - get nft
       summary: Get information of the NFT.
       operationId: getNFT
-      consumes:
-      - application/json
-      - application/xml
-      produces:
-      - application/json
-      - application/xml
       parameters:
-      - name: tokenId
-        in: query
-        description: TokenID of the NFT to get.
-        required: true
-        type: string
+        - name: tokenId
+          in: query
+          description: TokenID of the NFT to get.
+          required: true
+          schema:
+            type: string
       responses:
         "200":
           description: Success
-          schema:
-            $ref: '#/definitions/NFT'
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NFT"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/NFT"
         "400":
           description: Invalid input
   /nfts/mint:
     post:
       tags:
-      - mint
+        - mint
       summary: Mint a new NFT.
       operationId: mint
-      consumes:
-      - application/json
-      - application/xml
-      produces:
-      - application/json
-      - application/xml
-      parameters:
-      - in: body
-        name: nft
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/NFT"
+          application/xml:
+            schema:
+              $ref: "#/components/schemas/NFT"
         description: NFT object to mint.
         required: true
-        schema:
-          $ref: '#/definitions/NFT'
       responses:
         "200":
           description: Success
-          schema:
-            $ref: '#/definitions/ApiResponse'
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiResponse"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/ApiResponse"
         "400":
           description: Invalid input
   /nfts/transfer:
     post:
       tags:
-      - transfer
+        - transfer
       summary: Transfer the NFT.
       operationId: transfer
-      consumes:
-      - application/json
-      - application/xml
-      produces:
-      - application/json
-      - application/xml
       parameters:
-      - name: tokenId
-        in: query
-        description: TokenID of the NFT to transfer.
-        required: true
-        type: string
-      - name: toAddress
-        in: query
-        description: Ethereum address to transfer the NFT to.
-        required: true
-        type: string
+        - name: tokenId
+          in: query
+          description: TokenID of the NFT to transfer.
+          required: true
+          schema:
+            type: string
+        - name: toAddress
+          in: query
+          description: Ethereum address to transfer the NFT to.
+          required: true
+          schema:
+            type: string
       responses:
         "200":
           description: Success
-          schema:
-            $ref: '#/definitions/ApiResponse'
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiResponse"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/ApiResponse"
         "400":
           description: Invalid input
   /nfts/burn:
     post:
       tags:
-      - burn
+        - burn
       summary: Burn the NFT.
       operationId: burn
-      consumes:
-      - application/json
-      - application/xml
-      produces:
-      - application/json
-      - application/xml
       parameters:
-      - name: tokenId
-        in: query
-        description: TokenID of the NFT to burn.
-        required: true
-        type: string
+        - name: tokenId
+          in: query
+          description: TokenID of the NFT to burn.
+          required: true
+          schema:
+            type: string
       responses:
         "200":
           description: Success
-          schema:
-            $ref: '#/definitions/ApiResponse'
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiResponse"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/ApiResponse"
         "400":
           description: Invalid input
   /nfts/royalty:
     get:
       tags:
-      - royalty
+        - royalty
       summary: Get royalty of the NFT.
       operationId: getRoyalty
-      consumes:
-      - application/json
-      - application/xml
-      produces:
-      - application/json
-      - application/xml
       parameters:
-      - name: tokenId
-        in: query
-        description: TokenID to get royalty.
-        required: true
-        type: string
+        - name: tokenId
+          in: query
+          description: TokenID to get royalty.
+          required: true
+          schema:
+            type: string
       responses:
         "200":
           description: Success
-          schema:
-            $ref: '#/definitions/Royalty'
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Royalty"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/Royalty"
         "400":
           description: Invalid input
     post:
       tags:
-      - royalty
+        - royalty
       summary: Set royalty to the NFT.
       operationId: setRoyalty
-      consumes:
-      - application/json
-      - application/xml
-      produces:
-      - application/json
-      - application/xml
-      parameters:
-      - in: body
-        name: royalty
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Royalty"
+          application/xml:
+            schema:
+              $ref: "#/components/schemas/Royalty"
         description: NFT royalty to set.
         required: true
-        schema:
-          $ref: '#/definitions/Royalty'
       responses:
         "200":
           description: Success
-          schema:
-            $ref: '#/definitions/ApiResponse'
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiResponse"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/ApiResponse"
         "400":
           description: Invalid input
-securityDefinitions:
-  petstore_auth:
-    type: oauth2
-    authorizationUrl: http://petstore.swagger.io/oauth/dialog
-    flow: implicit
-    scopes:
-      write:pets: modify pets in your account
-      read:pets: read your pets
-  api_key:
-    type: apiKey
-    name: api_key
-    in: header
-definitions:
-  NFT:
-    type: object
-    properties:
-      id:
-        type: integer
-        format: int64
-        minimum: 1
-      name:
-        type: string
-        description: A name for the NFT.
-      description:
-        type: string
-        description: A description for the NFT.
-      tokenUri:
-        type: string
-        description: A Metadata URI.
-  Royalty:
-    type: object
-    properties:
-      payee:
-        type: string
-        description: A Ethereum address of the payee.
-      commission:
-        type: integer
-        format: int32
-        minimum: 0
-        maximum: 100
-  ApiResponse:
-    type: object
-    properties:
-      txHash:
-        type: string
-        description: A transaction hash of the transaction.
-# externalDocs:
-#   description: Find out more about Swagger
-#   url: http://swagger.io
+servers:
+  - url: /v1
+components:
+  securitySchemes:
+    petstore_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: http://petstore.swagger.io/oauth/dialog
+          scopes:
+            write:pets: modify pets in your account
+            read:pets: read your pets
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header
+  schemas:
+    NFT:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          minimum: 1
+        name:
+          type: string
+          description: A name for the NFT.
+        description:
+          type: string
+          description: A description for the NFT.
+        tokenUri:
+          type: string
+          description: A Metadata URI.
+    Royalty:
+      type: object
+      properties:
+        payee:
+          type: string
+          description: A Ethereum address of the payee.
+        commission:
+          type: integer
+          format: int32
+          minimum: 0
+          maximum: 100
+    ApiResponse:
+      type: object
+      properties:
+        txHash:
+          type: string
+          description: A transaction hash of the transaction.
