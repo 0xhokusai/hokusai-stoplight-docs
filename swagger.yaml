@@ -6,7 +6,7 @@ tags:
   - name: NFT
     description: Manage NFTs
 paths:
-  /nfts/${tokenId}:
+  /nfts/{tokenId}:
     get:
       tags:
         - get nft
