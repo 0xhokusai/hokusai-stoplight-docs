@@ -38,59 +38,9 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/NFT"
+              $ref: "#/components/schemas/MintNFT"
         description: NFT object to mint.
         required: true
-      responses:
-        "200":
-          description: Success
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/ApiResponse"
-        "400":
-          description: Invalid input
-  /nfts/transfer:
-    post:
-      tags:
-        - transfer
-      summary: Transfer the NFT.
-      operationId: transfer
-      parameters:
-        - name: tokenId
-          in: query
-          description: TokenID of the NFT to transfer.
-          required: true
-          schema:
-            type: string
-        - name: toAddress
-          in: query
-          description: Ethereum address to transfer the NFT to.
-          required: true
-          schema:
-            type: string
-      responses:
-        "200":
-          description: Success
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/ApiResponse"
-        "400":
-          description: Invalid input
-  /nfts/burn:
-    post:
-      tags:
-        - burn
-      summary: Burn the NFT.
-      operationId: burn
-      parameters:
-        - name: tokenId
-          in: query
-          description: TokenID of the NFT to burn.
-          required: true
-          schema:
-            type: string
       responses:
         "200":
           description: Success
@@ -145,20 +95,14 @@ paths:
           description: Invalid input
 servers:
   - url: /v1
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "key"
+    in: "query"
+security:
+  - api_key: []
 components:
-  securitySchemes:
-    petstore_auth:
-      type: oauth2
-      flows:
-        implicit:
-          authorizationUrl: http://petstore.swagger.io/oauth/dialog
-          scopes:
-            write:pets: modify pets in your account
-            read:pets: read your pets
-    api_key:
-      type: apiKey
-      name: api_key
-      in: header
   schemas:
     NFT:
       type: object
@@ -167,12 +111,12 @@ components:
           type: integer
           format: int64
           minimum: 1
-        name:
+        tokenUri:
           type: string
-          description: A name for the NFT.
-        description:
-          type: string
-          description: A description for the NFT.
+          description: A Metadata URI.
+    MintNFT:
+      type: object
+      properties:
         tokenUri:
           type: string
           description: A Metadata URI.
