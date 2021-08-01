@@ -6,13 +6,19 @@ tags:
   - name: NFT
     description: Manage NFTs
 paths:
-  /nfts/{tokenId}:
+  /nfts/{contractId}/{tokenId}:
     get:
       tags:
         - get nft
       summary: Get information of the NFT.
       operationId: getNFT
       parameters:
+        - in: path
+          name: contractId
+          required: true
+          description: Target contract ID.
+          schema:
+            type: string
         - in: path
           name: tokenId
           required: true
@@ -28,12 +34,19 @@ paths:
                 $ref: "#/components/schemas/NFT"
         "400":
           description: Invalid input
-  /nfts/mint:
+  /nfts/{contractId}/mint:
     post:
       tags:
         - mint
       summary: Mint a new NFT.
       operationId: mint
+      parameters:
+        - in: path
+          name: contractId
+          required: true
+          description: Target contract ID.
+          schema:
+            type: string
       requestBody:
         content:
           application/json:
@@ -50,15 +63,21 @@ paths:
                 $ref: "#/components/schemas/ApiResponse"
         "400":
           description: Invalid input
-  /nfts/royalty:
+  /nfts/{contractId}/{tokenId}/royalty:
     get:
       tags:
         - royalty
       summary: Get royalty of the NFT.
       operationId: getRoyalty
       parameters:
-        - name: tokenId
-          in: query
+        - in: path
+          name: contractId
+          required: true
+          description: Target contract ID.
+          schema:
+            type: string
+        - in: path
+          name: tokenId
           description: TokenID to get royalty.
           required: true
           schema:
@@ -77,6 +96,19 @@ paths:
         - royalty
       summary: Set royalty to the NFT.
       operationId: setRoyalty
+      parameters:
+        - in: path
+          name: contractId
+          required: true
+          description: Target contract ID.
+          schema:
+            type: string
+        - in: path
+          name: tokenId
+          required: true
+          description: Target token ID.
+          schema:
+            type: string
       requestBody:
         content:
           application/json:
