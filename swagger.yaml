@@ -149,6 +149,9 @@ components:
     MintNFT:
       type: object
       properties:
+        to:
+          type: string
+          description: A Ethereum address to mint the NFT to.
         tokenUri:
           type: string
           description: A Metadata URI.
