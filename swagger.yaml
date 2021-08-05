@@ -161,7 +161,7 @@ components:
         receiver:
           type: string
           description: A Ethereum address of the receiver.
-        value:
+        parcentage:
           type: integer
           format: int32
           minimum: 0
