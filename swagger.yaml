@@ -158,10 +158,10 @@ components:
     Royalty:
       type: object
       properties:
-        payee:
+        receiver:
           type: string
           description: A Ethereum address of the payee.
-        commission:
+        value:
           type: integer
           format: int32
           minimum: 0
