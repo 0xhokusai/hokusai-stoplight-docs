@@ -160,7 +160,7 @@ components:
       properties:
         receiver:
           type: string
-          description: A Ethereum address of the payee.
+          description: A Ethereum address of the receiver.
         value:
           type: integer
           format: int32
