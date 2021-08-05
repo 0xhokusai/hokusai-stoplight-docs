@@ -149,16 +149,19 @@ components:
     MintNFT:
       type: object
       properties:
+        to:
+          type: string
+          description: A Ethereum address to mint the NFT to.
         tokenUri:
           type: string
           description: A Metadata URI.
     Royalty:
       type: object
       properties:
-        payee:
+        receiver:
           type: string
-          description: A Ethereum address of the payee.
-        commission:
+          description: A Ethereum address of the receiver.
+        parcentage:
           type: integer
           format: int32
           minimum: 0
