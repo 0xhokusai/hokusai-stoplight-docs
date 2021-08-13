@@ -127,13 +127,6 @@ paths:
           description: Invalid input
 servers:
   - url: /v1
-securityDefinitions:
-  api_key:
-    type: "apiKey"
-    name: "key"
-    in: "query"
-security:
-  - api_key: []
 components:
   schemas:
     NFT:

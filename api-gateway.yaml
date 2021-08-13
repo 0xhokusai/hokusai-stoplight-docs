@@ -1,0 +1,212 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: Hokusai API
+  contact: {}
+host: example.com
+basePath: /v1
+schemes: []
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "key"
+    in: "query"
+security:
+  - api_key: []
+paths:
+  /nfts/{contractId}/{tokenId}:
+    get:
+      x-google-backend:
+        address: "https://asia-northeast1-civic-summer-318606.cloudfunctions.net/hokusai-api-data-provider-test"
+        path_translation: [APPEND_PATH_TO_ADDRESS]
+      description: Get information of the NFT.
+      summary: getNFT
+      tags:
+        - get nft
+      operationId: getNFT
+      deprecated: false
+      produces:
+        - application/json
+      parameters:
+        - name: contractId
+          in: path
+          required: true
+          type: string
+          description: Target contract ID.
+        - name: tokenId
+          in: path
+          required: true
+          type: string
+          description: TokenID of the NFT to get.
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/NFT"
+          headers: {}
+        "400":
+          description: Invalid input
+          headers: {}
+  /nfts/{contractId}/mint:
+    post:
+      x-google-backend:
+        address: "https://asia-northeast1-civic-summer-318606.cloudfunctions.net/hokusai-api-data-provider-test"
+        path_translation: [APPEND_PATH_TO_ADDRESS]
+      description: Mint a new NFT.
+      summary: mint
+      tags:
+        - mint
+      operationId: mint
+      deprecated: false
+      produces:
+        - application/json
+      consumes:
+        - application/json
+      parameters:
+        - name: contractId
+          in: path
+          required: true
+          type: string
+          description: Target contract ID.
+        - name: body
+          in: body
+          required: true
+          description: NFT object to mint.
+          schema:
+            $ref: "#/definitions/MintNFT"
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/ApiResponse"
+          headers: {}
+        "400":
+          description: Invalid input
+          headers: {}
+  /nfts/{contractId}/{tokenId}/royalty:
+    get:
+      x-google-backend:
+        address: "https://asia-northeast1-civic-summer-318606.cloudfunctions.net/hokusai-api-data-provider-test"
+        path_translation: [APPEND_PATH_TO_ADDRESS]
+      description: Get royalty of the NFT.
+      summary: getRoyalty
+      tags:
+        - royalty
+      operationId: getRoyalty
+      deprecated: false
+      produces:
+        - application/json
+      parameters:
+        - name: contractId
+          in: path
+          required: true
+          type: string
+          description: Target contract ID.
+        - name: tokenId
+          in: path
+          required: true
+          type: string
+          description: TokenID to get royalty.
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/Royalty"
+          headers: {}
+        "400":
+          description: Invalid input
+          headers: {}
+    post:
+      x-google-backend:
+        address: "https://asia-northeast1-civic-summer-318606.cloudfunctions.net/hokusai-api-data-provider-test"
+        path_translation: [APPEND_PATH_TO_ADDRESS]
+      description: Set royalty to the NFT.
+      summary: setRoyalty
+      tags:
+        - royalty
+      operationId: setRoyalty
+      deprecated: false
+      produces:
+        - application/json
+      consumes:
+        - application/json
+      parameters:
+        - name: contractId
+          in: path
+          required: true
+          type: string
+          description: Target contract ID.
+        - name: tokenId
+          in: path
+          required: true
+          type: string
+          description: Target token ID.
+        - name: body
+          in: body
+          required: true
+          description: NFT royalty to set.
+          schema:
+            $ref: "#/definitions/Royalty"
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/ApiResponse"
+          headers: {}
+        "400":
+          description: Invalid input
+          headers: {}
+definitions:
+  NFT:
+    title: NFT
+    type: object
+    properties:
+      id:
+        type: integer
+        minimum: 1
+        format: int64
+      tokenUri:
+        description: A Metadata URI.
+        type: string
+  MintNFT:
+    title: MintNFT
+    type: object
+    properties:
+      to:
+        description: A Ethereum address to mint the NFT to.
+        type: string
+      tokenUri:
+        description: A Metadata URI.
+        type: string
+  Royalty:
+    title: Royalty
+    type: object
+    properties:
+      receiver:
+        description: A Ethereum address of the receiver.
+        type: string
+      parcentage:
+        type: integer
+        minimum: 0
+        maximum: 100
+        format: int32
+  ApiResponse:
+    title: ApiResponse
+    type: object
+    properties:
+      txHash:
+        description: A transaction hash of the transaction.
+        type: string
+tags:
+  - name: NFT
+    description: Manage NFTs
+  - name: get nft
+    description: ""
+  - name: mint
+    description: ""
+  - name: royalty
+    description: ""
