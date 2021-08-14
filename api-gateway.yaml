@@ -189,11 +189,10 @@ definitions:
       receiver:
         description: A Ethereum address of the receiver.
         type: string
-      parcentage:
-        type: integer
+      percentage:
+        type: number
         minimum: 0
         maximum: 100
-        format: int32
   ApiResponse:
     title: ApiResponse
     type: object
