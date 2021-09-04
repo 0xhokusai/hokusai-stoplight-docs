@@ -26,7 +26,7 @@ paths:
           schema:
             type: integer
             minimum: 1
-            default: 50
+            default: 1
         - in: query
           name: page_size
           required: false
