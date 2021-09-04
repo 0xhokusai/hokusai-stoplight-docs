@@ -178,15 +178,7 @@ components:
     NFTs:
       type: array
       items:
-        type: object
-        properties:
-          id:
-            type: integer
-            format: int64
-            minimum: 1
-          tokenUri:
-            type: string
-            description: A Metadata URI.
+        $ref: "#/components/schemas/NFTs"
     NFT:
       type: object
       properties:
