@@ -12,27 +12,22 @@
       {
         "type": "item",
         "title": "Authentication",
-        "uri": "docs/table-of-contents.md"
+        "uri": "docs/authentication .md"
       }, 
       {
         "type": "item",
         "title": "Endpoint",
-        "uri": "docs/table-of-contents.md"
+        "uri": "docs/endpoint.md"
       },
       {
         "type": "item",
         "title": "Metadata",
-        "uri": "docs/table-of-contents.md"
+        "uri": "docs/metadata.md"
       },
       {
         "type": "item",
-        "title": "Authentication",
-        "uri": "docs/table-of-contents.md"
-      },      
-      {
-        "type": "item",
         "title": "Glosarry",
-        "uri": "docs/table-of-contents.md"
+        "uri": "docs/glosarry.md"
       }
     ]
   }
