@@ -6,24 +6,33 @@
 			},
       {
         "type": "item",
-        "title": "Item",
-        "uri": "docs/table-of-contents.md"
-      },
-      {
-        "type": "group",
-        "title": "Group",
-        "items": [
-          {
-            "type": "item",
-            "title": "Nested Item",
-            "uri": "docs/nested-item.md"
-          }
-        ]
+        "title": "Intro",
+        "uri": "docs/intro.md"
       },
       {
         "type": "item",
-        "title": "External Link",
-        "uri": "https://stoplight.io"
+        "title": "Authentication",
+        "uri": "docs/table-of-contents.md"
+      }, 
+      {
+        "type": "item",
+        "title": "Endpoint",
+        "uri": "docs/table-of-contents.md"
+      },
+      {
+        "type": "item",
+        "title": "Metadata",
+        "uri": "docs/table-of-contents.md"
+      },
+      {
+        "type": "item",
+        "title": "Authentication",
+        "uri": "docs/table-of-contents.md"
+      },      
+      {
+        "type": "item",
+        "title": "Glosarry",
+        "uri": "docs/table-of-contents.md"
       }
     ]
   }
