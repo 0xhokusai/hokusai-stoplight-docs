@@ -6,7 +6,49 @@ tags:
   - name: NFT
     description: Manage NFTs
 paths:
-  /nfts/{contractId}/{tokenId}:
+  '/nfts/{contractId}/mint':
+    post:
+      tags:
+        - mint
+      summary: Mint a new NFT.
+      operationId: mint
+      parameters:
+        - in: path
+          name: contractId
+          required: true
+          description: Target contract ID.
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MintNFT'
+            examples:
+              Curl:
+                value:
+                  to: string
+                  tokenUri: string
+        description: NFT object to mint.
+        required: true
+      responses:
+        '200':
+          description: |-
+            {
+              "txHash": "0xc968510337593d167efa433ab3726634cab8754d88f38e6e61e8ac7071601c42"
+            }
+        '400':
+          description: Bad Request
+        '403':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '500':
+          description: Internal Server Error
+      description: Get NFT Information
+  '/nfts/{contractId}/{tokenId}':
     get:
       tags:
         - get nft
@@ -26,44 +68,24 @@ paths:
           schema:
             type: string
       responses:
-        "200":
-          description: Success
+        '200':
+          description: |-
+            {
+              "id": 1,
+              "tokenUri": "https://example.com/1"
+            }
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/NFT"
-        "400":
+                $ref: '#/components/schemas/NFT'
+        '400':
           description: Invalid input
-  /nfts/{contractId}/mint:
-    post:
-      tags:
-        - mint
-      summary: Mint a new NFT.
-      operationId: mint
-      parameters:
-        - in: path
-          name: contractId
-          required: true
-          description: Target contract ID.
-          schema:
-            type: string
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/MintNFT"
-        description: NFT object to mint.
-        required: true
-      responses:
-        "200":
-          description: Success
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/ApiResponse"
-        "400":
-          description: Invalid input
-  /nfts/{contractId}/{tokenId}/royalty:
+        '403':
+          description: Forbidden
+        '500':
+          description: Internal Server Error
+      description: Get NFT Information.
+  '/nfts/{contractId}/{tokenId}/royalty':
     get:
       tags:
         - royalty
@@ -83,14 +105,38 @@ paths:
           schema:
             type: string
       responses:
-        "200":
-          description: Success
+        '200':
+          description: |-
+            {
+              "receiver": "0x3a93da588954acf4d0d8f1f1a4439fa79d84cf29",
+              "percentage": 10
+            }
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Royalty"
-        "400":
+                $ref: '#/components/schemas/Royalty'
+              examples: {}
+            application/xml:
+              schema:
+                type: object
+                properties: {}
+          headers: {}
+        '400':
           description: Invalid input
+        '403':
+          description: Forbidden
+        '500':
+          description: Internal Server Error
+      description: Get royalty information of NFT.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: {}
+            examples:
+              Curl:
+                value: {}
     post:
       tags:
         - royalty
@@ -113,25 +159,36 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/Royalty"
+              $ref: '#/components/schemas/Royalty'
         description: NFT royalty to set.
         required: true
       responses:
-        "200":
-          description: Success
+        '200':
+          description: |-
+            {
+              "txHash": "0xc968510337593d167efa433ab3726634cab8754d88f38e6e61e8ac7071601c42"
+            }
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ApiResponse"
-        "400":
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
           description: Invalid input
+        '403':
+          description: Forbidden
+        '500':
+          description: Internal Server Error
+      x-extension-1: null
+      x-extension-2: null
+      x-extension-3: null
+      description: Set NFT royalty.
 servers:
   - url: /v1
 securityDefinitions:
   api_key:
-    type: "apiKey"
-    name: "key"
-    in: "query"
+    type: apiKey
+    name: key
+    in: query
 security:
   - api_key: []
 components:
