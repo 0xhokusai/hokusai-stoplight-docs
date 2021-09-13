@@ -38,6 +38,11 @@
         "type": "item",
         "title": "APIs",
         "uri": "swagger.yaml"
+      },
+      {
+        "type": "item",
+        "title": "Get Started with Hokusai API",
+        "uri": "docs/get-started.md"
       }
     ]
   }
