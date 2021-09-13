@@ -1,0 +1,7 @@
+{
+  "formats": {
+    "markdown": {
+      "rootDir": "docs"
+    },
+  },
+}
