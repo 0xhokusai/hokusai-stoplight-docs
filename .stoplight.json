@@ -1,0 +1,10 @@
+{
+  "formats": {
+    "openapi": {
+      "rootDir": ".."
+    },
+    "markdown": {
+      "rootDir": "docs"
+    },
+  },
+}
