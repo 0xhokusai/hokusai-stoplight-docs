@@ -1,4 +1,4 @@
-# Metadata
+# 4.Metadata
 
 When [minting an NFT](nft/mint), you need to pass a parameter called `tokenUri`.
 A `tokenUri` is a URI containing metadata that allows an application to display information about an NFT.
