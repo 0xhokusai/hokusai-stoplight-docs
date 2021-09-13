@@ -1,4 +1,4 @@
-# 2.Issuing an API key
+# Issuing an API key
 
 Submit your request for an API key [here](https://hokusai.app/pre-register). You will receive the key, which contains `HOKUSAI_API_KEY` and `HOKUSAI_CONTRACT_ID`. Currently, it takes 2-3 business days to issue the API Key. 
 

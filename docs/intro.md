@@ -1,4 +1,4 @@
-# 1.Welcome to Hokusai API Document 🌊
+# Welcome to Hokusai API Document 🌊
 
 The Hokusai API enables anyone to simply build web services to mint, transfer and set royalty for NFTs. There is no need for crypto assets to manage your NFTs. The Hokusai API is organized around REST. This document describes the Hokusai API specification.
 

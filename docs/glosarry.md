@@ -1,4 +1,4 @@
-# 5.Glosarry
+# Glosarry
 
 ### Mint
 
