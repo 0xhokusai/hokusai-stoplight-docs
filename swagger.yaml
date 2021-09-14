@@ -30,12 +30,12 @@ paths:
           schema:
             type: string
       requestBody:
+        required: true
         content:
           application/json:
             schema:
               $ref: '#/components/schemas/MintNFT'
         description: NFT object to mint.
-        required: true
       responses:
         '200':
           description: Success
@@ -101,20 +101,11 @@ paths:
           schema:
             type: string
       requestBody:
+        required: true
         content:
           application/json:
             schema:
               $ref: '#/components/schemas/TransferNFT'
-            examples:
-              example-1:
-                request:
-                  from: '0x941e710a60a07307c575631a0fbe32c25def4956'
-                  to: '0xa0c68c638235ee32657e8f720a23cec1bfc77c77'
-                  value: 0
-                  gas: 1000000
-                  nonce: 76
-                  data: string
-        required: true
       responses:
         '200':
           description: Success
@@ -259,17 +250,26 @@ components:
               type: string
               description: user wallet address to send to
             value:
-              type: string
+              type: number
               description: amount of token that you want to send
             gas:
-              type: string
+              type: number
               description: gas fee
             nonce:
-              type: string
+              type: integer
               description: nonce
             data:
               type: string
               description: encoded data
+      x-examples:
+        example:
+          request:
+            from: '0xbe43fd23a0ba75c1c2f7a8d93c9754f7294da724'
+            to: '0x689f8e5913c158ffb5ac5aeb83b3c875f5d20309'
+            value: 0
+            gas: 1000000
+            nonce: 75
+            data: testdata
     Royalty:
       type: object
       properties:
