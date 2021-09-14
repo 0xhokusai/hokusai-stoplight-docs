@@ -48,7 +48,7 @@ paths:
   '/nfts/{contractId}/{tokenId}':
     get:
       tags:
-        - get nft
+        - NFT
       summary: Get information of the NFT.
       operationId: getNFT
       parameters:
