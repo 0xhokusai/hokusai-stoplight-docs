@@ -9,7 +9,7 @@ paths:
   '/nfts/{contractId}/mint':
     post:
       tags:
-        - mint
+        - NFT
       summary: Mint a new NFT.
       operationId: mint
       parameters:
