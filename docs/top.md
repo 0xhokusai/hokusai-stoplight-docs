@@ -1,6 +1,4 @@
 # Fast and Easy for NFT
-Get Started  
-API Documents
 
 ## No Gas fees, No cryptocurrency
 Since Hokusai pays fees to the blockchain network on behalf of its users, you do not need to prepare GAS fees (network fees) for minting and transferring NFTs.
