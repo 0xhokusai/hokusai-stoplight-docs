@@ -1,5 +1,9 @@
 {
     "items": [
+            {
+        "type": "divider",
+        "title": "Introduction"
+			},
       {
         "type": "item",
         "title": "Welcome to Hokusai",
@@ -7,7 +11,16 @@
       },
       {
         "type": "divider",
-        "title": "API Guide"
+        "title": "Getting Started"
+			},
+      {
+        "type": "item",
+        "title": "Get Started with Hokusai API",
+        "uri": "docs/get-started.md"
+      },
+      {
+        "type": "divider",
+        "title": "APIs"
 			},
       {
         "type": "item",
@@ -38,11 +51,6 @@
         "type": "item",
         "title": "API Guide",
         "uri": "swagger.yaml"
-      },
-      {
-        "type": "item",
-        "title": "Get Started with Hokusai API",
-        "uri": "docs/get-started.md"
       }
     ]
   }
