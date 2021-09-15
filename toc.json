@@ -6,7 +6,7 @@
 			},
       {
         "type": "item",
-        "title": "Welcome to Hokusai",
+        "title": "Welcome to Hokusai 👋",
         "uri": "docs/top.md"
       },
       {
@@ -15,7 +15,7 @@
 			},
       {
         "type": "item",
-        "title": "Getting Started with Hokusai API",
+        "title": "Getting Started with Hokusai API 🏃",
         "uri": "docs/get-started.md"
       },
       {
