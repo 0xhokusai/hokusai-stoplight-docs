@@ -1,6 +1,6 @@
 {
     "items": [
-            {
+      {
         "type": "divider",
         "title": "Introduction"
 			},
@@ -43,11 +43,6 @@
         "uri": "docs/metadata.md"
       },
       {
-        "type": "item",
-        "title": "Glosarry",
-        "uri": "docs/glosarry.md"
-      },
-      {
         "type": "divider",
         "title": "API Document"
 			},
@@ -55,6 +50,11 @@
         "type": "item",
         "title": "Hokusai API v1",
         "uri": "swagger.yaml"
+      },
+      {
+        "type": "divider",
+        "title": "Glosarry",
+        "uri": "docs/glosarry.md"
       }
     ]
   }
