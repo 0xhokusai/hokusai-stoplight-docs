@@ -88,8 +88,8 @@ paths:
     post:
       tags:
         - NFT
-      summary: transfer a NFT with meta transaction.
-      description: transfer a NFT with meta transaction.
+      summary: Transfer a NFT with meta transaction.
+      description: Transfer a NFT with meta transaction.
       operationId: transfer
       security:
         - ApiKeyAuth: []
@@ -245,7 +245,7 @@ components:
           properties:
             from:
               type: string
-              description: contractAddress you use
+              description: contractAddress
             to:
               type: string
               description: user wallet address to send to
