@@ -1,6 +1,6 @@
 # Transfer an NFT
 
-Hokusai API uses [metatransaction](glosarry.md#meta-transactions) to send trancactions.
+Hokusai API uses [meta-transaction](glosarry.md#meta-transactions) to send trancactions.
 
 In this section, we explain how to use meta-transactions to transfer NFTs.
 
