@@ -53,6 +53,10 @@
       },
       {
         "type": "divider",
+        "title": "Glossary"
+			},
+      {
+        "type": "item",
         "title": "Glosarry",
         "uri": "docs/glosarry.md"
       }
