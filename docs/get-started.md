@@ -68,11 +68,11 @@ curl https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2xnv
 }
 ```
 ## Using Hokusai API
-Congratulations! You're ready to use Hokusai API. Check out [Hokusai API Document](https://docs.hokusai.app/) for the full documentation. Now, let's try minting and getting an NFT. 
+Congratulations! You're ready to use Hokusai API. Now, let's try minting and getting an NFT. 
 If you using the Mumbai testnet, change the baseUrl of src/getNft.ts and src/mintNft.ts's to "https://mumbai.hokusai.app".
 
 #### Mint an NFT
-To [mint](https://docs.hokusai.app/api/glosarry/#mint) an NFT, run the code below
+To [mint](glosarry.md#mint) an NFT, run the code below
 ```:bash
 yarn mint-nft {to} {tokenUri}
 {
@@ -104,4 +104,4 @@ yarn transfer-nft {to} {tokenId}
 
 >  **The private key is very sensitive information. You should make sure no one else sees.**
 
-So far, you have minted an NFT, got NFT info and transfered an NFT via Hokusai API. See what else you can do with our API on [Hokusai API Document](https://docs.hokusai.app/) 🥳
+So far, you have minted an NFT, got NFT info and transfered an NFT via Hokusai API 🥳
