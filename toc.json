@@ -1,6 +1,6 @@
 {
     "items": [
-            {
+      {
         "type": "divider",
         "title": "Introduction"
 			},
@@ -20,7 +20,7 @@
       },
       {
         "type": "divider",
-        "title": "APIs"
+        "title": "API Guides"
 			},
       {
         "type": "item",
@@ -43,14 +43,22 @@
         "uri": "docs/metadata.md"
       },
       {
+        "type": "divider",
+        "title": "API Document"
+			},
+      {
+        "type": "item",
+        "title": "Hokusai API v1",
+        "uri": "swagger.yaml"
+      },
+      {
+        "type": "divider",
+        "title": "Glossary"
+			},
+      {
         "type": "item",
         "title": "Glosarry",
         "uri": "docs/glosarry.md"
-      },
-      {
-        "type": "item",
-        "title": "API Guide",
-        "uri": "swagger.yaml"
       }
     ]
   }
