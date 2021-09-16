@@ -1,4 +1,4 @@
-# Welcome to Hokusai API. 
+# Welcome to Hokusai API 👋
 
 ## Fast and Easy for NFT 🌊🗻
 ## A fully integrated set of NFT functions ⚡️
