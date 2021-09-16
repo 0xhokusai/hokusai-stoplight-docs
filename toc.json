@@ -43,6 +43,11 @@
         "uri": "docs/metadata.md"
       },
       {
+        "type": "item",
+        "title": "Transfer",
+        "uri": "docs/transfer.md"
+      },
+      {
         "type": "divider",
         "title": "API Document"
 			},

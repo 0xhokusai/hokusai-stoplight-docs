@@ -1,4 +1,4 @@
-# Transfer NFT
+# Transfer an NFT
 
 Hokusai API uses [metatransaction](glosarry.md#meta-transactions) to send trancactions.
 
@@ -11,4 +11,4 @@ In detail, please refer [this page](glosarry.md#meta-transactions).
 
 ## How to transfer NFT in Hokusai API
 
-You can learn how to transfer NFT in [Hokusai Get Started](get-started.md#). This tutorial provides some code for you to get started Hokusai API.
+You can learn how to transfer NFT in [Hokusai Get Started](get-started.md#transfer-an-nft). This tutorial provides some code for you to get started Hokusai API.
