@@ -20,7 +20,7 @@
       },
       {
         "type": "divider",
-        "title": "APIs"
+        "title": "API Guides"
 			},
       {
         "type": "item",
@@ -48,8 +48,12 @@
         "uri": "docs/glosarry.md"
       },
       {
+        "type": "divider",
+        "title": "API Document"
+			},
+      {
         "type": "item",
-        "title": "API Guide",
+        "title": "Hokusai API v1",
         "uri": "swagger.yaml"
       }
     ]
