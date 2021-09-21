@@ -1,13 +1,26 @@
 {
     "items": [
       {
+        "type": "divider",
+        "title": "Introduction"
+			},
+      {
         "type": "item",
-        "title": "Welcome to Hokusai",
+        "title": "Welcome to Hokusai 👋",
         "uri": "docs/top.md"
       },
       {
         "type": "divider",
-        "title": "Documents"
+        "title": "Getting Started"
+			},
+      {
+        "type": "item",
+        "title": "Getting Started with Hokusai API 🏃",
+        "uri": "docs/get-started.md"
+      },
+      {
+        "type": "divider",
+        "title": "API Guides"
 			},
       {
         "type": "item",
@@ -31,18 +44,26 @@
       },
       {
         "type": "item",
-        "title": "Glosarry",
-        "uri": "docs/glosarry.md"
+        "title": "Transfer",
+        "uri": "docs/transfer.md"
       },
       {
+        "type": "divider",
+        "title": "API Document"
+			},
+      {
         "type": "item",
-        "title": "APIs",
+        "title": "Hokusai API v1",
         "uri": "swagger.yaml"
       },
       {
+        "type": "divider",
+        "title": "Glossary"
+			},
+      {
         "type": "item",
-        "title": "Get Started with Hokusai API",
-        "uri": "docs/get-started.md"
+        "title": "Glosarry",
+        "uri": "docs/glosarry.md"
       }
     ]
   }
