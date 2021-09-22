@@ -90,9 +90,9 @@ yarn get-nft {tokenId}
 ```
 
 #### Transfer an NFT
-To transfer an NFT, you need to perform 2 steps:
+To transfer an NFT, you need to perform two steps:
 
-1. Fill in the private key of your wallet in `.env` file ([Get the private key](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key))
+1. Fill in the private key of your wallet in the `.env` file ([Get the private key](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key))
 2. Run the code below
 
 ```:bash
@@ -102,6 +102,6 @@ yarn transfer-nft {to} {tokenId}
 }
 ```
 
->  **The private key is very sensitive information. You should make sure no one else sees.**
+>  **Your private key is very sensitive information. Do not share with anyone else. **
 
-So far, you have minted an NFT, got NFT info and transfered an NFT via Hokusai API 🥳
+So far, you have minted an NFT, got NFT info, and transferred an NFT via Hokusai API 🥳
