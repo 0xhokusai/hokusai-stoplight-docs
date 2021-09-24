@@ -1,0 +1,14 @@
+# Endpoint
+Hokusai API is sending requests to the following endpoint. The base endpoint is:
+```
+https://mumbai.hokusai.app
+```
+
+Currently the Hokusai API provides the following endpoints.
+
+|Endpoint|Description|
+|--|--|
+|[`GET /v1/nfts/{contractId}/{tokenId}`](nft/get)|Get NFT information|
+|[`POST /v1/nfts/{contractId}/mint`](nft/mint)|[Mint](glosarry#Mint) an NFT|
+|[`GET /v1/nfts/{contractId}/{tokenId}/royalty`](royalty/get)|Get a royalty of a specific NFT|
+|[`POST /v1/nfts/{contractId}/{tokenId}/royalty`](royalty/set)|Set a royalty of a specific NFT|

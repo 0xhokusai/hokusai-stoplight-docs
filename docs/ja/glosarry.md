@@ -1,0 +1,5 @@
+# Glosarry
+
+### Mint
+
+To mint an NFT means to issue an NFT. See more information [here](https://help.foundation.app/en/articles/4742869-a-complete-guide-to-minting-an-nft).
