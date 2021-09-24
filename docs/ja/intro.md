@@ -4,7 +4,7 @@ Hokusai APIはNFTを活用できるAPIを提供します。Hokusai APIを使用�
   
 Hokusai API は誰でも簡単にNFTを導入することが可能なNFT専用のAPIです。
 
-![intro-image](/img/intro-image.png)   
+![intro-image.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/vmmmLmDAcZM)
 
 ## Hokusai APIの主な利点
 

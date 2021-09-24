@@ -5,10 +5,6 @@
 NFTを発行することをMintと表現します。 詳しくは [こちら]](https://help.foundation.app/en/articles/4742869-a-complete-guide-to-minting-an-nft).
 
 ### ガス代
-All transactions are required to pay a transaction fee, called a gas fee.
-Typically, users must have enough ETH to pay for the gas spent (On [Polygon](https://polygon.technology/), users must have [MATIC](https://polygon.technology/matic-token/) tokens).
-It is not an easy task for newcomers to accumulate enough ETH for the gas fee. As a result, Hokusai is providing meta-transaction to cover users' gas fees. 
-- [What is Gas | Ethereum Docs](https://ethereum.org/fi/developers/docs/gas/)
 
 すべての取引には、ガス料金と呼ばれる取引手数料を支払う必要があります。
 通常、ユーザーは消費したガス料金を支払うのに十分なETHを持っていなければなりません（[Polygon](https://polygon.technology/)では、ユーザーは[MATIC](https://polygon.technology/matic-token/)トークンを持っていなければなりません）。
