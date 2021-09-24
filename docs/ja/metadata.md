@@ -1,0 +1,27 @@
+# Metadata
+
+When [minting an NFT](nft/mint), you need to pass a parameter called `tokenUri`.
+A `tokenUri` is a URI containing metadata that allows an application to display information about an NFT.
+This chapter describes the metadata specification.
+
+Metadata is written in JSON format.
+Here is an example of metadata.
+
+```json
+{
+  "name": "Hokusai Logo",
+  "description": "Cool Hokusai Logo", 
+  "image": "https://docs.hokusai.app/img/hokusai.png", 
+}
+```
+
+Metadata can also include properties such as the following:
+
+|Property|Description|
+|--|--|
+|name|Name of the NFT.|
+|image|Image URL of the NFT. Basic image formats such as PNG and JPG are supported.|
+|description|Description of the NFT.|
+
+## References
+- [Metadata Standards | OpenSea](https://docs.opensea.io/docs/metadata-standards)

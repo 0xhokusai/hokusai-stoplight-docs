@@ -11,7 +11,7 @@
           {
             "type": "item",
             "title": "Welcome to Hokusai 👋",
-            "uri": "docs/top.md"
+            "uri": "docs/en/top.md"
           },
           {
             "type": "divider",
@@ -20,7 +20,7 @@
           {
             "type": "item",
             "title": "Getting Started with Hokusai API 🏃",
-            "uri": "docs/get-started.md"
+            "uri": "docs/en/get-started.md"
           },
           {
             "type": "divider",
@@ -29,27 +29,27 @@
           {
             "type": "item",
             "title": "Introduction",
-            "uri": "docs/intro.md"
+            "uri": "docs/en/intro.md"
           },
           {
             "type": "item",
             "title": "Authentication",
-            "uri": "docs/authentication.md"
+            "uri": "docs/en/authentication.md"
           }, 
           {
             "type": "item",
             "title": "Endpoint",
-            "uri": "docs/endpoint.md"
+            "uri": "docs/en/endpoint.md"
           },
           {
             "type": "item",
             "title": "Metadata",
-            "uri": "docs/metadata.md"
+            "uri": "docs/en/metadata.md"
           },
           {
             "type": "item",
             "title": "Transfer",
-            "uri": "docs/transfer.md"
+            "uri": "docs/en/transfer.md"
           },
           {
             "type": "divider",
@@ -67,7 +67,7 @@
           {
             "type": "item",
             "title": "Glosarry",
-            "uri": "docs/glosarry.md"
+            "uri": "docs/en/glosarry.md"
           }
         ]
       },
@@ -78,7 +78,7 @@
         {
           "type": "item",
           "title": "Hokusai APIへようこそ 👋",
-          "uri": "docs/top.md"
+          "uri": "docs/en/top.md"
         },
         {
           "type": "divider",
@@ -87,7 +87,7 @@
         {
           "type": "item",
           "title": "Getting Started with Hokusai API 🏃",
-          "uri": "docs/get-started.md"
+          "uri": "docs/en/get-started.md"
         },
         {
           "type": "divider",
@@ -96,27 +96,27 @@
         {
           "type": "item",
           "title": "導入",
-          "uri": "docs/intro.md"
+          "uri": "docs/ja/intro.md"
         },
         {
           "type": "item",
           "title": "認証",
-          "uri": "docs/authentication.md"
+          "uri": "docs/ja/authentication.md"
         }, 
         {
           "type": "item",
           "title": "エンドポイント",
-          "uri": "docs/endpoint.md"
+          "uri": "docs/ja/endpoint.md"
         },
         {
           "type": "item",
           "title": "メタデータ",
-          "uri": "docs/metadata.md"
+          "uri": "docs/ja/metadata.md"
         },
         {
           "type": "item",
           "title": "送信",
-          "uri": "docs/transfer.md"
+          "uri": "docs/ja/transfer.md"
         },
         {
           "type": "divider",
