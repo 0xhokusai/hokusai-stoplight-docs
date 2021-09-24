@@ -5,65 +5,71 @@
         "title": "Introduction"
 			},
       {
-        "type": "item",
-        "title": "Welcome to Hokusai 👋",
-        "uri": "docs/top.md"
-      },
-      {
-        "type": "divider",
-        "title": "Getting Started"
-			},
-      {
-        "type": "item",
-        "title": "Getting Started with Hokusai API 🏃",
-        "uri": "docs/get-started.md"
-      },
-      {
-        "type": "divider",
-        "title": "API Guides"
-			},
-      {
-        "type": "item",
-        "title": "Introduction",
-        "uri": "docs/intro.md"
-      },
-      {
-        "type": "item",
-        "title": "Authentication",
-        "uri": "docs/authentication.md"
-      }, 
-      {
-        "type": "item",
-        "title": "Endpoint",
-        "uri": "docs/endpoint.md"
-      },
-      {
-        "type": "item",
-        "title": "Metadata",
-        "uri": "docs/metadata.md"
-      },
-      {
-        "type": "item",
-        "title": "Transfer",
-        "uri": "docs/transfer.md"
-      },
-      {
-        "type": "divider",
-        "title": "API Document"
-			},
-      {
-        "type": "item",
-        "title": "Hokusai API v1",
-        "uri": "swagger.yaml"
-      },
-      {
-        "type": "divider",
-        "title": "Glossary"
-			},
-      {
-        "type": "item",
-        "title": "Glosarry",
-        "uri": "docs/glosarry.md"
+        "type":"group",
+        "title":"English",
+        "items":[
+          {
+            "type": "item",
+            "title": "Welcome to Hokusai 👋",
+            "uri": "docs/top.md"
+          },
+          {
+            "type": "divider",
+            "title": "Getting Started"
+          },
+          {
+            "type": "item",
+            "title": "Getting Started with Hokusai API 🏃",
+            "uri": "docs/get-started.md"
+          },
+          {
+            "type": "divider",
+            "title": "API Guides"
+          },
+          {
+            "type": "item",
+            "title": "Introduction",
+            "uri": "docs/intro.md"
+          },
+          {
+            "type": "item",
+            "title": "Authentication",
+            "uri": "docs/authentication.md"
+          }, 
+          {
+            "type": "item",
+            "title": "Endpoint",
+            "uri": "docs/endpoint.md"
+          },
+          {
+            "type": "item",
+            "title": "Metadata",
+            "uri": "docs/metadata.md"
+          },
+          {
+            "type": "item",
+            "title": "Transfer",
+            "uri": "docs/transfer.md"
+          },
+          {
+            "type": "divider",
+            "title": "API Document"
+          },
+          {
+            "type": "item",
+            "title": "Hokusai API v1",
+            "uri": "swagger.yaml"
+          },
+          {
+            "type": "divider",
+            "title": "Glossary"
+          },
+          {
+            "type": "item",
+            "title": "Glosarry",
+            "uri": "docs/glosarry.md"
+          }
+        ]
       }
     ]
   }
