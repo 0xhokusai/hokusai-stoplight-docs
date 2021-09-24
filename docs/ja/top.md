@@ -8,13 +8,13 @@ In addition, Hokusai will pay all the troublesome GAS fees (network fees). You c
 ## No Gas fees, No cryptocurrency 🥳
 Since Hokusai pays fees to the blockchain network on behalf of its users, you do not need to prepare GAS fees (network fees) for minting and transferring NFTs.
 
-## No blockchain engineers 🥷
+##  🥷
 If you want to develop NFT products, you need blockchain engineers. Hokusai API helps you integrate NFT into your own website without blockchain engineer, just as you can integrate payment functions using Stripe.
 
-## Flexible Support System 🚑
+## 柔軟なサポートシステム 🚑
 There are several blockchain engineers on the Hokusai team. If you have any questions about product development, please feel free to contact us. 
 
-## Links 🔗
+## リンク集 🔗
 - [Twitter](https://twitter.com/0xHokusai)  
 - [Medium](https://0xhokusai.medium.com/)   
 - [Discord](https://discord.gg/8HGXXpFRdv)  

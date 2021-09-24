@@ -1,8 +1,8 @@
-# Issuing an API key
+# API Keyを発行する
 
-Submit your request for an API key [here](https://ir9l8pcvcmm.typeform.com/to/FSREILsN?typeform-source=hokusai.app). You will receive the key, which contains `HOKUSAI_API_KEY` and `HOKUSAI_CONTRACT_ID`. Currently, it takes 2-3 business days to issue the API Key. 
+API　Keyの発行申請は [こちら](https://ir9l8pcvcmm.typeform.com/to/FSREILsN?typeform-source=hokusai.app). You will receive the key, which contains `HOKUSAI_API_KEY` and `HOKUSAI_CONTRACT_ID`. 発行申請から2~3営業日以内にAPI発行いたします。
 
-## Authentication
+## 認証
 Hokusai authenticates all API requests using API keys. 
 To authenticate requests, you should specify the API key in the `key` parameter of the URL query.
 Here is an example of a request.

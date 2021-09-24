@@ -1,4 +1,4 @@
-# Metadata
+# メタデータ
 
 When [minting an NFT](nft/mint), you need to pass a parameter called `tokenUri`.
 A `tokenUri` is a URI containing metadata that allows an application to display information about an NFT.
@@ -23,5 +23,5 @@ Metadata can also include properties such as the following:
 |image|Image URL of the NFT. Basic image formats such as PNG and JPG are supported.|
 |description|Description of the NFT.|
 
-## References
+##　参考文献
 - [Metadata Standards | OpenSea](https://docs.opensea.io/docs/metadata-standards)

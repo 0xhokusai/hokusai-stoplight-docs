@@ -1,11 +1,11 @@
-# Welcome to Hokusai API Document 🌊
+# Hokusai APIドキュメントへようこそ 🌊
 
 The Hokusai API enables anyone to simply build web services to mint, transfer, and set royalty for NFTs. There is no need for crypto assets to manage your NFTs. The Hokusai API is organized around REST. This document describes the Hokusai API specification.
 
 ![intro-image.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/vmmmLmDAcZM)
 
 
-## Reasons to Use Hokusai API
+## Hokusai　APIを使う理由
 ### Developer Friendly Open API
 The Hokusai API provides a seamless REST API for connecting to blockchain networks. You can introduce NFT to your existing web services without deep diving into the technical side of blockchain. 
 

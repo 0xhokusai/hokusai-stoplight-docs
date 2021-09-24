@@ -1,4 +1,4 @@
-# Endpoint
+# エンドポイント
 Hokusai API is sending requests to the following endpoint. The base endpoint is:
 ```
 testnet: https://mumbai.hokusai.app  
