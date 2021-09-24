@@ -75,5 +75,20 @@ Mint 時に発行された `tokenId` を利用して、NFT の情報を取得し
 yarn get-nft {tokenId}
 ```
 
+###　Transfer an NFT
+NFTを送信するには下記の２つの手順を踏む必要があります。:
+
+1. `.env`に送信元のウォレットのprivate keyを入力します。 ([Get the private key](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key))
+2. 下記コードを実行します。
+
+```:bash
+yarn transfer-nft {to} {tokenId}
+{
+  txHash: '0xdec77ee7148dc796dd08d656a256e1466daf2763c08cfe104f76e8baf318f3ed' # example Transaction Hash
+}
+```
+
+
+
 これで、Hokusai API のチュートリアルは終了です。
 Hokusai API を利用して、NFT を楽しみましょう！
