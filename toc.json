@@ -77,7 +77,7 @@
       "items":[
         {
           "type": "item",
-          "title": "Welcome to Hokusai 👋",
+          "title": "Hokusai APIへようこそ 👋",
           "uri": "docs/top.md"
         },
         {
@@ -91,36 +91,36 @@
         },
         {
           "type": "divider",
-          "title": "API Guides"
+          "title": "APIガイド"
         },
         {
           "type": "item",
-          "title": "Introduction",
+          "title": "導入",
           "uri": "docs/intro.md"
         },
         {
           "type": "item",
-          "title": "Authentication",
+          "title": "認証",
           "uri": "docs/authentication.md"
         }, 
         {
           "type": "item",
-          "title": "Endpoint",
+          "title": "エンドポイント",
           "uri": "docs/endpoint.md"
         },
         {
           "type": "item",
-          "title": "Metadata",
+          "title": "メタデータ",
           "uri": "docs/metadata.md"
         },
         {
           "type": "item",
-          "title": "Transfer",
+          "title": "送信",
           "uri": "docs/transfer.md"
         },
         {
           "type": "divider",
-          "title": "API Document"
+          "title": "APIドキュメント"
         },
         {
           "type": "item",
@@ -129,11 +129,11 @@
         },
         {
           "type": "divider",
-          "title": "Glossary"
+          "title": "用語集"
         },
         {
           "type": "item",
-          "title": "Glosarry",
+          "title": "用語集",
           "uri": "docs/glosarry.md"
         }
       ]
