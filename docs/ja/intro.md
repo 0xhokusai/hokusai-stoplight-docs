@@ -1,18 +1,29 @@
-# Hokusai APIドキュメントへようこそ 🌊
+Hokusai APIはNFTを活用できるAPIを提供します。Hokusai APIを使用することで**誰でも簡単に**NFTを既存のWEBサービスに導入するこができます。
 
-The Hokusai API enables anyone to simply build web services to mint, transfer, and set royalty for NFTs. There is no need for crypto assets to manage your NFTs. The Hokusai API is organized around REST. This document describes the Hokusai API specification.
+## Hokusai APIについて
+  
+Hokusai API は誰でも簡単にNFTを導入することが可能なNFT専用のAPIです。
 
-![intro-image.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/vmmmLmDAcZM)
+![intro-image](/img/intro-image.png)   
 
+## Hokusai APIの主な利点
 
-## Hokusai　APIを使う理由
-### Developer Friendly Open API
-The Hokusai API provides a seamless REST API for connecting to blockchain networks. You can introduce NFT to your existing web services without deep diving into the technical side of blockchain. 
+### 開発者にやさしい設計
 
-Our API requeires API key validation. You can issue your API [here](https://ir9l8pcvcmm.typeform.com/to/FSREILsN?typeform-source=hokusai.app).
+#### Open API
 
-### Support from the Community
-Join our [Discord](https://discord.com/invite/34fmuE25G2) channel to interact with other developers and NFT enthusiasts. You can ask questions directly to our team.
+Hokusai APIでは、ブロックチェーンネットワークとのやり取りをシームレスに行うための REST API を提供しています。
+ブロックチェーンの専門的な知識がなくとも、既存のWEBサービスに NFT の導入ができます。
 
-### No Gas Fees
-Expensive gas fees are discouraging for creators and developers. Using Hokusai API, you can send or receive NFTs without paying gas fees. Service providers don't need to maintain crypto assets when using our API.
+APIを呼び出す際には、有効なAPI keyが必要になります。APIをご利用になりたい方は、[こちら](https://hokusai.app/pre-register)からAPI Keyの発行申請を行ってください。
+
+#### 柔軟なサポート体制
+
+またHokusai APIではコミュニティのDiscordサーバーを用意しています。Discordサーバーでは、Hokusaiチームに気軽に質問や問い合せなどのサポートを受けることが可能です。  
+[こちら](https://discord.gg/34fmuE25G2)からご参加ください。
+
+#### GAS代（ネットワーク手数料）が無料
+
+Hokusai APIの利用者は、どんなプランを利用していてもNFTの発行と送信にかかるGAS代が完全に無料です。
+昨今GAS代の高騰が話題になりましたがHokusai APIでは、GAS代が一切かかりません。
+GAS代がかからないため、Hokusai API を利用するサービス提供者、サービス利用者は暗号資産を保持する必要がありません。

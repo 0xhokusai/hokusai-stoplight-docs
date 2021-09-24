@@ -1,19 +1,26 @@
 # エンドポイント
-Hokusai API is sending requests to the following endpoint. The base endpoint is:
+Hokusai API では以下のベース URL に対してリクエストを送信します。
+
 ```
 testnet: https://mumbai.hokusai.app  
 mainnet: https://polygon.hokusai.app  
 ```
 
+また、Hokusai API では現在、以下のようなエンドポイントを提供しています。
 Currently the Hokusai API provides the following endpoints.
 
-If you using the Mumbai testnet, change the baseUrl of `src/getNft.ts` and `src/mintNft.ts`'s to "https://mumbai.hokusai.app".
+テストネットをご利用の場合は`src/getNft.ts`と`src/mintNft.ts`のbaseUrlを"https://mumbai.hokusai.app"に変更してください。
+
+```
+https://mumbai.hokusai.app
+```
 
 
-|Endpoint|Description|
+
+|エンドポイント|説明|
 |--|--|
-|[`GET /v1/nfts/{contractId}/{tokenId}`](../swagger.yaml#get-information-of-the-nft)|Get NFT information|
-|[`POST /v1/nfts/{contractId}/mint`](../swagger.yaml#)|[Mint](glosarry.md#Mint) an NFT|
-|[`POST /v1/nfts/{contractId}/transfer`](../swagger.yaml#transfer-a-nft-with-meta-transaction)|Transfer an NFT|
-|[`GET /v1/nfts/{contractId}/{tokenId}/royalty`](../swagger.yaml#get-royalty-of-the-nft)|Get a royalty of a specific NFT|
-|[`POST /v1/nfts/{contractId}/{tokenId}/royalty`](../swagger.yaml#set-royalty-to-the-nft)|Set a royalty of a specific NFT|
+|[`GET /v1/nfts/{contractId}/{tokenId}`](../swagger.yaml#get-information-of-the-nft)|NFTの情報を取得する|
+|[`POST /v1/nfts/{contractId}/mint`](../swagger.yaml#)|NFTを発行する|
+|[`POST /v1/nfts/{contractId}/transfer`](../swagger.yaml#transfer-a-nft-with-meta-transaction)|NFTを送信する|
+|[`GET /v1/nfts/{contractId}/{tokenId}/royalty`](../swagger.yaml#get-royalty-of-the-nft)|NFTのロイヤリティ情報を取得する|
+|[`POST /v1/nfts/{contractId}/{tokenId}/royalty`](../swagger.yaml#set-royalty-to-the-nft)|NFTのロイヤリティを設定する|

@@ -2,17 +2,18 @@
 
 ## Fast and Easy for NFT 🌊🗻
 ## A fully integrated set of NFT functions ⚡️
-Mint, send, set royalty, burn, see data, all NFT functions. All Hokusai APIs are included. Hokusais API will enhance the NFT marketplace and platform for all art, collectibles, sports, and admission tickets.  
-In addition, Hokusai will pay all the troublesome GAS fees (network fees). You can start your own NFT business without having to go through the trouble of getting crypto assets from crypto exchanges or managing a wallet.
+Hokusai　APIには、発行、送信、ロイヤリティの設定、焼却、NFTの情報の取得、などのすべてのNFT機能がそろっています。
+Hokusai　APIは、美術品、コレクターズアイテム、スポーツ、入場券などすべてのNFTのマーケットプレイス、プラットフォームを強化します。 
+また、面倒なGAS料金（ネットワーク料金）は、Hokusaiがすべて負担します。暗号取引所から暗号資産を入手したり、ウォレットを管理したりする手間をかけずに、独自のNFTビジネスを始めることができます。
 
-## No Gas fees, No cryptocurrency 🥳
-Since Hokusai pays fees to the blockchain network on behalf of its users, you do not need to prepare GAS fees (network fees) for minting and transferring NFTs.
+## GAS代が無料 🥳
+Hokusaiが事業者やアーティストの代わりにブロックチェーンのネットワークに手数料を支払うため、 Hokusai APIの利用者は、NFTの発行や送信に必要なGAS代（ネットワーク手数料）を用意する必要がありません。
 
-##  🥷
-If you want to develop NFT products, you need blockchain engineers. Hokusai API helps you integrate NFT into your own website without blockchain engineer, just as you can integrate payment functions using Stripe.
+## Webエンジニアでも開発可能 🥷
+通常、NFT関連のプロダクトを開発する場合はブロックチェーンエンジニアが必要です。 Hokusai API を利用することで、Webエンジニアのみで NFT のプロダクトを開発できます。 決済機能を Stripe を使って組み込むように、NFTを自社サイトに組み込むことが可能です。
 
 ## 柔軟なサポートシステム 🚑
-There are several blockchain engineers on the Hokusai team. If you have any questions about product development, please feel free to contact us. 
+Hokusaiチームには、ブロックチェーンエンジニアが複数在籍しています。 プロダクト開発についてお困りの際はお気軽にお問い合わせください。アーキテクチャ、NFTについてお答えします。
 
 ## リンク集 🔗
 - [Twitter](https://twitter.com/0xHokusai)  
