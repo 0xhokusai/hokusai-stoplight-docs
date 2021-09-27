@@ -75,10 +75,10 @@ Mint 時に発行された `tokenId` を利用して、NFT の情報を取得し
 yarn get-nft {tokenId}
 ```
 
-###　NFTを送信する
+### NFTを送信する  
 NFTを送信するには下記の２つの手順を踏む必要があります。:
 
-1. `.env`に送信元のウォレットのprivate keyを入力します。 ([Get the private key](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key))
+1. `.env`に送信元のウォレットのprivate keyを入力します。 private keyの取得方法は[こちら](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key)をご覧ください。
 2. 下記コードを実行します。
 
 ```:bash
