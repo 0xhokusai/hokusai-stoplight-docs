@@ -1,3 +1,5 @@
+## Hokusai APIを始める 🌊
+
 このページでは Hokusai API を利用するためのチュートリアルを提供します。
 [このリポジトリ](https://github.com/0xhokusai/hokusai-get-started)をローカルに clone して、以下のチュートリアルへお進みください。
 
