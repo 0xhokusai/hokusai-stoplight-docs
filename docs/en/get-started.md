@@ -18,7 +18,7 @@ The installation requires the following steps:
 - Access NFT metadata
 
 ### 1. Obtain your API key
-Submit your request for an API key [here](https://ir9l8pcvcmm.typeform.com/to/mF96pqe5). You will receive the key, which contains `HOKUSAI_API_KEY` and `HOKUSAI_CONTRACT_ID`. Currently, it takes 2-3 business days to issue the API Key. 
+Submit your request for an API key [here](https://ir9l8pcvcmm.typeform.com/to/xSbuj2WA). You will receive the key, which contains `HOKUSAI_API_KEY` and `HOKUSAI_CONTRACT_ID`. Currently, it takes 2-3 business days to issue the API Key. 
 
 ### 2. Create your wallet
 To mint an NFT, you must have your wallet address. We recommend using [Metamask](https://docs.metamask.io) for wallet software.

@@ -15,7 +15,7 @@ Hokusai API は誰でも簡単にNFTを導入することが可能なNFT専用�
 Hokusai APIでは、ブロックチェーンネットワークとのやり取りをシームレスに行うための REST API を提供しています。
 ブロックチェーンの専門的な知識がなくとも、既存のWEBサービスに NFT の導入ができます。
 
-APIを呼び出す際には、有効なAPI keyが必要になります。APIをご利用になりたい方は、[こちら](https://hokusai.app/pre-register)からAPI Keyの発行申請を行ってください。
+APIを呼び出す際には、有効なAPI keyが必要になります。APIをご利用になりたい方は、[こちら](https://ir9l8pcvcmm.typeform.com/to/xSbuj2WA)からAPI Keyの発行申請を行ってください。
 
 #### 柔軟なサポート体制
 
