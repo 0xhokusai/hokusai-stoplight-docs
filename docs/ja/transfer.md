@@ -9,7 +9,7 @@ Hokusai　APIはNFTの送信に [meta-transaction](glosarry.md#meta-transactions
 メタトランザクションとは、第三者（リレーヤー)が他のユーザーの取引を送信して、ガス料金を自分で支払うことができる取引のことです。
 Hokusai　APIでは、メタトランザクションを利用して送信機能を実装しているため、利用者がガス代を支払う必要がありません。
 
-メタトランザクションについての詳細は[こちら](glosarry.md#meta-transactions) for more details.
+メタトランザクションについての詳細は[こちら](ja/glosarry.md#meta-transactions)をご覧ください。
 
 ## どのようにNFTの送信を行うか?
 
