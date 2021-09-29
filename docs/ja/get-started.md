@@ -5,7 +5,7 @@
 
 ## 1. API Key の取得
 
-[こちらのフォーム](https://ir9l8pcvcmm.typeform.com/to/FSREILsN?typeform-source=hokusai.app)からAPI Keyの発行申請を行ってください。
+[こちら](https://ir9l8pcvcmm.typeform.com/to/mF96pqe5)のフォームからAPI Keyの発行申請を行ってください。
 API Key発行まで2~3営業日お待ち下さい。
 
 ## 2. ウォレットの作成
