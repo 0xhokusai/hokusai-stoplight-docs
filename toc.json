@@ -52,6 +52,11 @@
             "uri": "docs/en/transfer.md"
           },
           {
+            "type": "item",
+            "title": "Glossary",
+            "uri": "docs/en/glossary.md"
+          },
+          {
             "type": "divider",
             "title": "API Document"
           },
@@ -59,17 +64,8 @@
             "type": "item",
             "title": "Hokusai API v1",
             "uri": "swagger.yaml"
-          },
-          {
-            "type": "divider",
-            "title": "Glossary"
-          },
-          {
-            "type": "item",
-            "title": "Glosarry",
-            "uri": "docs/en/glosarry.md"
           }
-        ]
+        ]      
       },
       {
       "type":"group",
@@ -121,7 +117,7 @@
         {
           "type": "item",
           "title": "用語集",
-          "uri": "docs/ja/glosarry.md"
+          "uri": "docs/ja/glosary.md"
         },
         {
           "type": "divider",
