@@ -7,7 +7,7 @@ mainnet: https://polygon.hokusai.app
 
 Currently the Hokusai API provides the following endpoints.
 
-If you using the Mumbai testnet, change the baseUrl of `src/getNft.ts` and `src/mintNft.ts`'s to "https://mumbai.hokusai.app".
+If you using the Mumbai testnet, change the baseUrl of `src/getNft.ts` and `src/mintNft.ts`'s to 　"https://mumbai.hokusai.app".
 
 
 |Endpoint|Description|
