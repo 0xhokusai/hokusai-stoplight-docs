@@ -9,7 +9,7 @@ mainnet: https://polygon.hokusai.app
 また、Hokusai API では現在、以下のようなエンドポイントを提供しています。
 Currently the Hokusai API provides the following endpoints.
 
-テストネットをご利用の場合は`src/getNft.ts`と`src/mintNft.ts`のbaseUrlを"https://mumbai.hokusai.app"に変更してください。
+テストネットをご利用の場合は`src/getNft.ts`と`src/mintNft.ts`のbaseUrlを"https://mumbai.hokusai.app" に変更してください。
 
 ```
 https://mumbai.hokusai.app
