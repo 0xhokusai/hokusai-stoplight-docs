@@ -119,6 +119,11 @@
           "uri": "docs/ja/transfer.md"
         },
         {
+          "type": "item",
+          "title": "用語集",
+          "uri": "docs/ja/glosarry.md"
+        },
+        {
           "type": "divider",
           "title": "APIドキュメント"
         },
@@ -126,15 +131,6 @@
           "type": "item",
           "title": "Hokusai API v1",
           "uri": "swagger.yaml"
-        },
-        {
-          "type": "divider",
-          "title": "用語集"
-        },
-        {
-          "type": "item",
-          "title": "用語集",
-          "uri": "docs/ja/glosarry.md"
         }
       ]
     }
