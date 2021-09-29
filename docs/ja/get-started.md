@@ -15,12 +15,12 @@ NFT を Mint するために、ウォレットアドレスを保持する必要�
 
 Metamask は、Ethereum などのブロックチェーンとやりとりを行う、仮想通貨のウォレットです。
 Metamask を利用したことがない方は、以下の記事を参考に Metamask の導入、 Polygon Mumbai Network の設定を行ってください。
-- [How to create Metamask Wallet](https://docs.matic.network/docs/develop/metamask/hello/)
-- [Configure Polygon on Metamask](https://docs.matic.network/docs/develop/metamask/config-polygon-on-metamask)
+- [How to create Metamask Wallet](https://docs.polygon.technology/docs/home/blockchain-basics/import-account-to-metamask)
+- [Configure Polygon on Metamask](https://docs.polygon.technology/docs/home/blockchain-basics/import-account-to-metamask)
 
 ## 3. NFT のメタデータを公開
 
-NFT は[特別なメタデータ](api/metadata)の URI を保持することができます。
+NFT は[特別なメタデータ](https://nftschool.dev/reference/metadata-schemas/#intro-to-json-schemas)の URI を保持することができます。
 ここでは、メタデータの URI を簡単に公開する方法をご紹介します。
 
 今回は、NFT のメタデータを公開するために、[nft.storage](https://nft.storage/) と呼ばれるサービスを利用します。
@@ -66,7 +66,7 @@ NFT を Mint してみましょう。
 yarn mint-nft {to} {tokenUri}
 ```
 
-パラメータの詳細については、[Hokudai API ドキュメント](https://docs.hokusai.app/) を確認してください。
+パラメータの詳細については、[Hokusai API ドキュメント](https://docs.hokusai.app/docs/swagger.yaml#mint-a-new-nft) を確認してください。
 
 ### NFT を取得する
 

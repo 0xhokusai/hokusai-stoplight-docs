@@ -25,8 +25,8 @@ To mint an NFT, you must have your wallet address. We recommend using [Metamask]
 
 Metamask is a software cryptocurrency wallet used to interact with the Ethereum blockchain.
 These articles provide a great introduction on how to set up Metamask.
-- [How to create Metamask Wallet](https://docs.matic.network/docs/develop/metamask/hello/)
-- [Configure Polygon on Metamask](https://docs.matic.network/docs/develop/metamask/config-polygon-on-metamask)
+- [How to create Metamask Wallet](https://docs.polygon.technology/docs/home/blockchain-basics/import-account-to-metamask)
+- [Configure Polygon on Metamask](https://docs.polygon.technology/docs/home/blockchain-basics/import-account-to-metamask)
 
 ### 3. Publish NFT metadata
 [Metadata](https://nftschool.dev/reference/metadata-schemas/#intro-to-json-schemas) is data that provides information about other data. NFT metadata contains information about its name, description, and image. 
