@@ -69,7 +69,7 @@ curl https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2xnv
 ```
 ## Using Hokusai API
 Congratulations! You're ready to use Hokusai API. Now, let's try minting and getting an NFT. 
-If you using the Mumbai testnet, change the baseUrl of src/getNft.ts and src/mintNft.ts's to "https://mumbai.hokusai.app".
+If you using the Mumbai testnet, change the baseUrl of src/getNft.ts and src/mintNft.ts's to https://mumbai.hokusai.app.
 
 #### Mint an NFT
 To [mint](glosarry.md#mint) an NFT, run the code below
