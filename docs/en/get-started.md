@@ -101,8 +101,8 @@ yarn transfer-nft {to} {tokenId}
   txHash: '0xdec77ee7148dc796dd08d656a256e1466daf2763c08cfe104f76e8baf318f3ed' # example Transaction Hash
 }
 ```
-If the wallet service is supported, there is no need to manage the private key of the sender's wallet.
+> If the wallet service is supported, there is no need to manage the private key of the sender's wallet.
 
->  **Your private key is very sensitive information. Do not share with anyone else. **
+>  Your private key is very sensitive information. Do not share with anyone else. 
 
 So far, you have minted an NFT, got NFT info, and transferred an NFT via Hokusai API 🥳
