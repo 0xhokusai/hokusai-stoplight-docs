@@ -89,7 +89,7 @@ yarn get-nft {tokenId}
 { id: {tokenId}, tokenUri: 'https://example.com/1' } # example response
 ```
 
-####　Transfer an NFT
+#### Transfer an NFT
 To transfer an NFT, you need to perform two steps:
 
 1. Fill in the private key of your wallet in the `.env` file ([Get the private key](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key))
