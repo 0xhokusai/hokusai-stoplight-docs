@@ -90,7 +90,9 @@ yarn transfer-nft {to} {tokenId}
   txHash: '0xdec77ee7148dc796dd08d656a256e1466daf2763c08cfe104f76e8baf318f3ed' # example Transaction Hash
 }
 ```
-※ Metamask等ウォレットサービスに対応した場合は送信元ウォレットのprivate keyの管理をする必要がありません。
+> Metamask等ウォレットサービスに対応した場合は送信元ウォレットのprivate keyの管理をする必要がありません。
+
+> Private Keyは非常に重要な情報です。他の誰とも共有しないでください。
 
 
 これで、Hokusai API のチュートリアルは終了です。
