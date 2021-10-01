@@ -92,7 +92,7 @@ yarn transfer-nft {to} {tokenId}
 ```
 > Metamask等ウォレットサービスに対応した場合は送信元ウォレットのprivate keyの管理をする必要がありません。
 
-> Private Keyは非常に重要な情報です。他の誰とも共有しないでください。
+> private Keyは非常に重要な情報です。他の誰とも共有しないでください。
 
 
 これで、Hokusai API のチュートリアルは終了です。
