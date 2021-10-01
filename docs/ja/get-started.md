@@ -81,6 +81,7 @@ yarn get-nft {tokenId}
 NFTを送信するには下記の２つの手順を踏む必要があります。:
 
 1. `.env`に送信元のウォレットのprivate keyを入力します。 private keyの取得方法は[こちら](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key)をご覧ください。
+
 2. 下記コードを実行します。
 
 ```:bash
@@ -89,7 +90,7 @@ yarn transfer-nft {to} {tokenId}
   txHash: '0xdec77ee7148dc796dd08d656a256e1466daf2763c08cfe104f76e8baf318f3ed' # example Transaction Hash
 }
 ```
-
+※ Metamask等ウォレットサービスに対応した場合は送信元ウォレットのprivate keyの管理をする必要がありません。
 
 
 これで、Hokusai API のチュートリアルは終了です。
