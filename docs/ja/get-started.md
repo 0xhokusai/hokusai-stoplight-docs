@@ -75,6 +75,8 @@ Hokusai API を動かす準備が整いました。
 NFT を Mint してみましょう。
 以下のコードを実行してください。
 
+{to}には発行したNFTを受け取るウォレットアドレスを指定します。このチュートリアルでは自分のウォレットアドレスを指定しましょう。
+
 ```bash
 yarn mint-nft {to} {tokenUri}
 ```
@@ -96,6 +98,7 @@ NFTを送信するには下記の２つの手順を踏む必要があります�
 1. `.env`に送信元のウォレットのprivate keyを入力します。 private keyの取得方法は[こちら](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key)をご覧ください。
 
 2. 下記コードを実行します。
+{to}にはNFTの送信先のウォレットアドレスを指定します。　　
 
 ```:bash
 yarn transfer-nft {to} {tokenId}
