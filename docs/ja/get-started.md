@@ -93,12 +93,12 @@ yarn get-nft {tokenId}
 ```
 
 ### NFTを送信する  
-NFTを送信するには下記の２つの手順を踏む必要があります。:
+NFTを送信するには下記の２つの手順を踏む必要があります。
 
 1. `.env`に送信元のウォレットのprivate keyを入力します。 private keyの取得方法は[こちら](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key)をご覧ください。
 
-2. 下記コードを実行します。
-{to}にはNFTの送信先のウォレットアドレスを指定します。　　
+2. 下記コードを実行します。{to}にはNFTの送信先のウォレットアドレスを指定します。　　
+
 
 ```:bash
 yarn transfer-nft {to} {tokenId}
@@ -110,6 +110,22 @@ yarn transfer-nft {to} {tokenId}
 
 > private Keyは非常に重要な情報です。他の誰とも共有しないでください。
 
+### NFTを消却する  
+NFTの消却を行う際は、0x000...にNFTを送信する必要があります。
+詳しくは[こちら](docs/ja/burn.md)のドキュメンとご覧ください。
+
+
+1. `.env`に送信元のウォレットのprivate keyを入力します。 private keyの取得方法は[こちら](https://metamask.zendesk.com/hc/en-us/articles360015289632-How-to-Export-an-Account-Private-Key)をご覧ください。
+
+2. 下記コードを実行します。
+
+
+```:bash
+yarn transfer-nft 0x0000000000000000000000000000000000000000 {tokenId}
+{
+  txHash: '0xdec77ee7148dc796dd08d656a256e1466daf2763c08cfe104f76e8baf318f3ed' # example Transaction Hash
+}
+```
 
 これで、Hokusai API のチュートリアルは終了です。
 Hokusai API を利用して、NFT を楽しみましょう！
