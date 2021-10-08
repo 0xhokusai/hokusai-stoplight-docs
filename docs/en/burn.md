@@ -1,4 +1,4 @@
-# Burn　NFT
+# Burn NFT
 
 Hokusai API uses [Transfer function](glosarry.md#meta-transactions) to burn NFT.
 
