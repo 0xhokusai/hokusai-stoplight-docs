@@ -4,9 +4,11 @@ Hokusai API uses [Transfer function](glosarry.md#meta-transactions) to burn NFT.
 
 ## NFTの消却とは
 
-NFTの消却は、焼却・Burnとも表現され、NFTを二度と使えなくさせることを指します。
-方法としては、秘密鍵を誰も知らないウォレットに送信することで消却することが可能です。
-Polygonの場合は、一般的に0x0000000000000000000000000000000000000000に送信することで消却することが可能です。消却の履歴は[こちら](https://polygonscan.com/address/0x0000000000000000000000000000000000000000#internaltx)から確認できます。
+Burn in NFT means to make the NFT unusable again.
+It can be burned by sending the private key to a wallet that no one knows about.
+
+In the case of Polygon, it is generally possible to erase it by sending it to 0x0000000000000000000000000000000000000000.
+Burn history is [here](https://polygonscan.com/address/0x0000000000000000000000000000000000000000#internaltx).
 
 
 ## How to burn NFT in Hokusai API
