@@ -1,8 +1,8 @@
-# NFTの消却
+# Burn　NFT
 
 Hokusai API uses [Transfer function](glosarry.md#meta-transactions) to burn NFT.
 
-## NFTの消却とは
+## What is Burn NFT　?
 
 Burn in NFT means to make the NFT unusable again.
 It can be burned by sending the private key to a wallet that no one knows about.
