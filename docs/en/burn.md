@@ -7,7 +7,8 @@ Hokusai API uses [Transfer function](glosarry.md#meta-transactions) to burn NFT.
 Burn in NFT means to make the NFT unusable again.
 It can be burned by sending the private key to a wallet that no one knows about.
 
-In the case of Polygon, it is generally possible to erase it by sending it to 0x0000000000000000000000000000000000000000.
+In the case of Polygon, it is generally possible to burn it by sending it to 0x0000000000000000000000000000000000000000.  
+
 Burn history is [here](https://polygonscan.com/address/0x0000000000000000000000000000000000000000#internaltx).
 
 
