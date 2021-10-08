@@ -115,7 +115,7 @@ NFTの消却を行う際は、0x000...にNFTを送信する必要があります
 詳しくは[こちら](docs/ja/burn.md)のドキュメンとご覧ください。
 
 
-1. `.env`に送信元のウォレットのprivate keyを入力します。 private keyの取得方法は[こちら](https://metamask.zendesk.com/hc/en-us/articles360015289632-How-to-Export-an-Account-Private-Key)をご覧ください。
+1. `.env`に送信元のウォレットのprivate keyを入力します。 
 
 2. 下記コードを実行します。
 
