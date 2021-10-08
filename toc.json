@@ -53,6 +53,11 @@
           },
           {
             "type": "item",
+            "title": "Transfer",
+            "uri": "docs/en/burn.md"
+          },
+          {
+            "type": "item",
             "title": "Glossary",
             "uri": "docs/en/glossary.md"
           },
@@ -113,6 +118,11 @@
           "type": "item",
           "title": "送信",
           "uri": "docs/ja/transfer.md"
+        },
+        {
+          "type": "item",
+          "title": "消却",
+          "uri": "docs/ja/burn.md"
         },
         {
           "type": "item",
