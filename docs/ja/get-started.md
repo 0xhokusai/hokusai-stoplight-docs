@@ -18,7 +18,7 @@ git clone https://github.com/0xhokusai/hokusai-get-started.git
 
 ## 1. API Key の取得
 
-[こちら](https://ir9l8pcvcmm.typeform.com/to/xSbuj2WA)のフォームからAPI Keyの発行申請を行ってください。
+[こちら](https://0xhokusai.notion.site/Hokusai-API-Application-form-a6d8118d416b41d88632396e3156cddb)のフォームからAPI Keyの発行申請を行ってください。
 API Key発行まで2~3営業日お待ち下さい。
 
 ## 2. ウォレットの作成
