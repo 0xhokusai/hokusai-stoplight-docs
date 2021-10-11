@@ -66,7 +66,7 @@ curl https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2xnv
 }
 ```
 
-## 3. Hokusai API を動かす
+## 4. Hokusai API を動かす
 
 Hokusai API を動かす準備が整いました。
 
