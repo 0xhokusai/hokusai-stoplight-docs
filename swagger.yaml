@@ -106,6 +106,7 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/TransferNFT'
+        description: ''
       responses:
         '200':
           description: Success
@@ -239,16 +240,25 @@ components:
           description: A Metadata URI.
     TransferNFT:
       type: object
+      x-examples:
+        example:
+          request:
+            from: '0xbe43fd23a0ba75c1c2f7a8d93c9754f7294da724'
+            to: '0x689f8e5913c158ffb5ac5aeb83b3c875f5d20309'
+            value: 0
+            gas: 1000000
+            nonce: 75
+            data: testdata
       properties:
         request:
           type: object
           properties:
             from:
               type: string
-              description: contractAddress
+              description: user wallet address to send to
             to:
               type: string
-              description: user wallet address to send to
+              description: contractAddress
             value:
               type: number
               description: amount of token that you want to send
@@ -261,15 +271,6 @@ components:
             data:
               type: string
               description: encoded data
-      x-examples:
-        example:
-          request:
-            from: '0xbe43fd23a0ba75c1c2f7a8d93c9754f7294da724'
-            to: '0x689f8e5913c158ffb5ac5aeb83b3c875f5d20309'
-            value: 0
-            gas: 1000000
-            nonce: 75
-            data: testdata
     Royalty:
       type: object
       properties:
