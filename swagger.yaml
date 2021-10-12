@@ -253,12 +253,12 @@ components:
         request:
           type: object
           properties:
-            from:
-              type: string
-              description: user wallet address to send to
             to:
               type: string
-              description: contractAddress
+              description: contract address given by Hokusai
+            from:
+              type: string
+              description: user wallet address send from
             value:
               type: number
               description: amount of token that you want to send
@@ -266,11 +266,14 @@ components:
               type: number
               description: gas fee
             nonce:
-              type: integer
+              type: number
               description: nonce
             data:
               type: string
-              description: encoded data
+              description: encoded transaction data
+            signature:
+              type: string
+              description: transaction signature
     Royalty:
       type: object
       properties:
