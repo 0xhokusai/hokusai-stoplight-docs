@@ -79,7 +79,7 @@ yarn mint-nft {to} {tokenUri}
   txHash: '0x8765feaa11a7e0f9f4a84f21415434d80dd9be27728a8f6eff4d402e4d0c2766' # example Transaction Hash
 }
 ```
-You may refer to our documentation [here](../swagger.yaml#mint-a-new-nft) for parameter descriptions.
+You may refer to our documentation [here](../../swagger.yaml#mint-a-new-nft) for parameter descriptions.
 
 #### Get an NFT
 `tokenId` issued by Hokusai API can be viewed via [polygonscan](https://mumbai.polygonscan.com). You can search by txHash received from minting. 

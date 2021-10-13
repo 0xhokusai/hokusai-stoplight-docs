@@ -81,7 +81,7 @@ NFT を Mint してみましょう。
 yarn mint-nft {to} {tokenUri}
 ```
 
-パラメータの詳細については、[Hokusai API ドキュメント](https://docs.hokusai.app/docs/swagger.yaml#mint-a-new-nft) を確認してください。
+パラメータの詳細については、[Hokusai API ドキュメント](../../swagger.yaml#mint-a-new-nft) を確認してください。
 
 ### NFT を取得する
 
