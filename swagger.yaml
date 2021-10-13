@@ -48,6 +48,39 @@ paths:
       description: Mint a new NFT
       operationId: mint
       summary: Mint a new NFT.
+  '/nfts/{contractId}/{tokenId}':
+    get:
+      produces:
+        - application/json
+      parameters:
+        - description: Target contract ID.
+          in: path
+          name: contractId
+          required: true
+          type: string
+        - description: TokenID of the NFT to get.
+          in: path
+          name: tokenId
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/NFT'
+        '400':
+          description: Invalid input
+        '403':
+          description: Forbidden
+        '500':
+          description: Internal Server Error
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - NFT
+      description: Get NFT Information.
+      operationId: getNFT
+      summary: Get information of the NFT.
   '/nfts/{contractId}/transfer':
     post:
       consumes:
@@ -84,39 +117,6 @@ paths:
       description: Transfer a NFT with meta transaction.
       operationId: transfer
       summary: Transfer a NFT with meta transaction.
-  '/nfts/{contractId}/{tokenId}':
-    get:
-      produces:
-        - application/json
-      parameters:
-        - description: Target contract ID.
-          in: path
-          name: contractId
-          required: true
-          type: string
-        - description: TokenID of the NFT to get.
-          in: path
-          name: tokenId
-          required: true
-          type: string
-      responses:
-        '200':
-          description: Success
-          schema:
-            $ref: '#/definitions/NFT'
-        '400':
-          description: Invalid input
-        '403':
-          description: Forbidden
-        '500':
-          description: Internal Server Error
-      security:
-        - ApiKeyAuth: []
-      tags:
-        - NFT
-      description: Get NFT Information.
-      operationId: getNFT
-      summary: Get information of the NFT.
   '/nfts/{contractId}/{tokenId}/royalty':
     get:
       consumes:
@@ -200,15 +200,6 @@ paths:
       operationId: setRoyalty
       summary: Set royalty to the NFT.
 definitions:
-  MintNFT:
-    properties:
-      to:
-        description: A Ethereum address to mint the NFT to.
-        type: string
-      tokenUri:
-        description: A Metadata URI.
-        type: string
-    type: object
   NFT:
     properties:
       id:
@@ -219,21 +210,13 @@ definitions:
         description: A Metadata URI.
         type: string
     type: object
-  ResponseWithTxHash:
+  MintNFT:
     properties:
-      txHash:
-        description: A transaction hash of the transaction.
+      to:
+        description: A Ethereum address to mint the NFT to.
         type: string
-    type: object
-  Royalty:
-    properties:
-      parcentage:
-        format: int32
-        maximum: 100
-        minimum: 0
-        type: integer
-      receiver:
-        description: A Ethereum address of the receiver.
+      tokenUri:
+        description: A Metadata URI.
         type: string
     type: object
   TransferNFT:
@@ -272,6 +255,23 @@ definitions:
           nonce: 75
           to: '0x689f8e5913c158ffb5ac5aeb83b3c875f5d20309'
           value: 0
+  Royalty:
+    properties:
+      parcentage:
+        format: int32
+        maximum: 100
+        minimum: 0
+        type: integer
+      receiver:
+        description: A Ethereum address of the receiver.
+        type: string
+    type: object
+  ResponseWithTxHash:
+    properties:
+      txHash:
+        description: A transaction hash of the transaction.
+        type: string
+    type: object
 securityDefinitions:
   ApiKeyAuth:
     in: query
@@ -285,4 +285,3 @@ tags:
   - description: Manage Royalty
     name: Royalty
 x-components: {}
-
