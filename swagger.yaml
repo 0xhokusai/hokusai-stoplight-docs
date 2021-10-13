@@ -1,295 +1,288 @@
-openapi: 3.0.0
+swagger: '2.0'
 info:
-  version: 1.0.0
-  title: Hokusai API
   contact:
     email: command@hokusai.app
     name: JapanMonoBundle
     url: 'https://hokusai.app'
   description: The world’s most powerful and easy-to-use NFT APIs
-tags:
-  - name: NFT
-    description: Manage NFTs
-  - name: Royalty
-    description: Manage Royalty
+  title: Hokusai API
+  version: 1.0.0
+host: polygon.hokusai.app
+basePath: /v1
+schemes:
+  - https
 paths:
   '/nfts/{contractId}/mint':
     post:
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - description: Target contract ID.
+          in: path
+          name: contractId
+          required: true
+          type: string
+        - description: NFT object to mint.
+          in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/MintNFT'
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/ResponseWithTxHash'
+        '400':
+          description: Bad Request
+        '403':
+          description: Forbidden
+        '500':
+          description: Internal Server Error
+      security:
+        - ApiKeyAuth: []
       tags:
         - NFT
-      summary: Mint a new NFT.
       description: Mint a new NFT
       operationId: mint
-      security:
-        - ApiKeyAuth: []
-      parameters:
-        - in: path
-          name: contractId
-          required: true
-          description: Target contract ID.
-          schema:
-            type: string
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/MintNFT'
-        description: NFT object to mint.
-      responses:
-        '200':
-          description: Success
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ResponseWithTxHash'
-        '400':
-          description: Bad Request
-        '403':
-          description: Forbidden
-        '500':
-          description: Internal Server Error
-  '/nfts/{contractId}/{tokenId}':
-    get:
-      tags:
-        - NFT
-      summary: Get information of the NFT.
-      description: Get NFT Information.
-      operationId: getNFT
-      security:
-        - ApiKeyAuth: []
-      parameters:
-        - in: path
-          name: contractId
-          required: true
-          description: Target contract ID.
-          schema:
-            type: string
-        - in: path
-          name: tokenId
-          required: true
-          description: TokenID of the NFT to get.
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/NFT'
-        '400':
-          description: Invalid input
-        '403':
-          description: Forbidden
-        '500':
-          description: Internal Server Error
+      summary: Mint a new NFT.
   '/nfts/{contractId}/transfer':
     post:
-      tags:
-        - NFT
-      summary: Transfer a NFT with meta transaction.
-      description: Transfer a NFT with meta transaction.
-      operationId: transfer
-      security:
-        - ApiKeyAuth: []
+      consumes:
+        - application/json
+      produces:
+        - application/json
       parameters:
-        - in: path
+        - description: Target contract ID.
+          in: path
           name: contractId
           required: true
-          description: Target contract ID.
+          type: string
+        - description: ''
+          in: body
+          name: body
+          required: true
           schema:
-            type: string
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/TransferNFT'
-        description: ''
+            $ref: '#/definitions/TransferNFT'
       responses:
         '200':
           description: Success
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ResponseWithTxHash'
+          schema:
+            $ref: '#/definitions/ResponseWithTxHash'
         '400':
           description: Bad Request
         '403':
           description: Forbidden
         '500':
           description: Internal Server Error
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - NFT
+      description: Transfer a NFT with meta transaction.
+      operationId: transfer
+      summary: Transfer a NFT with meta transaction.
+  '/nfts/{contractId}/{tokenId}':
+    get:
+      produces:
+        - application/json
+      parameters:
+        - description: Target contract ID.
+          in: path
+          name: contractId
+          required: true
+          type: string
+        - description: TokenID of the NFT to get.
+          in: path
+          name: tokenId
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/NFT'
+        '400':
+          description: Invalid input
+        '403':
+          description: Forbidden
+        '500':
+          description: Internal Server Error
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - NFT
+      description: Get NFT Information.
+      operationId: getNFT
+      summary: Get information of the NFT.
   '/nfts/{contractId}/{tokenId}/royalty':
     get:
+      consumes:
+        - application/json
+      produces:
+        - application/json
+        - application/xml
+      parameters:
+        - description: Target contract ID.
+          in: path
+          name: contractId
+          required: true
+          type: string
+        - description: TokenID to get royalty.
+          in: path
+          name: tokenId
+          required: true
+          type: string
+        - in: body
+          name: body
+          schema:
+            properties: {}
+            type: object
+      responses:
+        '200':
+          description: Success
+          headers: {}
+          schema:
+            $ref: '#/definitions/Royalty'
+        '400':
+          description: Invalid input
+        '403':
+          description: Forbidden
+        '500':
+          description: Internal Server Error
+      security:
+        - ApiKeyAuth: []
       tags:
         - Royalty
-      summary: Get royalty of the NFT.
       description: Get royalty information of NFT.
       operationId: getRoyalty
-      security:
-        - ApiKeyAuth: []
+      summary: Get royalty of the NFT.
+    post:
+      consumes:
+        - application/json
+      produces:
+        - application/json
       parameters:
-        - in: path
+        - description: Target contract ID.
+          in: path
           name: contractId
           required: true
-          description: Target contract ID.
-          schema:
-            type: string
-        - in: path
+          type: string
+        - description: Target token ID.
+          in: path
           name: tokenId
-          description: TokenID to get royalty.
+          required: true
+          type: string
+        - description: NFT royalty to set.
+          in: body
+          name: body
           required: true
           schema:
-            type: string
+            $ref: '#/definitions/Royalty'
       responses:
         '200':
           description: Success
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Royalty'
-            application/xml:
-              schema:
-                type: object
-                properties: {}
-          headers: {}
+          schema:
+            $ref: '#/definitions/ResponseWithTxHash'
         '400':
           description: Invalid input
         '403':
           description: Forbidden
         '500':
           description: Internal Server Error
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              properties: {}
-    post:
+      security:
+        - ApiKeyAuth: []
       tags:
         - Royalty
-      summary: Set royalty to the NFT.
       description: Set NFT royalty.
       operationId: setRoyalty
-      security:
-        - ApiKeyAuth: []
-      parameters:
-        - in: path
-          name: contractId
-          required: true
-          description: Target contract ID.
-          schema:
+      summary: Set royalty to the NFT.
+definitions:
+  MintNFT:
+    properties:
+      to:
+        description: A Ethereum address to mint the NFT to.
+        type: string
+      tokenUri:
+        description: A Metadata URI.
+        type: string
+    type: object
+  NFT:
+    properties:
+      id:
+        format: int64
+        minimum: 1
+        type: integer
+      tokenUri:
+        description: A Metadata URI.
+        type: string
+    type: object
+  ResponseWithTxHash:
+    properties:
+      txHash:
+        description: A transaction hash of the transaction.
+        type: string
+    type: object
+  Royalty:
+    properties:
+      parcentage:
+        format: int32
+        maximum: 100
+        minimum: 0
+        type: integer
+      receiver:
+        description: A Ethereum address of the receiver.
+        type: string
+    type: object
+  TransferNFT:
+    properties:
+      request:
+        properties:
+          data:
+            description: encoded transaction data
             type: string
-        - in: path
-          name: tokenId
-          required: true
-          description: Target token ID.
-          schema:
+          from:
+            description: user wallet address send from
             type: string
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Royalty'
-        description: NFT royalty to set.
-        required: true
-      responses:
-        '200':
-          description: Success
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ResponseWithTxHash'
-        '400':
-          description: Invalid input
-        '403':
-          description: Forbidden
-        '500':
-          description: Internal Server Error
-servers:
-  - url: 'https://polygon.hokusai.app/v1'
-    description: Mainnet
-  - url: 'https://mumbai.hokusai.app/v1'
-    description: Testnet
-components:
-  securitySchemes:
-    ApiKeyAuth:
-      type: apiKey
-      in: query
-      name: key
-  schemas:
-    NFT:
-      type: object
-      properties:
-        id:
-          type: integer
-          format: int64
-          minimum: 1
-        tokenUri:
-          type: string
-          description: A Metadata URI.
-    MintNFT:
-      type: object
-      properties:
-        to:
-          type: string
-          description: A Ethereum address to mint the NFT to.
-        tokenUri:
-          type: string
-          description: A Metadata URI.
-    TransferNFT:
-      type: object
-      x-examples:
-        example:
-          request:
-            from: '0xbe43fd23a0ba75c1c2f7a8d93c9754f7294da724'
-            to: '0x689f8e5913c158ffb5ac5aeb83b3c875f5d20309'
-            value: 0
-            gas: 1000000
-            nonce: 75
-            data: testdata
-      properties:
+          gas:
+            description: gas fee
+            type: number
+          nonce:
+            description: nonce
+            type: number
+          signature:
+            description: transaction signature
+            type: string
+          to:
+            description: contract address given by Hokusai
+            type: string
+          value:
+            description: amount of token that you want to send
+            type: number
+        type: object
+    type: object
+    x-examples:
+      example:
         request:
-          type: object
-          properties:
-            to:
-              type: string
-              description: contract address given by Hokusai
-            from:
-              type: string
-              description: user wallet address send from
-            value:
-              type: number
-              description: amount of token that you want to send
-            gas:
-              type: number
-              description: gas fee
-            nonce:
-              type: number
-              description: nonce
-            data:
-              type: string
-              description: encoded transaction data
-            signature:
-              type: string
-              description: transaction signature
-    Royalty:
-      type: object
-      properties:
-        receiver:
-          type: string
-          description: A Ethereum address of the receiver.
-        parcentage:
-          type: integer
-          format: int32
-          minimum: 0
-          maximum: 100
-    ResponseWithTxHash:
-      type: object
-      properties:
-        txHash:
-          type: string
-          description: A transaction hash of the transaction.
+          data: testdata
+          from: '0xbe43fd23a0ba75c1c2f7a8d93c9754f7294da724'
+          gas: 1000000
+          nonce: 75
+          to: '0x689f8e5913c158ffb5ac5aeb83b3c875f5d20309'
+          value: 0
+securityDefinitions:
+  ApiKeyAuth:
+    in: query
+    name: key
+    type: apiKey
 security:
   - ApiKeyAuth: []
+tags:
+  - description: Manage NFTs
+    name: NFT
+  - description: Manage Royalty
+    name: Royalty
+x-components: {}
+
