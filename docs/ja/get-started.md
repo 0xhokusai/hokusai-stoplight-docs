@@ -79,7 +79,7 @@ nft.storageを利用するために、nft.storageに登録し、API Keyを作成
 
 1. [ここ](https://nft.storage/login/)からnft.storageに登録してください。
 2. ログインしたら、右上の**API Keys**を押してください。
-3. 右上の**+ New Key**を押してください。
+3. 右上の**New Key**を押してください。
 4. API Keyの名前を入力して、**Create**を押してください。
 
 nft.storageのAPI Keyを作成できました。

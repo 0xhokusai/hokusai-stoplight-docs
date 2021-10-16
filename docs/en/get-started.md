@@ -22,7 +22,7 @@ Submit your request for an API key [here](https://0xhokusai.notion.site/Hokusai-
 
 ## 2. Prepare a wallet
 
-Before you start dealing with NFTs, you need an "account" to hold your tokens. Wallet applications are usually used to create an account on a blockchain as well as to sign your transactions. In this section, we will explain how to set up Metamask, which is one of the most common wallet applications for Ethereum and other networks, to create your wallet and your account, and connect them to the Polygon network. If you already have a wallet, proceed to "3. Publish NFT metadata".
+Before you start dealing with NFTs, you need an "account" to hold your tokens. Wallet applications are usually used to create an account on a blockchain as well as to sign your transactions. In this section, we will explain how to set up Metamask, which is one of the most common wallet applications for Ethereum and other networks, to create your wallet and your account, and connect them to the Polygon network. If you already have a wallet, proceed to [3. Obtain an nft.storage API Key](./get-started.md#3-obtain-an-nftstorage-api-key).
 
 ### 2.1. Install Metamask
 
@@ -97,7 +97,6 @@ Edit `.env` and set the variables. Note you don't need to set the `WALLET_PRIVAT
 ```bash
 #Your wallet's private key. Refer to "6.3. Transfer NFTs" for details.
 WALLET_PRIVATE_KEY = "your-private-key"
-#nft.storage API Keyを入力します。
 #Your nft.storage API Key.
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
 #Your Hokusai API Key.
