@@ -6,8 +6,8 @@
 ## チュートリアル
 チュートリアルを始めるために、下記よりリポジトリをクローンしてください。
 　
-```:bash
-git clone https://github.com/0xhokusai/hokusai-get-started.git
+```bash
+$ git clone https://github.com/0xhokusai/hokusai-get-started.git
 ```
 
 インストールには、次の手順が必要です。
@@ -147,7 +147,7 @@ NFT を Mint してみましょう。
 {to}には発行したNFTを受け取るウォレットアドレスを指定します。このチュートリアルでは自分のウォレットアドレスを指定しましょう。
 
 ```bash
-yarn mint-nft {to} {tokenUri}
+$ yarn mint-nft {to} {tokenUri}
 ```
 
 パラメータの詳細については、[Hokusai API ドキュメント](../../swagger.yaml#mint-a-new-nft) を確認してください。
@@ -158,7 +158,7 @@ Mint 時に発行された `tokenId` を利用して、NFT の情報を取得し
 `txHash` を [polygonscan](https://mumbai.polygonscan.com/) から検索することで、mint時に発行された`tokenId` を調べることができます。
 
 ```bash
-yarn get-nft {tokenId}
+$ yarn get-nft {tokenId}
 ```
 
 ### 6.3. NFTを送信する
@@ -195,7 +195,7 @@ HOKUSAI_CONTRACT_ID = "your-contract-id"
 下記のコードを実行してください。`{to}`にはNFT送信先のアカウントアドレスを指定します。
 
 ```bash
-yarn transfer-nft {to} {tokenId}
+$ yarn transfer-nft {to} {tokenId}
 {
   txHash: '0xdec77ee7148dc796dd08d656a256e1466daf2763c08cfe104f76e8baf318f3ed' # example Transaction Hash
 }
@@ -214,8 +214,8 @@ NFTの消却を行う際は、0x000...にNFTを送信する必要があります
 2. 下記コードを実行します。
 
 
-```:bash
-yarn transfer-nft 0x0000000000000000000000000000000000000000 {tokenId}
+```bash
+$ yarn transfer-nft 0x0000000000000000000000000000000000000000 {tokenId}
 {
   txHash: '0xdec77ee7148dc796dd08d656a256e1466daf2763c08cfe104f76e8baf318f3ed' # example Transaction Hash
 }

@@ -3,10 +3,10 @@
 > After completing this tutorial,  you'll be able to use Hokusai API and start integrating NFT on your website. 
 > 
 ### Table of Contents
-**[Getting Started](#getting-started)**<br>
-**[Using Hokusai API](#using-hokusai-api)**<br>
+**[Getting Started](#get-started)**<br>
+**[Using Hokusai API](#use-hokusai-api)**<br>
 
-## Getting Started
+## Get Started
 To get started with Hokusai API, first, clone this repository and follow the below tutorial.
 ```:bash
 git clone https://github.com/0xhokusai/hokusai-get-started.git
@@ -20,15 +20,15 @@ The installation requires the following steps:
 ### 1. Obtain your API key
 Submit your request for an API key [here](https://0xhokusai.notion.site/Hokusai-API-Application-form-a6d8118d416b41d88632396e3156cddb). You will receive an email, which contains `HOKUSAI_API_KEY` and `HOKUSAI_CONTRACT_ID`. Currently, it takes 2-3 business days to issue the API Key if you sign up for a Mainnet key. A Testnet key will be issued instatnly after your request.
 
-## 2. Prepare a wallet
+### 2. Prepare a wallet
 
 Before you start dealing with NFTs, you need an "account" to hold your tokens. Wallet applications are usually used to create an account on a blockchain as well as to sign your transactions. In this section, we will explain how to set up Metamask, which is one of the most common wallet applications for Ethereum and other networks, to create your wallet and your account, and connect them to the Polygon network. If you already have a wallet, proceed to [3. Obtain an nft.storage API Key](./get-started.md#3-obtain-an-nftstorage-api-key).
 
-### 2.1. Install Metamask
+#### 2.1. Install Metamask
 
 Install Metamask [here](https://metamask.io/download.html). Metamask supports Chrome, Firefox, Brave, and Edge.
 
-### 2.2. Create a wallet
+#### 2.2. Create a wallet
 
 1. Open Metamask on your browser.
 2. Press **Get Started.**
@@ -45,7 +45,7 @@ Install Metamask [here](https://metamask.io/download.html). Metamask supports Ch
 
 Now your wallet has been created along with your account.
 
-### 2.3. Connect to Polygon
+#### 2.3. Connect to Polygon
 
 At this point, the account you've just created does not exist on the Polygon network yet. Now, we will be adding the Polygon network and connecting your account to the network.
 
@@ -69,7 +69,7 @@ At this point, the account you've just created does not exist on the Polygon net
 
 Confirm that the currency of your balance is **MATIC** and the button on the top right side of the page says either **Polygon Mainnet** or **Mumbai Testnet**, and now you have successfully connected to the network.
 
-## 3. Obtain an nft.storage API Key
+### 3. Obtain an nft.storage API Key
 
 NFTs often have a metadata URI as one of their properties. This project makes use of [nft.storage](http://nft.storage) to store metadata for NFTs we will be minting. [nft.storage](https://nft.storage/) is a decentralized storage system to store and publish NFT metadata on [IPFS](https://docs.ipfs.io/).
 
@@ -82,9 +82,9 @@ To use [nft.storage](http://nft.storage), you need to register and create an API
 
 Now you have created an [nft.storage](http://nft.storage) API Key.
 
-## 4. Set up the project
+### 4. Set up the project
 
-### 4.1. Create a setting file
+#### 4.1. Create a setting file
 
 In this project, the program reads Hokusai API Key, Hokusai Contract ID, [nft.storage](http://nft.storage) API Key and the wallet's private key into environment variables, from a `.env` file. Run the code below to copy `.env.sample` file from the project and create a `.env` file.
 
@@ -92,10 +92,10 @@ In this project, the program reads Hokusai API Key, Hokusai Contract ID, [nft.st
 $ cp .env.sample .env
 ```
 
-Edit `.env` and set the variables. Note you don't need to set the `WALLET_PRIVATE_KEY` yet.
+Edit `.env` and set the variables. Note you don't need to set the `WALLET_PRIVATE_KEY` here yet.
 
 ```bash
-#Your wallet's private key. Refer to "6.3. Transfer NFTs" for details.
+#Your wallet's private key. Refer to "Transfer an NFT" for details.
 WALLET_PRIVATE_KEY = "your-private-key"
 #Your nft.storage API Key.
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
@@ -105,7 +105,7 @@ HOKUSAI_API_KEY = "your-hokusai-api-key"
 HOKUSAI_CONTRACT_ID = "your-contract-id"
 ```
 
-### 4.2. Install packages
+#### 4.2. Install packages
 
 Run the code below to install all the packages required to execute programs.
 
@@ -113,7 +113,7 @@ Run the code below to install all the packages required to execute programs.
 $ yarn
 ```
 
-## 5. Publish NFT metadata
+### 5. Publish NFT metadata
 
 You can publish metadata using our sample image (hokusai.png) by running the following command.
 
@@ -133,33 +133,33 @@ $ curl https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2x
 }
 ```
 
-## 6. Use Hokusai API
+## Use Hokusai API
 Congratulations! You're ready to use Hokusai API. Now, let's try minting and getting an NFT. 
 If you using the Mumbai testnet, change the baseUrl of src/getNft.ts and src/mintNft.ts's to https://mumbai.hokusai.app.
 
-### 6.1. Mint an NFT
+### 1. Mint an NFT
 To [mint](glosarry.md#mint) an NFT, run the code below
-```:bash
-yarn mint-nft {to} {tokenUri}
+```bash
+$ yarn mint-nft {to} {tokenUri}
 {
   txHash: '0x8765feaa11a7e0f9f4a84f21415434d80dd9be27728a8f6eff4d402e4d0c2766' # example Transaction Hash
 }
 ```
 You may refer to our documentation [here](../../swagger.yaml#mint-a-new-nft) for parameter descriptions.
 
-### 6.2. Get an NFT
+### 2. Get an NFT
 `tokenId` issued by Hokusai API can be viewed via [polygonscan](https://mumbai.polygonscan.com). You can search by txHash received from minting. 
 
-```:bash
-yarn get-nft {tokenId}
+```bash
+$ yarn get-nft {tokenId}
 { id: {tokenId}, tokenUri: 'https://example.com/1' } # example response
 ```
 
-### 6.3. Transfer an NFT
+### 3. Transfer an NFT
 
 To transfer an NFT, you need a signature of the sender account. Generating the signature requires the sender's private key. 
 
-#### 6.3.1. Export Private Key
+#### 3.1. Export Private Key
 
 We will explain how to export your private key on Metamask.
 
@@ -189,7 +189,7 @@ HOKUSAI_CONTRACT_ID = "your-contract-id"
 Run the code below. `{to}` should be the account address you want to send the token to.
 
 ```bash
-yarn transfer-nft {to} {tokenId}
+$ yarn transfer-nft {to} {tokenId}
 {
   txHash: '0xdec77ee7148dc796dd08d656a256e1466daf2763c08cfe104f76e8baf318f3ed' # example Transaction Hash
 }
@@ -199,7 +199,7 @@ yarn transfer-nft {to} {tokenId}
 
 >  Your private key is very sensitive information. Do not share with anyone else. 
 
-### 6.4. Burn an NFT
+### 4. Burn an NFT
 
 To burn an NFT, you need to send NFT to 0x000...
 You may refer to our documentation [here](docs/en/burn.md) for burn descriptions.
@@ -207,8 +207,8 @@ You may refer to our documentation [here](docs/en/burn.md) for burn descriptions
 1. Fill in the private key of your wallet in the `.env` file ([Get the private key](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key))
 2. Run the code below
 
-```:bash
-yarn transfer-nft 0x0000000000000000000000000000000000000000 {tokenId}
+```bash
+$ yarn transfer-nft 0x0000000000000000000000000000000000000000 {tokenId}
 {
   txHash: '0xdec77ee7148dc796dd08d656a256e1466daf2763c08cfe104f76e8baf318f3ed' # example Transaction Hash
 }
