@@ -55,6 +55,7 @@ At this point, the account you've just created does not exist on the Polygon net
     ![custom_rpc.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/wVrrFHw5p3M)
     
 3. Fill out the fields with information below.
+
     Property | Polygon Mainnet | Mumbai Testnet
     ---------|----------|---------
     Network Name | Polygon Mainnet | Mumbai Testnet
@@ -64,7 +65,6 @@ At this point, the account you've just created does not exist on the Polygon net
     Block Explorer URL (Optional) | https://polygonscan.com | https://mumbai.polygonscan.com
     
     ![new_network_mainnet.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/ZmYEkZY00fM)
-
     
 4. Press **Save**.
 
