@@ -19,3 +19,26 @@ Hokusai　APIでは、メタトランザクションを利用して送信機能�
 新規参入者にとって、ガス代に十分なETHを保有ことは簡単なことではありません。そのためHokusaiではユーザーにガス代の負担をなくすために、メタトランザクションを利用しています。
 
 - [What is a Meta-transaction | OpenZepplin Docs](https://docs.openzeppelin.com/learn/sending-gasless-transactions#what-is-a-meta-tx)
+
+
+### Metadata
+
+
+
+### Mumbai network
+
+### Polygon network
+
+### ContractID
+
+### Token ID
+
+### tokenUri
+
+### API Key
+
+### Wallet
+
+### Account
+
+### TxHash

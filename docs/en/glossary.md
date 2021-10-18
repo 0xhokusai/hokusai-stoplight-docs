@@ -16,3 +16,23 @@ Meta-transactions mean transactions that a third party (called a relayer) can se
 By using Hokusai API, Users can easily use meta-transaction.
 
 - [What is a Meta-transaction | OpenZepplin Docs](https://docs.openzeppelin.com/learn/sending-gasless-transactions#what-is-a-meta-tx)
+
+### Metadata
+
+### Mumbai network
+
+### Polygon network
+
+### ContractID
+
+### Token ID
+
+### tokenUri
+
+### API Key
+
+### Wallet
+
+### Account
+
+### TxHash
