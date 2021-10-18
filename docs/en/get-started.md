@@ -32,9 +32,9 @@ Install Metamask [here](https://metamask.io/download.html). Metamask supports Ch
 
 1. Open Metamask on your browser.
 2. Press **Get Started.**
-3. Select **Create a Wallet** on the right.
-    
-    ![create_a_wallet.png](create_a_wallet.png)
+3. Select **Create a Wallet** on the right.    
+
+    ![create_a_wallet.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/M9kJf3upBS8)
     
 4. Read the data usage policy and privacy policy, then select either button.
 5. Create a new password, read and agree to the terms of use, and press **Create**.
@@ -52,7 +52,7 @@ At this point, the account you've just created does not exist on the Polygon net
 1. Press **Ethereum Mainnet** on the top right side of the page.
 2. Press **Custom RPC** at the bottom of the menu.
     
-    ![custom_rpc.png](custom_rpc.png)
+    ![custom_rpc.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/wVrrFHw5p3M)
     
 3. Fill out the fields with information below.
     Property | Polygon Mainnet | Mumbai Testnet
@@ -63,7 +63,8 @@ At this point, the account you've just created does not exist on the Polygon net
     Currency (Optional) | MATIC | MATIC
     Block Explorer URL (Optional) | https://polygonscan.com | https://mumbai.polygonscan.com
     
-    ![new_network_mainnet.png](new_network_mainnet.png)
+    ![new_network_mainnet.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/ZmYEkZY00fM)
+
     
 4. Press **Save**.
 
@@ -167,7 +168,7 @@ We will explain how to export your private key on Metamask.
 2. Press the menu button just below your account icon on the top right side of the page.
 3. Press **Account details**.
     
-    ![account_details.png](account_details.png)
+    ![account_details.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/DyqaoXNXV08)
     
 4. Press **Export Private Key**.
 5. Type your password and press **Confirm**.

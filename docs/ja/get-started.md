@@ -35,7 +35,7 @@ NFTを管理するためには、トークンを保持するアカウントが�
 2. **開始**ボタンを押してください。
 3. 右の**ウォレットの作成**を選択してください。
     
-    ![create_a_wallet.png](create_a_wallet.png)
+    ![create_a_wallet.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/52FODQ5ud9k)
     
 4. データ収集のポリシーとプライバシーポリシーを読み、どちらかを選択してください。
 5. 新しいパスワードを入力し、使用条件に同意した後、**作成**を押してください。
@@ -53,7 +53,7 @@ NFTを管理するためには、トークンを保持するアカウントが�
 1. 画面右上の**イーサリアム メインネット**と書いてある場所を押してください。
 2. メニュー最下部の**カスタム RPC**を押してください。
     
-    ![custom_rpc.png](custom_rpc.png)
+    ![custom_rpc.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/h0BhERcxMwI)
     
 3. それぞれのボックスに以下のように情報を入力してください。
 
@@ -65,7 +65,7 @@ NFTを管理するためには、トークンを保持するアカウントが�
     通貨記号(オプション) | MATIC | MATIC
     ブロックエクスプローラーのURL(オプション) | https://polygonscan.com | https://mumbai.polygonscan.com
     
-    ![new_network_mainnet.png](new_network_mainnet.png)
+    ![new_network_mainnet.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/unc7jEAbkIo)
     
 4. **保存**を押してください。
 
@@ -173,7 +173,7 @@ NFTを送信するには送信元アカウントの署名が必要になりま�
 2. 画面右上アカウントアイコンの下にある縦3点のメニューボタンを押してください。
 3. **アカウントの詳細**を押してください。
     
-    ![account_details.png](account_details.png)
+    ![account_details.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/6hDwvlke3Mk)
     
 4. **秘密鍵のエクスポート**を押してください。
 5. Metamaskのパスワードを入力し、確認を押してください。
