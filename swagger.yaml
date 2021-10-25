@@ -140,6 +140,7 @@ paths:
           schema:
             properties: {}
             type: object
+          description: ''
       responses:
         '200':
           description: Success
@@ -201,33 +202,44 @@ paths:
       summary: Set royalty to the NFT.
 definitions:
   NFT:
+    type: object
     properties:
       id:
         format: int64
         minimum: 1
         type: integer
       tokenUri:
-        description: A Metadata URI.
+        description: Metadata URI
         type: string
-    type: object
   MintNFT:
+    type: object
     properties:
       to:
-        description: A Ethereum address to mint the NFT to.
+        description: Address to mint the NFT to
         type: string
       tokenUri:
-        description: A Metadata URI.
+        description: Metadata URI
         type: string
-    type: object
   TransferNFT:
+    type: object
+    x-examples:
+      example:
+        request:
+          data: testdata
+          from: '0xbe43fd23a0ba75c1c2f7a8d93c9754f7294da724'
+          gas: 1000000
+          nonce: 75
+          to: '0x689f8e5913c158ffb5ac5aeb83b3c875f5d20309'
+          value: 0
     properties:
       request:
+        type: object
         properties:
           data:
             description: encoded transaction data
             type: string
           from:
-            description: user wallet address send from
+            description: user wallet address to send from
             type: string
           gas:
             description: gas fee
@@ -244,20 +256,10 @@ definitions:
           value:
             description: amount of token that you want to send
             type: number
-        type: object
-    type: object
-    x-examples:
-      example:
-        request:
-          data: testdata
-          from: '0xbe43fd23a0ba75c1c2f7a8d93c9754f7294da724'
-          gas: 1000000
-          nonce: 75
-          to: '0x689f8e5913c158ffb5ac5aeb83b3c875f5d20309'
-          value: 0
   Royalty:
+    type: object
     properties:
-      parcentage:
+      percentage:
         format: int32
         maximum: 100
         minimum: 0
@@ -265,7 +267,6 @@ definitions:
       receiver:
         description: A Ethereum address of the receiver.
         type: string
-    type: object
   ResponseWithTxHash:
     properties:
       txHash:
