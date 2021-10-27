@@ -38,7 +38,7 @@ An API Key is a unique identifier used to authenticate a user, developer, or cal
 
 ### Wallet
 
-A wallet is a user interface to a blockchain. A wallet application provides users with a variety of functionalities such as account creation (key pair generation), sending a transaciton to another account, checking your balance, etc. 
+A wallet is a user interface to a blockchain. A wallet application provides users with a variety of functionalities such as account creation (key pair generation), sending a transaciton to another account, checking your balance, etc. The name "wallet" comes from its function to check your current balance.
 
 ### Account
 
