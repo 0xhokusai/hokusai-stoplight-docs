@@ -2,4 +2,4 @@
 
 ロイヤルティとは、NFT を他人に譲渡する際に、NFT 発行者が売買価格の一部を受け取れるようにする仕組みです。 Hokusai API を利用して発行される NFT は、ロイヤルティメタデータを保持しています。そのため、ロイヤルティ送金に対応したマーケットプレースを利用することで、NFT 発行者がロイヤルティを受け取る仕組みを簡単に導入することができます。
 
-Hokusai API では、ロイヤルティをセットする `POST /nfts/{contractId}/{tokenId}/royalty` エンドポイントが存在しています。`percentage` と `receiver` という、２つのパラメータと共にエンドポイントを叩くことで、ロイヤルティの設定を簡単に行うことができます。
+Hokusai API では、ロイヤルティをセットする [`POST /nfts/{contractId}/{tokenId}/royalty`](../../swagger.yaml#get-royalty-of-the-NFT) エンドポイントが存在しています。`percentage` と `receiver` という、２つのパラメータと共にエンドポイントを叩くことで、ロイヤルティの設定を簡単に行うことができます。
