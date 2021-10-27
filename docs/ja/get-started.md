@@ -11,10 +11,12 @@ git clone https://github.com/0xhokusai/hokusai-get-started.git
 ```
 
 インストールには、次の手順が必要です。
-- Obtain API key
-- Create your wallet
-- Publish NFT metadata
-- Access NFT metadata
+- API　Keyの取得
+- ウォレットの作成
+- NFTのメタデータを公開
+- NFTを発行する
+- NFTを取得する
+- NFTを送信する
 
 ## 1. API Key の取得
 
