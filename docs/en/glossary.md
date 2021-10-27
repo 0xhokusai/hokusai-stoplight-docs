@@ -46,6 +46,11 @@ An account is an entity with a unique address that can send transactions. NFTs a
 
 - [ETHEREUM ACCOUNTS | Ethereum Docs](https://ethereum.org/en/developers/docs/accounts/)
 
+### Transaction
+
+A transaction is an object sent to a blockhain network by an externally-owned (a.k.a. human-owned) account. This includes coin transers and contract calls.
+
+- [TRANSACTIONS | Ethereum Docs](https://ethereum.org/en/developers/docs/transactions/)
 
 ### TxHash
 
