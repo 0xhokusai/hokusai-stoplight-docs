@@ -27,15 +27,6 @@ Hokusai　APIでは、メタトランザクションを利用して送信機能�
 
 - [Metadata Standards | Opensea](https://docs.opensea.io/docs/metadata-standards)
 
-
-### Polygon Mainnet
-
-Polygon Mainnetとは、Ethereumの大きな問題である
-
-https://ethereum.org/en/developers/docs/scaling/#layer-2-scaling
-
-### Mumbai Testnet
-
 ### Contract ID
 
 Contract IDとは、Hokusai APIが提供するコントラクトを一意に区別する識別子です。Hokusai APIは、このIDを使ってHokusaiのデータベースから対応するコントラクトアドレス照合し、NFTの発行や送信などの操作を実行します。Contract IDはHokusai API Key発行時にメールで通知されます。Polygon Mainnetでご利用の場合は、API Key1つにつき1つのコントラクトが作成されます。Mumbai Testnetをご利用の場合は、1つのコントラクトを共有します。
