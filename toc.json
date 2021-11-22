@@ -58,6 +58,11 @@
           },
           {
             "type": "item",
+            "title": "Royalty",
+            "uri": "docs/en/royalty.md"
+          },
+          {
+            "type": "item",
             "title": "Glossary",
             "uri": "docs/en/glossary.md"
           },
@@ -124,6 +129,11 @@
           "title": "消却",
           "uri": "docs/ja/burn.md"
         },
+        {
+            "type": "item",
+            "title": "ロイヤルティ",
+            "uri": "docs/ja/royalty.md"
+          },
         {
           "type": "item",
           "title": "用語集",
