@@ -1,31 +1,33 @@
-# 料金
+# Pricing
 
-Hokusai API では、テストネット・事業者向け・エンタープライズの３つのプランをご利用いただけます。  
-プランを比較して、サービスに最適なプランを選択してください。
+Hokusai API offers three different plans: Testnet, Business, and Enterprise.  
+Please compare the plans and choose the best one for your service.
 
- |  | **テストネット** | **事業者向け** | **エンタープライズ** |
+ |  | **Testnet** | **Business** | **Enterprise** |
 | --- | --- | --- | --- |
-| **月額利用料** | 無料 | 無料 | 無料 |
-| **NFTの発行上限** | 無制限 | 無制限 | 無制限 |
-| **NFTの送信上限** | 無制限 | 無制限 | 無制限 |
-| **ネットワーク手数料** | 無料 | 無料 | 無料 |
-| **独自コントラクト発行料** | (独自コントラクトなし) | 20,000円 | お問い合わせください |
-| **NFTの発行** | 無料 | 1000円/件 | お問い合わせください |
-| **NFTの送信** | 無料 | 150円/件 | お問い合わせください |
-| **NFTの消却** | 無料 | 150円/件 | お問い合わせください |
-| **対応チェーン** | Polygon(Testnet) | Polygon(Mainnet) | Polygon(Mainnet) |
-| | [**無料で始める**](https://0xhokusai.notion.site/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0)| [**登録する**](https://0xhokusai.notion.site/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0) | [**問い合わせる**](https://hokusai.app/contact) |
+| **Basic charge(month)** | FREE | FREE | FREE |
+| **NFT mint upper limit** | UNLIMITED | UNLIMITED | UNLIMITED |
+| **NFT send upper limit** | UNLIMITED | UNLIMITED | UNLIMITED |
+| **GAS(Network fees)** | FREE | FREE | FREE |
+| **Original contract issuance fee** | (No original contract) | $200 | Contact sales |
+| **Mint NFT** | FREE | $9/tx | Contact sales |
+| **Send NFT** | FREE | $1.2/tx | Contact sales |
+| **Burn NFT** | FREE | $1.2/tx | Contact sales |
+| **Supported chains:** | Polygon(Testnet) | Polygon(Mainnet) | Polygon(Mainnet) |
+| | [**Get Started for Free**](https://0xhokusai.notion.site/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0)| [**Submit**](https://0xhokusai.notion.site/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0) | [**Contact sales**](https://hokusai.app/contact) |
 
-## テストネット
+## Testnet plan
 
-テストネット版はサービスの検証・テストに適しています。 すべての機能が無料でご利用いただけます。 ご利用いただけるチェーンはPolygon　Testnetです。 
-ご利用のお申込みは[**こちら**](https://0xhokusai.notion.site/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0)
+Testnet version is suitable for service verification and testing. All features are available for FREE. The available chain is Polygon Testnet. 
+Click [**here**](https://0xhokusai.notion.site/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0) to apply for use.
 
-## 事業者向け
-事業者向けプランは、事業化に向けて一般公開前の成長段階にあるサービスに適しています。ご利用いただけるチェーンはPolygon　Mainnetです。   
-ご利用のお申込みは[**こちら**](https://0xhokusai.notion.site/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0)
+## Business plan
+The business plan is suitable for services that are in the growth stage before they are released to the public for commercialization. The available chain is Polygon Mainnet.   
+Click [**here**](https://0xhokusai.notion.site/Polygon-Mainnet-8b29f247de5b46e4900797ed4ab3818e) to apply for use.
 
-## エンタープライズ
-エンタープライズ版は、ボリュームディスカウント・カスタムプランがございます。また、企画・技術・法務 のワンストップサービスを提供しています。まずは[**こちら**](https://hokusai.app/contact)からお問い合わせください。
+
+## Enterprise plan
+The enterprise version is available in volume discount and custom plans. We also provide a one-stop service for planning, technology, and legal services. To get started
+Please contact us from [**here**](https://hokusai.app/contact).
 
 
