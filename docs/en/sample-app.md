@@ -5,7 +5,7 @@ In this tutorial, we will guide you through steps to implement transfer using Ho
 You can find the sample app [here](https://github.com/0xhokusai/hokusai-api-client-sample).
 
 ## Get an API Key
-Hokusai API offers a free API Key for Testnet use. Register for an API Key from [here](https://ir9l8pcvcmm.typeform.com/to/xSbuj2WA) and your API Key and Contract ID will be sent via email.
+Hokusai API offers a free API Key for Testnet use. Register for an API Key from [here](https://www.notion.so/0xhokusai/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0) and your API Key and Contract ID will be sent via email.
 
 ## Integrate Metamask to your app
 In this tutorial, we will be using [Metamask](https://docs.metamask.io/guide/#why-metamask), one of the most standard wallet applications out there.

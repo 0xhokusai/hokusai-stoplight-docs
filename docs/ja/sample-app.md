@@ -8,7 +8,7 @@
 
 ## API Keyを発行する
 Hokusai APIではTestnet用のAPI Keyを無料で配布しています。
-以下の[フォーム](https://ir9l8pcvcmm.typeform.com/to/xSbuj2WA)から利用申請を行うことができます。
+以下の[フォーム](https://www.notion.so/0xhokusai/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0)から利用申請を行うことができます。
 
 
 ## Metamaskの実装
