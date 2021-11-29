@@ -1,28 +1,21 @@
-# はじめに
+## Transferを行うサンプルアプリ
 
-今回は、Hokusai APIを利用して、ガス代なし（Meta Transaction）でNFTをTransferをするサンプルを紹介します。
+このページでは、Hokusai APIとReactを利用して、ガス代なし（Meta Transaction）でNFTをTransferをするサンプルアプリを紹介します。
 この機能を実装すれば、実装したサービスを利用するユーザが、ガス代を負担することなく、サービスを利用することができるようになります。（つまり**暗号資産を持たないユーザ向けのサービスを展開**することができます）
 
-今回使うサンプルコードはこちらとなります↓
-https://github.com/0xhokusai/hokusai-api-client-sample
+今回使うサンプルコードは[こちら](https://github.com/0xhokusai/hokusai-api-client-sample)となります。
 
-# Hokusai APIとは
 
-https://hokusai.app/
-Hokusai APIは、NFTのMint（発行）、Transfer（移転）、Burn（消却）、Royaltyの設定、Metadata情報の取得などの機能をAPIとして提供しているサービスです。
-自分でコントラクトを書かずにNFTのサービスを作ることができます。
-
-# API Keyを発行する
+## API Keyを発行する
 Hokusai APIではTestnet用のAPI Keyを無料で配布しています。
-以下のフォームから利用申請を行うことができます。
-
-https://ir9l8pcvcmm.typeform.com/to/xSbuj2WA
+以下の[フォーム](https://ir9l8pcvcmm.typeform.com/to/xSbuj2WA)から利用申請を行うことができます。
 
 
-# Metamaskの実装
-今回はWalletとして、一般的であるMetamaskを利用します。
-https://docs.metamask.io/guide/#why-metamask
-## ネットワーク設定
+## Metamaskの実装
+今回はWalletとして、一般的である[Metamask](https://docs.metamask.io/guide/#why-metamask
+)を利用します。
+
+### ネットワーク設定
 今回はPolygonのTestnetであるMumbaiを利用するので、以下のようにネットワークを設定します。
 ```Typescript
 const networkParam = {
@@ -33,12 +26,11 @@ const networkParam = {
   blockExplorerUrls: ['https://mumbai.polygonscan.com/'],
 };
 ```
-注意するべきところはchainIdは10進数ではなく**16進数の文字列**で設定する必要があります。
-ネットワーク情報についてはPolygon公式のこちらのサイトに記述されています。
-https://docs.polygon.technology/docs/develop/network-details/network
+注意するべき点としてchainIdは10進数ではなく**16進数の文字列**で設定する必要があります。
+ネットワーク情報についてはPolygon公式の[こちらのサイト](https://docs.polygon.technology/docs/develop/network-details/network)に記述されています。
 
 
-## Metamaskとの接続
+### Metamaskとの接続
 続いて、Metamaskを接続しProviderを取得する関数を定義します。
 `wallet_addEthereumChain`メソッドを利用することで、ネットワーク切り替えのモーダルを表示させることができます（ユーザがそのネットワークをMetamaskに登録してない場合、同時にネットワークを登録させることができます。）
 ```Typescript
@@ -65,14 +57,13 @@ async function connectMetamask() {
 }
 ```
 
-# Hokusai APIでNFTをTransferする
-Hokusai APIでNFTをTransferする手順は以下の通りです。
+## Hokusai APIでNFTをTransferする
+NFTをTransferする手順は以下の通りです。
 1. Transactionのデータを作成
 2. 1.のデータをMetamaskで署名
 3. 1.で作成したデータと2.で作成した署名をHokusai APIにPost
 
-また、Hokusai APIででMeta Transactionを利用する際には、`transfer`エンドポイントを利用します。
-https://docs.hokusai.app/docs/hokusai-api/b3A6MjA5NTQ3NzM-transfer-a-nft-with-meta-transaction
+また、Hokusai APIででMeta Transactionを利用する際には、[`transfer`](../../swagger.yaml#transfer)エンドポイントを利用します。
 Bodyに必要なデータは、以下の通りです。
 - `from`: Transaction送信者のアドレス
 - `to`: Hokusai APIのNFTコントラクトのアドレス
@@ -95,7 +86,7 @@ Bodyに必要なデータは、以下の通りです。
 ```
 
 
-## 1. Transactionデータの作成
+### 1. Transactionデータの作成
 Transactionのデータを作成します。
 Transactionのデータ構造は以下の通りです。
 ```json
@@ -110,8 +101,8 @@ Transactionのデータ構造は以下の通りです。
 ```
 
 まず初めに、`data`に入れるNFTのコントラクトで実行したい関数のデータを作成します
-ABIはこちらのものを使います。
-https://github.com/0xhokusai/hokusai-api-client-sample/blob/main/src/abis/ERC721WithRoyaltyMetaTx.json
+ABIは[こちら](https://github.com/0xhokusai/hokusai-api-client-sample/blob/main/src/abis/ERC721WithRoyaltyMetaTx.json)のものを使います。
+
 
 ```typescript
 import { ethers } from 'ethers';
@@ -172,22 +163,24 @@ const message: Message = {
 
 ```
 コントラクトアドレスに関して、Hokusai APIのMumbai Testnet環境では以下のように設定します。
-`forwarderAddress`: 0x0E285b682EAF6244a2AD3b1D25cFe61BF6A41fc3
-`contractAddress`: 0x73b5373a27f4a271c6559c6c83b10620acde9a2a
+```
+forwarderAddress: 0x0E285b682EAF6244a2AD3b1D25cFe61BF6A41fc3
+contractAddress: 0x73b5373a27f4a271c6559c6c83b10620acde9a2a
+```
 
 また、`forwarder.getNonce(from)`でTransactionに必要なNonceをForwarderから取得します。
 `data`は、先程`encodeFunctionData`で作成したものを利用します。
 
 
-## 2. Metamaskでデータに署名
+### 2. Metamaskでデータに署名
 署名に必要な手順は以下の通りです。
 1. 署名データを作成（先程作成した`message`を利用）
 2. Metamaskの署名モーダルを表示し、ユーザに署名させる
 
-### 署名データの作成
-`signTypedData_v4`の署名データを作成します。
+#### 署名データの作成
+[`signTypedData_v4`](https://docs.metamask.io/guide/signing-data.html#sign-typed-data-v4
+)の署名データを作成します。
 
-https://docs.metamask.io/guide/signing-data.html#sign-typed-data-v4
 
 署名データを作成する関数`createTypedDataV4()`を定義します。
 ```typescript
@@ -242,7 +235,7 @@ const typedData = createTypedDataV4(
   message
 );
 ```
-### Metamaskの署名モーダルを表示し、ユーザに署名させる
+#### Metamaskの署名モーダルを表示し、ユーザに署名させる
 署名したデータを`signature`という変数に格納しています。
 ```typescript
 const signature = await provider.send('eth_signTypedData_v4', [
@@ -252,12 +245,12 @@ const signature = await provider.send('eth_signTypedData_v4', [
 ```
 
 
-## 3. Post!
+### 3. Post!
 最後にHokusai APIに作成した`message`と`signature`をPostします。
-`contractId`と`apiKey`は、
+`contractId`と`apiKey`は、ご自身のものを設定してください。
 ```typescript
-const contractId = xxxxx
-const apiKey = yyyyy
+const contractId = 'your-contract-id'
+const apiKey = 'your-api-key'
 
 result = await fetch(
   `https://mumbai.hokusai.app/v1/nfts/${contractId}/transfer?key=${apiKey}`,
@@ -266,11 +259,10 @@ result = await fetch(
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ request: { ...message, signature } }),
   }
-)
-        .then((res) => res.json())
+).then((res) => res.json())
 ```
 
-# まとめ
+## まとめ
 Hokusai APIを利用して、ガス代なし（Meta Transaction）でNFTをTransferをするためには次の手順が必要です。
 
 1. Transactionデータの作成
