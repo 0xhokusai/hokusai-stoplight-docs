@@ -1,6 +1,6 @@
-## Transferを行うサンプルアプリ
+## Transferを行うサンプル
 
-このページでは、Hokusai APIとReactを利用して、ガス代なし（Meta Transaction）でNFTをTransferをするサンプルアプリを紹介します。
+このページでは、Hokusai APIを利用して、ガス代なし（Meta Transaction）でNFTをTransferをするサンプルを紹介します。
 この機能を実装すれば、実装したサービスを利用するユーザが、ガス代を負担することなく、サービスを利用することができるようになります。（つまり**暗号資産を持たないユーザ向けのサービスを展開**することができます）
 
 今回使うサンプルコードは[こちら](https://github.com/0xhokusai/hokusai-api-client-sample)となります。
