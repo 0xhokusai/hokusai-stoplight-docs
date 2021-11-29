@@ -23,6 +23,11 @@
             "uri": "docs/en/get-started.md"
           },
           {
+            "type": "item",
+            "title": "Sample Project: Transfer",
+            "uri": "docs/en/sample-app.md"
+          },
+          {
             "type": "divider",
             "title": "API Guides"
           },
@@ -94,6 +99,11 @@
           "type": "item",
           "title": "チュートリアル 🏃",
           "uri": "docs/ja/get-started.md"
+        },
+        {
+          "type": "item",
+          "title": "Transfer実装のサンプル",
+          "uri": "docs/ja/sample-app.md"
         },
         {
           "type": "divider",
