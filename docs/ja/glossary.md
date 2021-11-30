@@ -19,3 +19,42 @@ Hokusai　APIでは、メタトランザクションを利用して送信機能�
 新規参入者にとって、ガス代に十分なETHを保有ことは簡単なことではありません。そのためHokusaiではユーザーにガス代の負担をなくすために、メタトランザクションを利用しています。
 
 - [What is a Meta-transaction | OpenZepplin Docs](https://docs.openzeppelin.com/learn/sending-gasless-transactions#what-is-a-meta-tx)
+
+
+### メタデータ
+
+メタデータとは、あるデータに付随する付加的な情報のことを指します。NFTの場合、そのトークンが表す名前、説明、画像データなどが一般的ですが、発行者が必要だと考えればどのような情報を付加することもできます。[Opensea](https://opensea.io)のようなNFTマーケットプレイスでは、以下のようなメタデータの規格が定められています。
+
+- [Metadata Standards | Opensea](https://docs.opensea.io/docs/metadata-standards)
+
+### Contract ID
+
+Contract IDとは、Hokusai APIが提供するコントラクトを一意に区別する識別子です。Hokusai APIは、このIDを使ってHokusaiのデータベースから対応するコントラクトアドレス照合し、NFTの発行や送信などの操作を実行します。Contract IDはHokusai API Key発行時にメールで通知されます。Polygon Mainnetでご利用の場合は、API Key1つにつき1つのコントラクトが作成されます。Mumbai Testnetをご利用の場合は、1つのコントラクトを共有します。
+
+### Token ID
+
+Token IDとは、あるNFTコントラクトが発行するトークンを一意に区別するための識別子です。Hokusai APIが提供するコントラクトでは、そのコントラクトを使って発行した何番目のトークンかを表す数字を使用しています。
+
+### API Key
+
+API Keyとは、通常Web APIの利用権を認証するための文字列です。ユーザーはAPIの利用登録をして、API Keyを取得します。Hokusai APIでは、利用登録後、[Contract ID](./glossary.md#contract-id)とともにメールで通知いたします。Polygon Mainnetでご利用の場合は、一つのAPI Keyにつき一つのContractがご使用いただけます。
+
+### ウォレット
+
+ウォレットとは、ユーザーがブロックチェーンとやりとりをするためのインターフェイスです。アカウントの作成（秘密鍵の作成）、トランザクションの発行、残高の確認など、様々な機能を提供します。通貨の残高を確認する”財布”のように利用されるため、ウォレットと呼ばれています。
+
+### アカウント
+
+アカウントとは、固有のアドレスをもち、トランザクションを送信することのできるオブジェクトです。ユーザーは、通常ウォレットが生成する鍵からアドレスを指定してアカウントを作成します。NFTは、アカウントアドレスに対して発行、送信などが行われます。
+
+- [ETHEREUM ACCOUNTS | Ethereum Docs](https://ethereum.org/en/developers/docs/accounts/)
+
+### トランザクション
+
+トランザクションとは、ブロックチェーンネットワークに対して、ユーザーが持つアカウントが送信することのできるオブジェクトです。これには、通貨の送金や、コントラクトの呼び出しなどが含まれます。
+
+- [TRANSACTIONS | Ethereum Docs](https://ethereum.org/en/developers/docs/transactions/)
+
+### TxHash
+
+TxHashとは”transaction hash”のことで、NFTの発行等、コントラクトのコードを実行する時のトランザクションのhash値です。

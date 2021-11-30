@@ -23,6 +23,11 @@
             "uri": "docs/en/get-started.md"
           },
           {
+            "type": "item",
+            "title": "Sample Project: Transfer",
+            "uri": "docs/en/sample-app.md"
+          },
+          {
             "type": "divider",
             "title": "API Guides"
           },
@@ -68,6 +73,11 @@
           },
           {
             "type": "item",
+            "title": "Royalty",
+            "uri": "docs/en/royalty.md"
+          },
+          {
+            "type": "item",
             "title": "Glossary",
             "uri": "docs/en/glossary.md"
           },
@@ -99,6 +109,11 @@
           "type": "item",
           "title": "チュートリアル 🏃",
           "uri": "docs/ja/get-started.md"
+        },
+        {
+          "type": "item",
+          "title": "Transfer実装のサンプル",
+          "uri": "docs/ja/sample-app.md"
         },
         {
           "type": "divider",
@@ -144,6 +159,11 @@
           "title": "消却",
           "uri": "docs/ja/burn.md"
         },
+        {
+            "type": "item",
+            "title": "ロイヤルティ",
+            "uri": "docs/ja/royalty.md"
+          },
         {
           "type": "item",
           "title": "用語集",
