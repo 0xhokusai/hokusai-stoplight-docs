@@ -37,6 +37,16 @@
             "uri": "docs/en/intro.md"
           },
           {
+          "type": "item",
+          "title": "Pricing",
+          "uri": "docs/en/pricing.md"
+          },
+          {
+            "type": "item",
+            "title": "NFT Starter kit",
+            "uri": "docs/en/starter-kit.md"
+          },
+          {
             "type": "item",
             "title": "Authentication",
             "uri": "docs/en/authentication.md"
@@ -113,6 +123,16 @@
           "type": "item",
           "title": "導入",
           "uri": "docs/ja/intro.md"
+        },
+        {
+          "type": "item",
+          "title": "料金表",
+          "uri": "docs/ja/pricing.md"
+        },
+        {
+          "type": "item",
+          "title": "NFT Starter kit",
+          "uri": "docs/en/starter-kit.md"
         },
         {
           "type": "item",

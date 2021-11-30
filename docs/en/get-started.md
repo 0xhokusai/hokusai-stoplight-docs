@@ -15,7 +15,7 @@ The installation requires the following steps:
 - Obtain API key
 - Create your wallet
 - Publish NFT metadata
-- Access NFT metadata
+- Mint NFT
 
 ### 1. Obtain your API key
 Submit your request for an API key [here](https://0xhokusai.notion.site/Hokusai-API-Application-form-a6d8118d416b41d88632396e3156cddb). You will receive an email, which contains `HOKUSAI_API_KEY` and `HOKUSAI_CONTRACT_ID`. Currently, it takes 2-3 business days to issue the API Key if you sign up for a Mainnet key. A Testnet key will be issued instatnly after your request.
