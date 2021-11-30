@@ -1,3 +1,3 @@
 ## Hokusai API Documents powerd by Stoplight
 
-https://docs.hokusai.app/
+This repository manages https://docs.hokusai.app/ documents.
