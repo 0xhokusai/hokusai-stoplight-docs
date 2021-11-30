@@ -38,6 +38,11 @@
           },
           {
             "type": "item",
+            "title": "NFT Starter kit",
+            "uri": "docs/en/starter-kit.md"
+            },
+          {
+            "type": "item",
             "title": "Authentication",
             "uri": "docs/en/authentication.md"
           }, 
@@ -108,6 +113,11 @@
           "type": "item",
           "title": "料金表",
           "uri": "docs/ja/pricing.md"
+        },
+        {
+          "type": "item",
+          "title": "NFT Starter kit",
+          "uri": "docs/en/starter-kit.md"
         },
         {
           "type": "item",

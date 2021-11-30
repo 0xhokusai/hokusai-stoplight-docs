@@ -2,45 +2,42 @@
 
 ![d82733-5-4139214f31edc7e2dd7c-4.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/xxjKTgYH2UI)
 
+**We have launched "NFT Starter Kit" for businesses. The NFT Starter Kit is the best NFT package for those that want to start an NFT business right now. Enabling them to start an NFT business small and fast. enter the NFT business faster and start small.** 
 
-NFT Starter Kit is a package service that allows you to build a website to sell your original NFT.
-Businesses that want to sell NFT on a trial basis can create a dedicated NFT sales site for their single product and sell NFT.
+## **Details**
 
-This NFT package is ideal for businesses that want to start NFT business right now, allowing them to enter the NFT business faster and start small.
+### **Pricing**
 
-## Details of NFT Starter Kit
+- 20 or less mints
+    - Initial fee $980
+- 21 or more mints
+    - Initial fee $980 + $9 x (additional number of mints)
+- Transaction fees: Free
+- Monthly fee: Free for 3 months (after 4 months: $44/month)
 
-## Price
+### Installation **period**
 
-$1,000 for ~20 units (additional units can be added for $10 each)
+Up to 1 week from request
 
-Transaction fees: Free
+**Differences from existing marketplaces**
 
-Monthly fee: Free for 3 months (after 4 months: 5,000 yen/month)
+***1. Can be built as a dedicated site for original NFTs***
 
-### Implementation period
+Use of your own domain name and design customization is possible. You can also create your own contract, meaning you have full control over the branding of your NFTs.
 
-Up to one week from the request.
+***2. Flexible payment methods***
 
-### Differences from existing marketplaces.
+You can choose between legal currency payment (credit card payment via PayPal) and crypto asset payment.
 
-### Can be built as a dedicated site for original NFTs.
+***3. Can be used as test marketing***
 
-You can use your own domain name and customize your design. You can use your own domain name and customize the design. You can also create your own contract, so you can offer the brand power of your original NFT.
+You can easily test whether your contents and products are suitable for NFT business. It can also be used for advertising testing.
 
-### Flexible payment methods
+1. ***Low implementation fee***
 
-You can choose between legal tender payment (credit card payment with PayPal) and crypto asset payment.
+Businesses using this sales site do not need to purchase cryptographic assets to mint NFTs because Hokusai API covers it for you, resulting in lower implementation fees.
 
-### Can be used as test marketing
-
-You can easily test whether your contents and products are suitable for NFT business. You can also use it for advertising verification.
-
-### Low cost of implementation
-
-With the Hokusai API, businesses do not need to purchase cryptographic assets to issue NFTs, so the implementation cost is low.
-
-### How to apply
+- **How to Apply**
 
 Apply from the following application form.
 
