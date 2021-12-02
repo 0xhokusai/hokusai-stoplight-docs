@@ -9,10 +9,10 @@ Please compare the plans and choose the best one for your service.
 | **NFT mint upper limit** | UNLIMITED | UNLIMITED | UNLIMITED |
 | **NFT send upper limit** | UNLIMITED | UNLIMITED | UNLIMITED |
 | **GAS(Network fees)** | FREE | FREE | FREE |
-| **Original contract issuance fee** | (No original contract) | $200 | Contact sales |
-| **Mint NFT** | FREE | $9/tx | Contact sales |
-| **Send NFT** | FREE | $1.2/tx | Contact sales |
-| **Burn NFT** | FREE | $1.2/tx | Contact sales |
+| **Original contract issuance fee** | (No original contract) | ¥20,000 | Contact sales |
+| **Mint NFT** | FREE | ¥1,000/tx | Contact sales |
+| **Send NFT** | FREE | ¥100/tx | Contact sales |
+| **Burn NFT** | FREE | ¥100/tx | Contact sales |
 | **Supported chains:** | Polygon(Testnet) | Polygon(Mainnet) | Polygon(Mainnet) |
 | | [**Get Started for Free**](https://0xhokusai.notion.site/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0)| [**Submit**](https://0xhokusai.notion.site/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0) | [**Contact sales**](https://hokusai.app/contact) |
 
