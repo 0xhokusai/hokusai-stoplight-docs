@@ -154,6 +154,19 @@ $ yarn mint-nft {to} {tokenUri}
 
 パラメータの詳細については、[Hokusai API ドキュメント](../../swagger.yaml#mint-a-new-nft) を確認してください。
 
+#### 6.1.1. PolygonscanでTokenIDを確認する
+
+発行されたNFTがMumbaiネットワーク上にあるのを確認するためには[Polygonscan](https://mumbai.polygonscan.com/)を使います。Polygonscanとは、Polygonネットワーク上に記録された全てのトランザクション、ブロック、アカウントの詳細を閲覧することができるウェブサイトです。
+
+![polygonscan_top.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/T7773jY2LH8)
+
+mintのレスポンスとして返却された`txHash`をサーチボックスにコピーしエンターを押してください。
+
+![polygonscan_detail.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/9tB4KnKIDrA)
+
+先ほど実行したmintトランザクションに関する詳細な情報の一覧（ブロック、呼び出したコントラクトアドレス、送信されたトークンなど）が表示されます。**Tokens Transferred** > **For ERC-721 TokenID [`tokenId`]** に送信されたNFTに関する情報が記載されています。`[]`の中の数字が`tokenId`を表しています。（上の画像において`tokenId`は`66`）`tokenId`は他のエンドポイントで利用することになります。
+
+
 ### 6.2. NFT を取得する
 
 Mint 時に発行された `tokenId` を利用して、NFT の情報を取得してみましょう。
@@ -194,6 +207,12 @@ HOKUSAI_API_KEY = "your-hokusai-api-key"
 HOKUSAI_CONTRACT_ID = "your-contract-id"
 ```
 
+> Metamask等ウォレットサービスに対応した場合は送信元ウォレットのprivate keyの管理をする必要がありません。
+
+> private Keyは非常に重要な情報です。他の誰とも共有しないでください。
+
+#### 6.3.2. 送信を実行する
+
 下記のコードを実行してください。`{to}`にはNFT送信先のアカウントアドレスを指定します。
 
 ```bash
@@ -202,9 +221,14 @@ $ yarn transfer-nft {to} {tokenId}
   txHash: '0xdec77ee7148dc796dd08d656a256e1466daf2763c08cfe104f76e8baf318f3ed' # example Transaction Hash
 }
 ```
-> Metamask等ウォレットサービスに対応した場合は送信元ウォレットのprivate keyの管理をする必要がありません。
 
-> private Keyは非常に重要な情報です。他の誰とも共有しないでください。
+#### 6.3.3. 送信履歴をPolygonscanで確認する
+[Polygonscan](https://mumbai.polygonscan.com/)を使って、実行した送信の履歴を確認することができます。`txHash`をサーチボックスにコピーして検索してください。
+
+![polygonscan_detail_transfer.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/lOIe8DV0J5E)
+
+**Tokens Transferred**から、送信者と送信先のアドレスや送信されたトークンの`tokenId`などの情報を確認することができます。送信者と送信先のウォレットアドレスが実行時に指定したものと合致していることを確認してください。
+
 
 ### 6.4. NFTを消却する  
 NFTの消却を行う際は、0x000...にNFTを送信する必要があります。
