@@ -146,7 +146,19 @@ $ yarn mint-nft {to} {tokenUri}
   txHash: '0x8765feaa11a7e0f9f4a84f21415434d80dd9be27728a8f6eff4d402e4d0c2766' # example Transaction Hash
 }
 ```
-You may refer to our documentation [here](../../swagger.yaml#mint-a-new-nft) for parameter descriptions.
+Refer to our documentation [here](../../swagger.yaml#mint-a-new-nft) for parameter descriptions.
+
+#### 1.1. Check TokenID on Polygonscan
+You have successfully minted an NFT, but where can you actually see this token on the Mumbai chain? You can confirm this by scanning the transaction with [polygonscan](https://mumbai.polygonscan.com/), which is a website where you can explore all the transactions/blocks/accounts on a Polygon chain (in this case, Mumbai Testnet) with a hash/block number/address.
+
+![polygonscan_top.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/T7773jY2LH8)
+
+Copy & paste in the search box the `txHash` you received as the response and enter.
+
+![polygonscan_detail.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/9tB4KnKIDrA)
+
+Now all the details about this transaction (minting), including the block, contract it intereacted with, information about tokens transferred, etc, show up. Look for the **Tokens Transferred** > **For ERC-721 TokenID [`tokenId`]**. The number in `[]` is the `tokenId` of the token (In the picture above, `tokenId` is `66`). You will use this `tokenId` with the following operations.
+
 
 ### 2. Get an NFT
 `tokenId` issued by Hokusai API can be viewed via [polygonscan](https://mumbai.polygonscan.com). You can search by txHash received from minting. 
@@ -187,6 +199,12 @@ HOKUSAI_API_KEY = "your-hokusai-api-key"
 HOKUSAI_CONTRACT_ID = "your-contract-id"
 ```
 
+> If the wallet service is supported, there is no need to manage the private key of the sender's wallet.
+
+>  Your private key is very sensitive information. **Do not** share with anyone else.
+
+
+#### 3.2. Transfer
 Run the code below. `{to}` should be the account address you want to send the token to.
 
 ```bash
@@ -196,9 +214,13 @@ $ yarn transfer-nft {to} {tokenId}
 }
 ```
 
-> If the wallet service is supported, there is no need to manage the private key of the sender's wallet.
+#### 3.3. Check transaction on Polygonscan
+You can view this transfer transaction on [Polygonscan](https://mumbai.polygonscan.com/) with `txHash`. Copy & paste the `txHash` in the search box.
 
->  Your private key is very sensitive information. Do not share with anyone else. 
+![polygonscan_detail_transfer.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/lOIe8DV0J5E)
+
+In **Tokens Transferred** section, you can see from which address and to which address the token of `[tokenId]` was transferred. Confirm the wallet address and `{to}` correspond `From` and `To` on the page. 
+
 
 ### 4. Burn an NFT
 
