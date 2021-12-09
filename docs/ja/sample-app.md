@@ -162,11 +162,13 @@ const message: Message = {
 };
 
 ```
-コントラクトアドレスに関して、Hokusai APIのMumbai Testnet環境では以下のように設定します。
-```
-forwarderAddress: 0x0E285b682EAF6244a2AD3b1D25cFe61BF6A41fc3
-contractAddress: 0x73b5373a27f4a271c6559c6c83b10620acde9a2a
-```
+`forwarderAddress`と`contractAddress`は以下のように設定します。
+
+address | Mumbai Testnet | Polygon Mainnet 
+--------|----------------|----------------
+`forwarderAddress` | 0x0E285b682EAF6244a2AD3b1D25cFe61BF6A41fc3 | 0xD64a425d91a97866cE4ee2d759A23560411ADb01
+`contractAddress` | 0x73b5373a27f4a271c6559c6c83b10620acde9a2a | ご自身のcontractAddress
+
 
 また、`forwarder.getNonce(from)`でTransactionに必要なNonceをForwarderから取得します。
 `data`は、先程`encodeFunctionData`で作成したものを利用します。
