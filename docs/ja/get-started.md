@@ -156,7 +156,11 @@ $ yarn mint-nft {to} {tokenUri}
 
 #### 6.1.1. PolygonscanでTokenIDを確認する
 
-発行されたNFTがMumbaiネットワーク上にあるのを確認するためには[Polygonscan](https://mumbai.polygonscan.com/)を使います。Polygonscanとは、Polygonネットワーク上に記録された全てのトランザクション、ブロック、アカウントの詳細を閲覧することができるウェブサイトです。
+発行されたNFTがネットワーク上にあるのを確認するためにはPolygonscanを使います。Polygonscanとは、Polygonネットワーク上に記録された全てのトランザクション、ブロック、アカウントの詳細を閲覧することができるウェブサイトです。
+
+Mumbai テストネット：https://mumbai.polygonscan.com
+
+Polygon メインネット：https://polygonscan.com
 
 ![polygonscan_top.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/T7773jY2LH8)
 
