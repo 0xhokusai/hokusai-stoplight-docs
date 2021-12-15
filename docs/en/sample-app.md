@@ -147,10 +147,16 @@ const message: Message = {
 };
 
 ```
-`forwarderAddress` and `contractAddress`, for Mumbai Testnet, should be set as follows:
+`forwarderAddress` and `contractAddress` should be set as follows:
+
+address | Mumbai Testnet | Polygon Mainnet 
+--------|----------------|----------------
+`forwarderAddress` | 0x0E285b682EAF6244a2AD3b1D25cFe61BF6A41fc3 | 0xD64a425d91a97866cE4ee2d759A23560411ADb01
+`contractAddress` | 0x73b5373a27f4a271c6559c6c83b10620acde9a2a | Your contract address
+
 ```
-forwarderAddress: 0x0E285b682EAF6244a2AD3b1D25cFe61BF6A41fc3
-contractAddress: 0x73b5373a27f4a271c6559c6c83b10620acde9a2a
+forwarderAddress: 0x0E285b682EAF6244a2AD3b1D25cFe61BF6A41fc3 // For Mumbai
+contractAddress: 0x73b5373a27f4a271c6559c6c83b10620acde9a2a // For Mumbai
 ```
 
 `forwarder.getNonce(from)` returns the nonce which you need for the transaction to be mined. 
