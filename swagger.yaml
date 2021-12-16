@@ -12,6 +12,29 @@ basePath: /v1
 schemes:
   - https
 paths:
+  /status/health:
+    get:
+      summary: Health Check
+      tags: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            description: ''
+            type: object
+            properties:
+              success:
+                type: boolean
+            required:
+              - success
+            x-examples:
+              example-1:
+                success: true
+          examples: {}
+      operationId: health
+      description: Check liveness status of API.
+      parameters: []
+      security: []
   '/nfts/{contractId}/mint':
     post:
       consumes:
