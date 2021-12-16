@@ -14,25 +14,34 @@ schemes:
 paths:
   /status/health:
     get:
+      produces:
+        - application/json
       summary: Health Check
       tags: []
       responses:
         '200':
           description: OK
           schema:
-            description: ''
-            type: object
-            properties:
-              success:
-                type: boolean
-            required:
-              - success
-            x-examples:
-              example-1:
-                success: true
+            $ref: '#/definitions/Health'
           examples: {}
+          headers: {}
+        '400':
+          description: Bad Request
+          schema:
+            type: object
+            properties: {}
+        '403':
+          description: Forbidden
+          schema:
+            type: object
+            properties: {}
+        '500':
+          description: Internal Server Error
+          schema:
+            type: object
+            properties: {}
       operationId: health
-      description: Check liveness status of API.
+      description: Check health status of API.
       parameters: []
       security: []
   '/nfts/{contractId}/mint':
@@ -296,6 +305,12 @@ definitions:
         description: A transaction hash of the transaction.
         type: string
     type: object
+  Health:
+    title: Health
+    type: object
+    properties:
+      success:
+        type: boolean
 securityDefinitions:
   ApiKeyAuth:
     in: query
