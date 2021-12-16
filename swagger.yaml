@@ -12,6 +12,38 @@ basePath: /v1
 schemes:
   - https
 paths:
+  /status/health:
+    get:
+      produces:
+        - application/json
+      summary: Health Check
+      tags: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/Health'
+          examples: {}
+          headers: {}
+        '400':
+          description: Bad Request
+          schema:
+            type: object
+            properties: {}
+        '403':
+          description: Forbidden
+          schema:
+            type: object
+            properties: {}
+        '500':
+          description: Internal Server Error
+          schema:
+            type: object
+            properties: {}
+      operationId: health
+      description: Check health status of API.
+      parameters: []
+      security: []
   '/nfts/{contractId}/mint':
     post:
       consumes:
@@ -273,6 +305,12 @@ definitions:
         description: A transaction hash of the transaction.
         type: string
     type: object
+  Health:
+    title: Health
+    type: object
+    properties:
+      success:
+        type: boolean
 securityDefinitions:
   ApiKeyAuth:
     in: query
