@@ -13,6 +13,8 @@ In addition, Hokusai will pay all the troublesome GAS fees (network fees). You c
 ](https://0xhokusai.notion.site/Hokusai-API-Application-form-a6d8118d416b41d88632396e3156cddb)
 
 ## No cryptocurrency 🥳
+![Group 2 (1).png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/lTqY2CtzOP8)
+
 Since Hokusai pays fees to the blockchain network on behalf of its users, you do not need to prepare GAS fees (network fees) for minting and transferring NFTs.
 
 ## No Solidity 🥷
