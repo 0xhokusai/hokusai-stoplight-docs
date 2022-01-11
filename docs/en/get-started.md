@@ -104,6 +104,8 @@ NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
 HOKUSAI_API_KEY = "your-hokusai-api-key"
 #Your Hokusai Contract ID.
 HOKUSAI_CONTRACT_ID = "your-contract-id"
+#Your Hokusai Contract Address.
+HOKUSAI_CONTRACT_ADDRESS = "your-contract-address"
 ```
 
 #### 4.2. Install packages
