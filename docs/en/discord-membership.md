@@ -9,6 +9,7 @@ A few examples:
 
 ## Set up NFT
 
+More detailed steps to mint an NFT with Hokusai API are explained in the [tutorial](get-started.md).
 
 ### 1. Obtain API Key
 
