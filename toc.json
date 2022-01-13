@@ -28,6 +28,11 @@
             "uri": "docs/en/sample-app.md"
           },
           {
+            "type": "item",
+            "title": "Sample Project: Discord Membership",
+            "uri": "docs/en/discord-membership.md"
+          },
+          {
             "type": "divider",
             "title": "API Guides"
           },
@@ -114,6 +119,11 @@
           "type": "item",
           "title": "Transfer実装のサンプル",
           "uri": "docs/ja/sample-app.md"
+        },
+        {
+          "type": "item",
+          "title": "NFTを使ったDiscordメンバーシップ",
+          "uri": "docs/ja/discord-membership.md"
         },
         {
           "type": "divider",
