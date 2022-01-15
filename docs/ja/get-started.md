@@ -237,7 +237,7 @@ $ yarn transfer-nft {to} {tokenId}
 
 ### 6.4. NFTを消却する  
 NFTの消却を行う際は、0x000...にNFTを送信する必要があります。
-詳しくは[こちら](docs/ja/burn.md)のドキュメンとご覧ください。
+詳しくは[こちら](docs/ja/burn.md)のドキュメントをご覧ください。
 
 
 1. `.env`に送信元のウォレットのprivate keyを入力します。 
