@@ -5,13 +5,13 @@
 
 ## チュートリアル
 チュートリアルを始めるために、下記よりリポジトリをクローンしてください。
-　
+
 ```bash
 $ git clone https://github.com/0xhokusai/hokusai-get-started.git
 ```
 
 インストールには、次の手順が必要です。
-- API　Keyの取得
+- API Keyの取得
 - ウォレットの作成
 - NFTのメタデータを公開
 - NFTを発行する
