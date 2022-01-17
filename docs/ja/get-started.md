@@ -5,13 +5,13 @@
 
 ## チュートリアル
 チュートリアルを始めるために、下記よりリポジトリをクローンしてください。
-　
+
 ```bash
 $ git clone https://github.com/0xhokusai/hokusai-get-started.git
 ```
 
 インストールには、次の手順が必要です。
-- API　Keyの取得
+- API Keyの取得
 - ウォレットの作成
 - NFTのメタデータを公開
 - NFTを発行する
@@ -237,7 +237,7 @@ $ yarn transfer-nft {to} {tokenId}
 
 ### 6.4. NFTを消却する  
 NFTの消却を行う際は、0x000...にNFTを送信する必要があります。
-詳しくは[こちら](docs/ja/burn.md)のドキュメンとご覧ください。
+詳しくは[こちら](docs/ja/burn.md)のドキュメントをご覧ください。
 
 
 1. `.env`に送信元のウォレットのprivate keyを入力します。 

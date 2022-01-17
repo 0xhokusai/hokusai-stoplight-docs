@@ -6,7 +6,7 @@
 ![Group 57.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/7bCnxmp6awk)
 
 
-Mint, send, set royalty, burn, see data, all NFT functions. All Hokusai APIs are included. Hokusais API will enhance the NFT marketplace and platform for all art, collectibles, sports, and admission tickets.  
+Mint, send, set royalty, burn, see data, all NFT functions. All Hokusai APIs are included. Hokusai API will enhance the NFT marketplace and platform for all art, collectibles, sports, and admission tickets.  
 In addition, Hokusai will pay all the troublesome GAS fees (network fees). You can start your own NFT business without having to go through the trouble of getting crypto assets from crypto exchanges or managing a wallet.
 
 [**Apply API key→**
