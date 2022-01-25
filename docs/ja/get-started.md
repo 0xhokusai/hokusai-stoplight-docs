@@ -236,9 +236,9 @@ $ yarn transfer-nft {to} {tokenId}
 **Tokens Transferred**から、送信者と送信先のアドレスや送信されたトークンの`tokenId`などの情報を確認することができます。送信者と送信先のウォレットアドレスが実行時に指定したものと合致していることを確認してください。
 
 ### 6.4. NFTを消却する  
-NFTの消却を行う際は、0x000...にNFTを送信する必要があります。
-詳しくは[こちら](docs/ja/burn.md)のドキュメントをご覧ください。
 
+下記のコードを実行してください。`{tokenId}`には対象のNFTのTokenIdを指定します。
+実行するウォレットがその`tokenId`のNFTを所有していることを確認してください。
 
 1. `.env`に送信元のウォレットのprivate keyを入力します。 
 
@@ -246,9 +246,9 @@ NFTの消却を行う際は、0x000...にNFTを送信する必要があります
 
 
 ```bash
-$ yarn transfer-nft 0x0000000000000000000000000000000000000000 {tokenId}
+$ yarn burn-nft {tokenId}
 {
-  txHash: '0xdec77ee7148dc796dd08d656a256e1466daf2763c08cfe104f76e8baf318f3ed' # example Transaction Hash
+  txHash: '0x67eca6ca63d542f4b01fd60d53feda89ce64f42394c27b77fa3fccbb15244d3c' # example Transaction Hash
 }
 ```
 
