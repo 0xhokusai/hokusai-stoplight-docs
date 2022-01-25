@@ -62,7 +62,7 @@ NFTを管理するためには、トークンを保持するアカウントが�
     Property | Polygon Mainnet | Mumbai Testnet
     ---------|----------|---------
     ネットワーク名 | Polygon Mainnet | Mumbai Testnet
-    新規 RPC URL | https://polygon-rpc.com | https://rpc-mumbai.matic.today
+    新規 RPC URL | https://polygon-rpc.com | https://rpc-mumbai.maticvigil.com 
     チェーン ID | 137 | 80001
     通貨記号(オプション) | MATIC | MATIC
     ブロックエクスプローラーのURL(オプション) | https://polygonscan.com | https://mumbai.polygonscan.com
