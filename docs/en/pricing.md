@@ -9,12 +9,12 @@ Please compare the plans and choose the best one for your service.
 | **NFT mint upper limit** | UNLIMITED | UNLIMITED | UNLIMITED |
 | **NFT send upper limit** | UNLIMITED | UNLIMITED | UNLIMITED |
 | **GAS(Network fees)** | FREE | FREE | FREE |
-| **Original contract issuance fee** | (No original contract) | ¥20,000 | Contact sales |
-| **Mint NFT** | FREE | ¥1,000/tx | Contact sales |
-| **Send NFT** | FREE | ¥100/tx | Contact sales |
-| **Burn NFT** | FREE | ¥100/tx | Contact sales |
+| **Original contract issuance fee** | (No original contract) | FREE | Contact sales |
+| **Mint NFT** | FREE | $8.0/tx | $8.0/tx |
+| **Send NFT** | FREE | $0.8/tx | $0.8/tx |
+| **Burn NFT** | FREE | $0.8/tx | $0.8/tx |
 | **Supported chains:** | Polygon(Testnet) | Polygon(Mainnet) | Polygon(Mainnet) |
-| | [**Get Started for Free**](https://0xhokusai.notion.site/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0)| [**Submit**](https://0xhokusai.notion.site/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0) | [**Contact sales**](https://hokusai.app/contact) |
+| | [**Get Started for Free**](https://0xhokusai.notion.site/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0)| [**Submit**](https://0xhokusai.notion.site/Hokusai-API-API-Key-Registration-Form-API-a6d8118d416b41d88632396e3156cddb) | [**Contact sales**](https://hokusai.app/contact) |
 
 ## Testnet plan
 
