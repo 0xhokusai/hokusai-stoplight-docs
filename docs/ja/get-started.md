@@ -245,7 +245,7 @@ $ yarn transfer-nft {to} {tokenId}
 2. 下記コードを実行します。
 
 
-```bas111h
+```bash
 $ yarn burn-nft {tokenId}
 {
   txHash: '0x67eca6ca63d542f4b01fd60d53feda89ce64f42394c27b77fa3fccbb15244d3c' # example Transaction Hash
