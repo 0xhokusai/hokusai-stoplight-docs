@@ -231,16 +231,18 @@ In **Tokens Transferred** section, you can see from which address and to which a
 
 ### 4. Burn an NFT
 
-To burn an NFT, you need to send NFT to 0x000...
-You may refer to our documentation [here](docs/en/burn.md) for burn descriptions.
+Run the code below. 
+Must be the owner of the NFT for that `tokenId` to burn. 
 
-1. Fill in the private key of your wallet in the `.env` file ([Get the private key](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key))
+1. Fill in the private key of your wallet in the `.env` file ([Get the private key](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key)) 
+
 2. Run the code below
 
-```bash
-$ yarn transfer-nft 0x0000000000000000000000000000000000000000 {tokenId}
+
+```bas111h
+$ yarn burn-nft {tokenId}
 {
-  txHash: '0xdec77ee7148dc796dd08d656a256e1466daf2763c08cfe104f76e8baf318f3ed' # example Transaction Hash
+  txHash: '0x67eca6ca63d542f4b01fd60d53feda89ce64f42394c27b77fa3fccbb15244d3c' # example Transaction Hash
 }
 ```
 
