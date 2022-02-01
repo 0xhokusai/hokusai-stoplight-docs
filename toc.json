@@ -131,6 +131,11 @@
           "uri": "docs/ja/discord-membership.md"
         },
         {
+          "type": "item",
+          "title": "ユーザが特定の NFT を保持しているか検証するサンプル",
+          "uri": "docs/en/how-to-check-who-holds-specific-nft.md"
+        },
+        {
           "type": "divider",
           "title": "APIガイド"
         },
