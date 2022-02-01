@@ -1,106 +1,111 @@
 {
-    "items": [
-      {
-        "type": "divider",
-        "title": "Introduction"
-			},
-      {
-        "type":"group",
-        "title":"English",
-        "items":[
-          {
-            "type": "item",
-            "title": "Welcome to Hokusai 👋",
-            "uri": "docs/en/top.md"
-          },
-          {
-            "type": "divider",
-            "title": "Getting Started"
-          },
-          {
-            "type": "item",
-            "title": "Getting Started with Hokusai API 🏃",
-            "uri": "docs/en/get-started.md"
-          },
-          {
-            "type": "item",
-            "title": "Sample Project: Transfer",
-            "uri": "docs/en/sample-app.md"
-          },
-          {
-            "type": "item",
-            "title": "Sample Project: Discord Membership",
-            "uri": "docs/en/discord-membership.md"
-          },
-          {
-            "type": "divider",
-            "title": "API Guides"
-          },
-          {
-            "type": "item",
-            "title": "Introduction",
-            "uri": "docs/en/intro.md"
-          },
-          {
+  "items": [
+    {
+      "type": "divider",
+      "title": "Introduction"
+    },
+    {
+      "type": "group",
+      "title": "English",
+      "items": [
+        {
+          "type": "item",
+          "title": "Welcome to Hokusai 👋",
+          "uri": "docs/en/top.md"
+        },
+        {
+          "type": "divider",
+          "title": "Getting Started"
+        },
+        {
+          "type": "item",
+          "title": "Getting Started with Hokusai API 🏃",
+          "uri": "docs/en/get-started.md"
+        },
+        {
+          "type": "item",
+          "title": "Sample Project: Transfer",
+          "uri": "docs/en/sample-app.md"
+        },
+        {
+          "type": "item",
+          "title": "Sample Project: Discord Membership",
+          "uri": "docs/en/discord-membership.md"
+        },
+        {
+          "type": "item",
+          "title": "Sample Project: How to check who holds specific NFT",
+          "uri": "docs/en/how-to-check-who-holds-specific-nft.md"
+        },
+        {
+          "type": "divider",
+          "title": "API Guides"
+        },
+        {
+          "type": "item",
+          "title": "Introduction",
+          "uri": "docs/en/intro.md"
+        },
+        {
           "type": "item",
           "title": "Pricing",
           "uri": "docs/en/pricing.md"
-          },
-          {
-            "type": "item",
-            "title": "NFT Starter kit",
-            "uri": "docs/en/starter-kit.md"
-          },
-          {
-            "type": "item",
-            "title": "Authentication",
-            "uri": "docs/en/authentication.md"
-          }, 
-          {
-            "type": "item",
-            "title": "Endpoint",
-            "uri": "docs/en/endpoint.md"
-          },
-          {
-            "type": "item",
-            "title": "Metadata",
-            "uri": "docs/en/metadata.md"
-          },
-          {
-            "type": "item",
-            "title": "Transfer",
-            "uri": "docs/en/transfer.md"
-          },
-          {
-            "type": "item",
-            "title": "Burn",
-            "uri": "docs/en/burn.md"
-          },
-          {
-            "type": "item",
-            "title": "Royalty",
-            "uri": "docs/en/royalty.md"
-          },
-          {
-            "type": "item",
-            "title": "Glossary",
-            "uri": "docs/en/glossary.md"
-          },
-          {
-            "type": "divider",
-            "title": "API Document"
-          },
-          {
-            "type": "item",
-            "title": "Hokusai API v1",
-            "uri": "swagger.yaml"
-          }
-        ]      
-      },
-      {
-      "type":"group",
-      "title":"日本語",
-      "items":[
+        },
+        {
+          "type": "item",
+          "title": "NFT Starter kit",
+          "uri": "docs/en/starter-kit.md"
+        },
+        {
+          "type": "item",
+          "title": "Authentication",
+          "uri": "docs/en/authentication.md"
+        },
+        {
+          "type": "item",
+          "title": "Endpoint",
+          "uri": "docs/en/endpoint.md"
+        },
+        {
+          "type": "item",
+          "title": "Metadata",
+          "uri": "docs/en/metadata.md"
+        },
+        {
+          "type": "item",
+          "title": "Transfer",
+          "uri": "docs/en/transfer.md"
+        },
+        {
+          "type": "item",
+          "title": "Burn",
+          "uri": "docs/en/burn.md"
+        },
+        {
+          "type": "item",
+          "title": "Royalty",
+          "uri": "docs/en/royalty.md"
+        },
+        {
+          "type": "item",
+          "title": "Glossary",
+          "uri": "docs/en/glossary.md"
+        },
+        {
+          "type": "divider",
+          "title": "API Document"
+        },
+        {
+          "type": "item",
+          "title": "Hokusai API v1",
+          "uri": "swagger.yaml"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "日本語",
+      "items": [
         {
           "type": "item",
           "title": "Hokusai APIへようこそ 👋",
@@ -148,7 +153,7 @@
           "type": "item",
           "title": "認証",
           "uri": "docs/ja/authentication.md"
-        }, 
+        },
         {
           "type": "item",
           "title": "エンドポイント",
@@ -170,10 +175,10 @@
           "uri": "docs/ja/burn.md"
         },
         {
-            "type": "item",
-            "title": "ロイヤルティ",
-            "uri": "docs/ja/royalty.md"
-          },
+          "type": "item",
+          "title": "ロイヤルティ",
+          "uri": "docs/ja/royalty.md"
+        },
         {
           "type": "item",
           "title": "用語集",
