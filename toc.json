@@ -34,7 +34,7 @@
         },
         {
           "type": "item",
-          "title": "Sample Project: check NFT owner",
+          "title": "Sample Project: Check NFT owner",
           "uri": "docs/en/check-nft-owner.md"
         },
         {
@@ -122,17 +122,17 @@
         },
         {
           "type": "item",
-          "title": "Transfer実装のサンプル",
+          "title": "サンプル：Transfer実装",
           "uri": "docs/ja/sample-app.md"
         },
         {
           "type": "item",
-          "title": "NFTを使ったDiscordメンバーシップ",
+          "title": "サンプル：NFTを使ったDiscordメンバーシップ",
           "uri": "docs/ja/discord-membership.md"
         },
         {
           "type": "item",
-          "title": "NFTのオーナーを検証",
+          "title": "サンプル：NFTのオーナーを検証",
           "uri": "docs/ja/check-nft-owner.md"
         },
         {
