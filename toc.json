@@ -35,7 +35,7 @@
         {
           "type": "item",
           "title": "Sample Project: check NFT owner",
-          "uri": "docs/en/how-to-check-who-holds-specific-nft.md"
+          "uri": "docs/en/check-nft-owner.md"
         },
         {
           "type": "divider",
@@ -133,7 +133,7 @@
         {
           "type": "item",
           "title": "NFTのオーナーを検証",
-          "uri": "docs/en/how-to-check-who-holds-specific-nft.md"
+          "uri": "docs/ja/check-nft-owner.md"
         },
         {
           "type": "divider",
