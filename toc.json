@@ -122,12 +122,12 @@
         },
         {
           "type": "item",
-          "title": "サンプル：Transfer実装",
+          "title": "サンプル：Transferの実装",
           "uri": "docs/ja/sample-app.md"
         },
         {
           "type": "item",
-          "title": "サンプル：NFTを使ったDiscordメンバーシップ",
+          "title": "サンプル：Discordメンバーシップ",
           "uri": "docs/ja/discord-membership.md"
         },
         {
