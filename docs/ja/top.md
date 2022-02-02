@@ -12,6 +12,12 @@ Hokusai APIは、美術品、コレクターズアイテム、スポーツ、入
 ## GAS代が無料 🥳
 
 Hokusaiが事業者やアーティストの代わりにブロックチェーンのネットワークに手数料を支払うため、 Hokusai APIの利用者は、NFTの発行や送信に必要なGAS代（ネットワーク手数料）を用意する必要がありません。
+Hokusaiを体験できるサイトは以下の通りです。
+
+**[コードを使わずにテストネットでNFTを発行する →](https://client.hokusai.app/)**
+
+**[Hokusaiを利用したショップサイトの例 →](https://hokusai-nft-starter-kit.web.app/)**
+
 
 ## Webエンジニアでも開発可能 🥷
 
