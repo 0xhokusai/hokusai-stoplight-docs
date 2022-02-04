@@ -5,13 +5,13 @@
 
 ## チュートリアル
 チュートリアルを始めるために、下記よりリポジトリをクローンしてください。
-　
+
 ```bash
 $ git clone https://github.com/0xhokusai/hokusai-get-started.git
 ```
 
 インストールには、次の手順が必要です。
-- API　Keyの取得
+- API Keyの取得
 - ウォレットの作成
 - NFTのメタデータを公開
 - NFTを発行する
@@ -62,7 +62,7 @@ NFTを管理するためには、トークンを保持するアカウントが�
     Property | Polygon Mainnet | Mumbai Testnet
     ---------|----------|---------
     ネットワーク名 | Polygon Mainnet | Mumbai Testnet
-    新規 RPC URL | https://polygon-rpc.com | https://rpc-mumbai.matic.today or <br>　https://matic-mumbai.chainstacklabs.com or <br> https://rpc-mumbai.maticvigil.com or <br> https://matic-testnet-archive-rpc.bwarelabs.com
+    新規 RPC URL | https://polygon-rpc.com | https://rpc-mumbai.matic.today or <br>https://matic-mumbai.chainstacklabs.com or <br> https://rpc-mumbai.maticvigil.com or <br> https://matic-testnet-archive-rpc.bwarelabs.com
     チェーン ID | 137 | 80001
     通貨記号(オプション) | MATIC | MATIC
     ブロックエクスプローラーのURL(オプション) | https://polygonscan.com | https://mumbai.polygonscan.com

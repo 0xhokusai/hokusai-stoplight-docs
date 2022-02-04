@@ -59,7 +59,7 @@ At this point, the account you've just created does not exist on the Polygon net
     Property | Polygon Mainnet | Mumbai Testnet
     ---------|----------|---------
     Network Name | Polygon Mainnet | Mumbai Testnet
-    New RPC URL | https://polygon-rpc.com | https://rpc-mumbai.matic.today or <br>　https://matic-mumbai.chainstacklabs.com or <br> https://rpc-mumbai.maticvigil.com or <br> https://matic-testnet-archive-rpc.bwarelabs.com
+    New RPC URL | https://polygon-rpc.com | https://rpc-mumbai.matic.today or <br>https://matic-mumbai.chainstacklabs.com or <br> https://rpc-mumbai.maticvigil.com or <br> https://matic-testnet-archive-rpc.bwarelabs.com
     Chain ID | 137 | 80001
     Currency (Optional) | MATIC | MATIC
     Block Explorer URL (Optional) | https://polygonscan.com | https://mumbai.polygonscan.com
