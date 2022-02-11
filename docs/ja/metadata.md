@@ -19,8 +19,8 @@ Hokusai API では、NFT を Mint する際に、`tokenUri` と呼ばれるも�
 |プロパティ|説明|
 |--|--|
 |name|NFT の名前です。その NFT 固有の名前を付けます。|
-|image|NFT の画像URLです。PNG や JPG 等の基本的な画像フォーマットに対応しています。|
 |description|NFT の説明です。|
+|image|NFT の画像URLです。PNG や JPG 等の基本的な画像フォーマットに対応しています。|
 
 ## 参考
 - [Metadata Standards | OpenSea](https://docs.opensea.io/docs/metadata-standards)
