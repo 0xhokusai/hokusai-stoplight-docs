@@ -1,3 +1,7 @@
+---
+internal: true
+---
+
 # NFT Starter Kit
 
 ![d82733-5-4139214f31edc7e2dd7c-4.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/xxjKTgYH2UI)
