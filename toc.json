@@ -98,7 +98,12 @@
         {
           "type": "item",
           "title": "Hokusai API v1",
-          "uri": "swagger.yaml"
+          "uri": "./reference/swagger-v1.yaml"
+        },
+        {
+          "type": "item",
+          "title": "Hokusai API v2",
+          "uri": "./reference/swagger-v2.yaml"
         }
       ]
     },
@@ -196,7 +201,12 @@
         {
           "type": "item",
           "title": "Hokusai API v1",
-          "uri": "swagger.yaml"
+          "uri": "./reference/swagger-v1.yaml"
+        },
+        {
+          "type": "item",
+          "title": "Hokusai API v2",
+          "uri": "./reference/swagger-v2.yaml"
         }
       ]
     }

@@ -2,13 +2,13 @@ swagger: '2.0'
 info:
   contact:
     email: command@hokusai.app
-    name: JapanMonoBundle
+    name: MonoBundle
     url: 'https://hokusai.app'
   description: The world’s most powerful and easy-to-use NFT APIs
   title: Hokusai API
-  version: 1.0.0
+  version: 2.0.0
 host: polygon.hokusai.app
-basePath: /v1
+basePath: /v2
 schemes:
   - https
 paths:
@@ -44,7 +44,7 @@ paths:
       description: Check health status of API.
       parameters: []
       security: []
-  '/nfts/{contractId}/mint':
+  '/nft/{contractVer}/{contractId}/mint':
     post:
       consumes:
         - application/json
@@ -56,17 +56,19 @@ paths:
           name: contractId
           required: true
           type: string
-        - description: NFT object to mint.
+        - description: NFT objects to mint.
           in: body
           name: body
           required: true
           schema:
             $ref: '#/definitions/MintNFT'
+          x-examples: {}
       responses:
         '200':
           description: Success
           schema:
             $ref: '#/definitions/ResponseWithTxHash'
+          examples: {}
         '400':
           description: Bad Request
         '403':
@@ -77,10 +79,19 @@ paths:
         - ApiKeyAuth: []
       tags:
         - NFT
-      description: Mint a new NFT
+      description: Mints new NFT
       operationId: mint
-      summary: Mint a new NFT.
-  '/nfts/{contractId}/{tokenId}':
+      summary: Mints new NFT.
+    parameters:
+      - type: string
+        name: contractVer
+        in: path
+        required: true
+      - type: string
+        name: contractId
+        in: path
+        required: true
+  '/nft/{contractVer}/{contractId}/{tokenId}':
     get:
       produces:
         - application/json
@@ -100,6 +111,7 @@ paths:
           description: Success
           schema:
             $ref: '#/definitions/NFT'
+          examples: {}
         '400':
           description: Invalid input
         '403':
@@ -113,7 +125,20 @@ paths:
       description: Get NFT Information.
       operationId: getNFT
       summary: Get information of the NFT.
-  '/nfts/{contractId}/transfer':
+    parameters:
+      - type: string
+        name: contractVer
+        in: path
+        required: true
+      - type: string
+        name: contractId
+        in: path
+        required: true
+      - type: string
+        name: tokenId
+        in: path
+        required: true
+  '/nft/{contractVer}/{contractId}/transfer':
     post:
       consumes:
         - application/json
@@ -149,7 +174,16 @@ paths:
       description: Transfer a NFT with meta transaction.
       operationId: transfer
       summary: Transfer a NFT with meta transaction.
-  '/nfts/{contractId}/{tokenId}/royalty':
+    parameters:
+      - type: string
+        name: contractVer
+        in: path
+        required: true
+      - type: string
+        name: contractId
+        in: path
+        required: true
+  '/nft/{contractVer}/{contractId}/{tokenId}/royalty':
     get:
       consumes:
         - application/json
@@ -232,6 +266,19 @@ paths:
       description: Set NFT royalty.
       operationId: setRoyalty
       summary: Set royalty to the NFT.
+    parameters:
+      - type: string
+        name: contractVer
+        in: path
+        required: true
+      - type: string
+        name: contractId
+        in: path
+        required: true
+      - type: string
+        name: tokenId
+        in: path
+        required: true
 definitions:
   NFT:
     type: object
@@ -244,14 +291,17 @@ definitions:
         description: Metadata URI
         type: string
   MintNFT:
-    type: object
-    properties:
-      to:
-        description: Address to mint the NFT to
-        type: string
-      tokenUri:
-        description: Metadata URI
-        type: string
+    type: array
+    x-examples: {}
+    items:
+      type: object
+      properties:
+        to:
+          type: string
+          description: Address to mint the NFT to
+        tokenUri:
+          type: string
+          description: Metadata URI
   TransferNFT:
     type: object
     x-examples:
