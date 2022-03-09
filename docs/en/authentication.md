@@ -6,7 +6,25 @@ Submit your request for an API key [here](https://0xhokusai.notion.site/Hokusai-
 Hokusai authenticates all API requests using API keys. 
 To authenticate requests, you should specify the API key in the `key` parameter of the URL query.
 Here is an example of a request.
+
+<!--
+type: tab
+title: v2
+-->
+
+```:bash
+https://api.hokusai.app/v2/nft/{contractVersion/{contractAddress}/mint?key={apiKey}
+```
+
+<!--
+type: tab
+title: v1
+-->
+
 ```:bash
 https://api.hokusai.app/v1/nfts/{contractAddress}/mint?key={apiKey}
 ```
+
+<!-- type: tab-end -->
+
 All endpoints must include the `key` parameter with the API key.

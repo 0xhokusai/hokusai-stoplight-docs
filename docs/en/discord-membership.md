@@ -88,7 +88,7 @@ $ yarn mint-nft {to} {tokenUri}
   txHash: '0x8765feaa11a7e0f9f4a84f21415434d80dd9be27728a8f6eff4d402e4d0c2766' # example Transaction Hash
 }
 ```
-Refer to our documentation [here](../../swagger.yaml#mint-a-new-nft) for parameter descriptions.
+Refer to our documentation [here](../../reference/swagger-v2.yaml#mint-a-new-nft) for parameter descriptions.
 
 ## Set up roles on Discord
 

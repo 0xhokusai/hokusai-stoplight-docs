@@ -55,7 +55,7 @@ async function connectMetamask() {
 To transfer NFTs, you need to:
 1. create transaction data.
 2. sign the data with Metamask.
-3. post the data with signature to [`transfer`](../../swagger.yaml#transfer) endpoint.
+3. post the data with signature to [`transfer`](../../reference/swagger-v2.yaml#transfer) endpoint.
 
 The request body should include the following information:
 - `from`: sender address
@@ -238,8 +238,33 @@ const signature = await provider.send('eth_signTypedData_v4', [
 
 
 ### 3. Post!
-Finally, post `message` and `signature` to [`transfer`](../../swagger.yaml#transfer) endpoint. 
+Finally, post `message` and `signature` to [`transfer`](../../reference/swagger-v2.yaml#transfer) endpoint. 
 Set your own `contractId` and `apiKey`.
+
+<!--
+type: tab
+title: v2
+-->
+
+```typescript
+const contractVer = 'your-contract-version'
+const contractId = 'your-contract-id'
+const apiKey = 'your-api-key'
+
+result = await fetch(
+  `https://mumbai.hokusai.app/v2/nft/${contractVer}/${contractId}/transfer?key=${apiKey}`,
+  {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ request: { ...message, signature } }),
+  }
+).then((res) => res.json())
+```
+
+<!--
+type: tab
+title: v1
+-->
 
 ```typescript
 const contractId = 'your-contract-id'
@@ -255,9 +280,11 @@ result = await fetch(
 ).then((res) => res.json())
 ```
 
+<!-- type: tab-end -->
+
 ## Summary
 To perform transfer of NFTs with no gas payment using Hokusai API, you need to:
 
 1. create transaction data.
 2. sign the data with Metamask.
-3. post the data with signature to [`transfer`](../../swagger.yaml#transfer) endpoint.
+3. post the data with signature to [`transfer`](../../reference/swagger-v2.yaml#transfer) endpoint.

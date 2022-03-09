@@ -148,7 +148,7 @@ $ yarn mint-nft {to} {tokenUri}
   txHash: '0x8765feaa11a7e0f9f4a84f21415434d80dd9be27728a8f6eff4d402e4d0c2766' # example Transaction Hash
 }
 ```
-Refer to our documentation [here](../../swagger.yaml#mint-a-new-nft) for parameter descriptions.
+Refer to our documentation [here](../../reference/swagger-v2.yaml#mint-a-new-nft) for parameter descriptions.
 
 #### 1.1. Check TokenID on Polygonscan
 You have successfully minted an NFT, but where can you actually see this token on the chain? You can confirm this by scanning the transaction with Polygonscan, which is a website where you can explore all the transactions/blocks/accounts on a Polygon chain (in this case, Mumbai Testnet) with a hash/block number/address.

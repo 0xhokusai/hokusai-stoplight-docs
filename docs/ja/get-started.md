@@ -143,6 +143,8 @@ $ curl https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2x
 
 Hokusai API を動かす準備が整いました。
 
+テストネットをご利用の場合は`src/getNft.ts`と`src/mintNft.ts`のbaseUrlを"https://mumbai.hokusai.app" に変更してください。
+
 ### 6.1. NFT を発行する
 
 NFT を Mint してみましょう。
@@ -154,7 +156,7 @@ NFT を Mint してみましょう。
 $ yarn mint-nft {to} {tokenUri}
 ```
 
-パラメータの詳細については、[Hokusai API ドキュメント](../../swagger.yaml#mint-a-new-nft) を確認してください。
+パラメータの詳細については、[Hokusai API ドキュメント](../../reference/swagger-v2.yaml#mints-new-nft) を確認してください。
 
 #### 6.1.1. PolygonscanでTokenIDを確認する
 

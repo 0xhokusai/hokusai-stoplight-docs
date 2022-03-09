@@ -65,7 +65,7 @@ NFTをTransferする手順は以下の通りです。
 2. 1.のデータをMetamaskで署名
 3. 1.で作成したデータと2.で作成した署名をHokusai APIにPost
 
-また、Hokusai APIででMeta Transactionを利用する際には、[`transfer`](../../swagger.yaml#transfer)エンドポイントを利用します。
+また、Hokusai APIででMeta Transactionを利用する際には、[`transfer`](../../reference/swagger-v2.yaml#transfer)エンドポイントを利用します。
 Bodyに必要なデータは、以下の通りです。
 - `from`: Transaction送信者のアドレス
 - `to`: Hokusai APIのNFTコントラクトのアドレス
@@ -252,6 +252,32 @@ const signature = await provider.send('eth_signTypedData_v4', [
 ### 3. Post!
 最後にHokusai APIに作成した`message`と`signature`をPostします。
 `contractId`と`apiKey`は、ご自身のものを設定してください。
+
+<!--
+type: tab
+title: v2
+-->
+
+```typescript
+const contractVer = 'your-contract-version'
+const contractId = 'your-contract-id'
+const apiKey = 'your-api-key'
+
+result = await fetch(
+  `https://mumbai.hokusai.app/v2/nft/${contractVer}/${contractId}/transfer?key=${apiKey}`,
+  {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ request: { ...message, signature } }),
+  }
+).then((res) => res.json())
+```
+
+<!--
+type: tab
+title: v1
+-->
+
 ```typescript
 const contractId = 'your-contract-id'
 const apiKey = 'your-api-key'
@@ -265,6 +291,8 @@ result = await fetch(
   }
 ).then((res) => res.json())
 ```
+
+<!-- type: tab-end -->
 
 ## まとめ
 Hokusai APIを利用して、ガス代なし（Meta Transaction）でNFTをTransferをするためには次の手順が必要です。

@@ -79,7 +79,9 @@ paths:
         - ApiKeyAuth: []
       tags:
         - NFT
-      description: Mints new NFT
+      description: |-
+        Mints new NFT.
+        It is possible to mint one or more NFTs (BatchMint).
       operationId: mint
       summary: Mints new NFT.
     parameters:

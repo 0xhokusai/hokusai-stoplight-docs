@@ -8,9 +8,26 @@ Hokusai API では全てのリクエストに対して、有効性を確認す�
 ユーザはリクエストの認証を行うために、URLクエリの `key` パラメータに API Key を指定します。
 以下はリクエストの例です。
 
+<!--
+type: tab
+title: v2
+-->
+
+```:bash
+https://api.hokusai.app/v2/nft/{contractVersion/{contractAddress}/mint?key={apiKey}
+```
+
+<!--
+type: tab
+title: v1
+-->
+
 ```:bash
 https://api.hokusai.app/v1/nfts/{contractAddress}/mint?key={apiKey}
 ```
+
+<!-- type: tab-end -->
+
 
 このように、全てのエンドポイントには、API Key を値として持つ `key` パラメータの指定が必要となります。
 All endpoints must include the `key` parameter with the API key.
