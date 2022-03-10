@@ -1,6 +1,6 @@
 # Burn NFT
 
-Hokusai API uses [Transfer function](glosarry.md#meta-transactions) to burn NFT.
+Hokusai uses [Transfer function](glosarry.md#meta-transactions) to burn NFT.
 
 ## What is Burn NFT ?
 
@@ -12,8 +12,8 @@ In the case of Polygon, it is generally possible to burn it by sending it to 0x0
 Burn history is [here](https://polygonscan.com/address/0x0000000000000000000000000000000000000000#internaltx).
 
 
-## How to burn NFT in Hokusai API
+## How to burn NFT in Hokusai
 
-You can learn how to burn NFT in [Hokusai Get Started](docs/en/get-started.md). This tutorial provides some code for you to get started with Hokusai API.
+You can learn how to burn NFT in [Hokusai Get Started](docs/en/get-started.md). This tutorial provides some code for you to get started with Hokusai.
 
 

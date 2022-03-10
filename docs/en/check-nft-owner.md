@@ -1,16 +1,16 @@
-# How to check who holds specific NFT by using Hokusai API
+# How to check who holds specific NFT by using Hokusai
 
 ## Introduction
 
-Today, we will introduce the following implementation example using the Hokusai API.
+Today, we will introduce the following implementation example using the Hokusai.
 
 - Verify that the user who connected the wallet has a specific NFT.
 - Verify how many NFTs the user connected to the wallet has.
 
-## What is Hokusai API?
+## What is Hokusai?
 
-[Hokusai API](https://hokusai.app/) is a service that provides APIs for NFT.
-You can these operation by using Hokusai API.
+[Hokusai](https://hokusai.app/) is a service that provides APIs for NFT.
+You can these operation by using Hokusai.
 
 - Mint NFT
 - Transfer NFT
@@ -61,7 +61,7 @@ async function connectMetamask() {
 
 To call functions for the contract, let's load the ABI.
 
-The ABI used by Hokusai API is [here](https://github.com/0xhokusai/hokusai-api-client-sample/blob/main/src/abis/ERC721WithRoyaltyMetaTx.json).
+The ABI used by Hokusai is [here](https://github.com/0xhokusai/hokusai-api-client-sample/blob/main/src/abis/ERC721WithRoyaltyMetaTx.json).
 
 You can find `contractAddress` in the email sent when you applied for API or in the [administration page](https://dashboard.hokusai.app).
 
@@ -91,7 +91,7 @@ const isHolder = tokenHolder === address; // NFT所有者とMetamaskのアカウ
 
 ## How much NFT does the user that connect wallet hold?
 
-Contracts issued by Hokusai API are compatible ERC721Enumerable.
+Contracts issued by Hokusai are compatible ERC721Enumerable.
 
 By using this specification, you can implement website that only users that hold NFT minted by the contract can access.
 
@@ -120,7 +120,7 @@ It is an embedded NFT service that provides API services as an infrastructure fo
 
 https://hokusai.app/
 
-Japan MonoBundle, the provider of "Hokusai API", is hiring engineers!
+MonoBundle, the provider of "Hokusai", is hiring engineers!
 Why don't you join us as a full remote engineer and enjoy the speed and big changes?
 
 [Hokusai career page](https://www.notion.so/0xhokusai/Backend-engineer-aabdbbbb48584113854e9e8102f13d6b)

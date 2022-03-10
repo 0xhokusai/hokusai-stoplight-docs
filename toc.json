@@ -19,7 +19,7 @@
         },
         {
           "type": "item",
-          "title": "Getting Started with Hokusai API 🏃",
+          "title": "Getting Started with Hokusai 🏃",
           "uri": "docs/en/get-started.md"
         },
         {
@@ -97,12 +97,12 @@
         },
         {
           "type": "item",
-          "title": "Hokusai API v1",
+          "title": "Hokusai v1",
           "uri": "./reference/swagger-v1.yaml"
         },
         {
           "type": "item",
-          "title": "Hokusai API v2",
+          "title": "Hokusai v2",
           "uri": "./reference/swagger-v2.yaml"
         }
       ]
@@ -113,7 +113,7 @@
       "items": [
         {
           "type": "item",
-          "title": "Hokusai APIへようこそ 👋",
+          "title": "Hokusaiへようこそ 👋",
           "uri": "docs/ja/top.md"
         },
         {
@@ -200,12 +200,12 @@
         },
         {
           "type": "item",
-          "title": "Hokusai API v1",
+          "title": "Hokusai v1",
           "uri": "./reference/swagger-v1.yaml"
         },
         {
           "type": "item",
-          "title": "Hokusai API v2",
+          "title": "Hokusai v2",
           "uri": "./reference/swagger-v2.yaml"
         }
       ]

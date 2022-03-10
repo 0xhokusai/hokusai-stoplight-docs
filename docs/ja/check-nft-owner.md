@@ -1,18 +1,18 @@
 ## はじめに
 
-今回は、Hokusai APIを利用した以下の実装例を紹介します。
+今回は、Hokusaiを利用した以下の実装例を紹介します。
 
 - Walletを接続したユーザが特定のNFTを持っているか検証
 - Walletを接続したユーザが何個NFTをもっているか検証
 
-## Hokusai APIとは
+## Hokusaiとは
 
-[Hokusai API](https://hokusai.app/)は、NFTのMint（発行）、Transfer（移転）、Burn（消却）、Royaltyの設定、Metadata情報の取得などの機能をAPIとして提供しているサービスです。
+[Hokusai](https://hokusai.app/)は、NFTのMint（発行）、Transfer（移転）、Burn（消却）、Royaltyの設定、Metadata情報の取得などの機能をAPIとして提供しているサービスです。
 自分でコントラクトを書かずにNFTのサービスを作ることができます。
 
 ## API Keyを発行する
 
-Hokusai APIではTestnet用のAPI Keyを無料で配布しています。
+HokusaiではTestnet用のAPI Keyを無料で配布しています。
 [このフォーム](https://ir9l8pcvcmm.typeform.com/to/xSbuj2WA)から利用申請を行うことができます。
 
 ## Metamaskの実装
@@ -25,7 +25,7 @@ Metamaskでの実装については、[過去の記事](https://zenn.dev/hokusai
 ## ContractのABIの読み込み
 
 コントラクト上の関数を呼び出すためにABIを読み込みます。
-[こちら](https://github.com/0xhokusai/hokusai-api-client-sample/blob/main/src/abis/ERC721WithRoyaltyMetaTx.json)は、Hokusai APIで利用しているコントラクトのABIです。
+[こちら](https://github.com/0xhokusai/hokusai-api-client-sample/blob/main/src/abis/ERC721WithRoyaltyMetaTx.json)は、Hokusaiで利用しているコントラクトのABIです。
 
 `contractAddress`については、API申請時のメールまたは、[管理画面](https://dashboard.hokusai.app)に記載されています。
 
@@ -56,7 +56,7 @@ const isHolder = tokenHolder === address; // NFT所有者とMetamaskのアカウ
 
 ## Walletを接続したユーザが何個NFTをもっているか検証
 
-Hokusai APIで発行したコントラクトはERC721Enumerableに対応しています。
+Hokusaiで発行したコントラクトはERC721Enumerableに対応しています。
 これを利用して、そのコントラクトでMintされたNFTを所有しているユーザのみアクセスできるページなどを実装することができます。
 
 ```Typescript
@@ -68,7 +68,7 @@ const tokenBalance = await contract.balanceOf(address); // NFT所有量を取得
 
 ## まとめ
 
-今回は、Hokusai APIを利用した以下の実装例を紹介しました。
+今回は、Hokusaiを利用した以下の実装例を紹介しました。
 
 - `ownerOf(tokenId)`を利用して、Walletを接続したユーザが特定のNFTを持っているか検証
 - `balanceOf(address)`を利用して、Walletを接続したユーザが何個NFTをもっているか検証
@@ -77,12 +77,12 @@ const tokenBalance = await contract.balanceOf(address); // NFT所有量を取得
 
 ## 宣伝
 
-HokusaiはNFTの開発インフラ「Hokusai API」を提供しています。
+HokusaiはNFTの開発インフラ「Hokusai」を提供しています。
 「デジタル上で価値を流通させたい全ての個人・事業者にとってのインフラ」としてAPIサービスを提供するEmbedded NFTサービスです。
 
 https://hokusai.app/
 
-「Hokusai API」を提供する日本モノバンドル株式会社では、エンジニアを採用中です！
+「Hokusai」を提供するモノバンドル株式会社では、エンジニアを採用中です！
 ぜひフルリモートで、スピード感や大きな変化を楽しみながらぜひ働いてみませんか？
 
 [Hokusai 採用ページ](https://www.notion.so/0xhokusai/Backend-engineer-aabdbbbb48584113854e9e8102f13d6b)

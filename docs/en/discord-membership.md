@@ -9,7 +9,7 @@ A few examples:
 
 ## Set up NFT
 
-More detailed steps to mint an NFT with Hokusai API are explained in the [tutorial](get-started.md).
+More detailed steps to mint an NFT with Hokusai are explained in the [tutorial](get-started.md).
 
 ### 1. Obtain API Key
 
@@ -22,7 +22,7 @@ Register an [nft.storage](http://nft.storage) account [here](https://nft.storage
 
 ### 3. Clone sample project
 
-To mint an NFT with Hokusai API, clone this sample repository.
+To mint an NFT with Hokusai, clone this sample repository.
 
 ```bash
 $ git clone https://github.com/0xhokusai/hokusai-get-started.git

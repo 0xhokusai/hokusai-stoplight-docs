@@ -5,7 +5,7 @@ info:
     name: MonoBundle
     url: 'https://hokusai.app'
   description: The world’s most powerful and easy-to-use NFT APIs
-  title: Hokusai API
+  title: Hokusai
   version: 2.0.0
 host: polygon.hokusai.app
 basePath: /v2

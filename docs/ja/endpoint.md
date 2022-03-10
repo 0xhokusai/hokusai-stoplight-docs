@@ -1,12 +1,12 @@
 # エンドポイント
-Hokusai API では以下のベース URL に対してリクエストを送信します。
+Hokusai では以下のベース URL に対してリクエストを送信します。
 
 ```
 testnet: https://mumbai.hokusai.app  
 mainnet: https://polygon.hokusai.app  
 ```
 
-また、Hokusai API では現在、以下のようなエンドポイントを提供しています。
+また、Hokusai では現在、以下のようなエンドポイントを提供しています。
 
 テストネットをご利用の場合は`src/getNft.ts`と`src/mintNft.ts`のbaseUrlを"https://mumbai.hokusai.app" に変更してください。
 

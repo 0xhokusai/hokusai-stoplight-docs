@@ -1,13 +1,13 @@
-# Getting Started with Hokusai API 🌊
-> This document covers the setup and basic usages of Hokusai API. <br>
-> After completing this tutorial,  you'll be able to use Hokusai API and start integrating NFT on your website. 
+# Getting Started with Hokusai 🌊
+> This document covers the setup and basic usages of Hokusai. <br>
+> After completing this tutorial,  you'll be able to use Hokusai and start integrating NFT on your website. 
 > 
 ### Table of Contents
 **[Getting Started](#get-started)**<br>
-**[Using Hokusai API](#use-hokusai-api)**<br>
+**[Using Hokusai](#use-hokusai-api)**<br>
 
 ## Get Started
-To get started with Hokusai API, first, clone this repository and follow the below tutorial.
+To get started with Hokusai, first, clone this repository and follow the below tutorial.
 ```:bash
 git clone https://github.com/0xhokusai/hokusai-get-started.git
 ```
@@ -136,8 +136,8 @@ $ curl https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2x
 }
 ```
 
-## Use Hokusai API
-Congratulations! You're ready to use Hokusai API. Now, let's try minting and getting an NFT. 
+## Use Hokusai
+Congratulations! You're ready to use Hokusai. Now, let's try minting and getting an NFT. 
 If you using the Mumbai testnet, change the baseUrl of src/getNft.ts and src/mintNft.ts's to https://mumbai.hokusai.app.
 
 ### 1. Mint an NFT
@@ -168,7 +168,7 @@ Now all the details about this transaction (minting), including the block, contr
 
 
 ### 2. Get an NFT
-`tokenId` issued by Hokusai API can be viewed via [polygonscan](https://mumbai.polygonscan.com). You can search by txHash received from minting. 
+`tokenId` issued by Hokusai can be viewed via [polygonscan](https://mumbai.polygonscan.com). You can search by txHash received from minting. 
 
 ```bash
 $ yarn get-nft {tokenId}
@@ -246,4 +246,4 @@ $ yarn burn-nft {tokenId}
 }
 ```
 
-So far, you have minted an NFT, got NFT info, and transferred an NFT via Hokusai API 🥳
+So far, you have minted an NFT, got NFT info, and transferred an NFT via Hokusai 🥳

@@ -1,11 +1,11 @@
 # Endpoint
-Hokusai API is sending requests to the following endpoint. The base endpoint is:
+Hokusai is sending requests to the following endpoint. The base endpoint is:
 ```
 testnet: https://mumbai.hokusai.app  
 mainnet: https://polygon.hokusai.app  
 ```
 
-Currently the Hokusai API provides the following endpoints.
+Currently the Hokusai provides the following endpoints.
 
 If you using the Mumbai testnet, change the baseUrl of `src/getNft.ts` and `src/mintNft.ts`'s to "https://mumbai.hokusai.app".
 
