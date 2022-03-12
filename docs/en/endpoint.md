@@ -24,11 +24,11 @@ title: v2
 
 |Endpoint|Description|
 |--|--|
-|[`GET /v2/nft/{contractVer}/{contractId}/{tokenId}`](../../reference/swagger-v2.yaml#get-information-of-the-nft)|Get NFT information|
-|[`POST /v2/nft/{contractVer}/{contractId}/mint`](../../reference/swagger-v2.yaml#mints-new-nft)|[Mint](glossary.md#Mint) an NFT|
-|[`POST /v2/nft/{contractVer}/{contractId}/transfer`](../../reference/swagger-v2.yaml#transfer-a-nft-with-meta-transaction)|Transfer an NFT|
-|[`GET /v2/nft/{contractVer}/{contractId}/{tokenId}/royalty`](../../reference/swagger-v2.yaml#get-royalty-of-the-nft)|Get a royalty of a specific NFT|
-|[`POST /v2/nft/{contractVer}/{contractId}/{tokenId}/royalty`](../../reference/swagger-v2.yaml#set-royalty-to-the-nft)|Set a royalty of a specific NFT|
+|[`GET /v2/{network}/nft/{contractVer}/{contractId}/{tokenId}`](../../reference/swagger-v2.yaml#get-information-of-the-nft)|Get NFT information|
+|[`POST /v2/{network}/nft/{contractVer}/{contractId}/mint`](../../reference/swagger-v2.yaml#mints-new-nft)|[Mint](glossary.md#Mint) an NFT|
+|[`POST /v2/{network}/nft/{contractVer}/{contractId}/transfer`](../../reference/swagger-v2.yaml#transfer-a-nft-with-meta-transaction)|Transfer an NFT|
+|[`GET /v2/{network}/nft/{contractVer}/{contractId}/{tokenId}/royalty`](../../reference/swagger-v2.yaml#get-royalty-of-the-nft)|Get a royalty of a specific NFT|
+|[`POST /v2/{network}/nft/{contractVer}/{contractId}/{tokenId}/royalty`](../../reference/swagger-v2.yaml#set-royalty-to-the-nft)|Set a royalty of a specific NFT|
 
 <!--
 type: tab

@@ -68,6 +68,11 @@
         },
         {
           "type": "item",
+          "title": "Network (Chain)",
+          "uri": "docs/en/network.md"
+        },
+        {
+          "type": "item",
           "title": "Metadata",
           "uri": "docs/en/metadata.md"
         },
@@ -168,6 +173,11 @@
           "type": "item",
           "title": "エンドポイント",
           "uri": "docs/ja/endpoint.md"
+        },
+        {
+          "type": "item",
+          "title": "ネットワーク（チェイン）",
+          "uri": "docs/ja/network.md"
         },
         {
           "type": "item",
