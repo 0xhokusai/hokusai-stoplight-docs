@@ -98,13 +98,17 @@ Edit `.env` and set the variables. Note you don't need to set the `WALLET_PRIVAT
 ```bash
 #Your wallet's private key. Refer to "Transfer an NFT" for details.
 WALLET_PRIVATE_KEY = "your-private-key"
-#Your nft.storage API Key.
+#API key for nft.storage
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
-#Your Hokusai API Key.
+#Contract Network (this is mock, please set "mumbai")
+CONTRACT_NETWORK = "mumbai"
+#Hokusai API key
 HOKUSAI_API_KEY = "your-hokusai-api-key"
-#Your Hokusai Contract ID.
+#Hokusai Contract Version
+HOKUSAI_CONTRACT_VERSION = "your-contract-version"
+#Hokusai contract ID
 HOKUSAI_CONTRACT_ID = "your-contract-id"
-#Your Hokusai Contract Address.
+#Hokusai Contract Address
 HOKUSAI_CONTRACT_ADDRESS = "your-contract-address"
 ```
 
@@ -149,6 +153,14 @@ $ yarn mint-nft {to} {tokenUri}
 }
 ```
 Refer to our documentation [here](../../reference/swagger-v2.yaml#mint-a-new-nft) for parameter descriptions.
+
+Hokusai v2 is the default for all command in get-started, including `mint-nft`.
+If you want to use Hokusai v1 API, use `:v1` suffix.
+
+```bash
+# call Hokusai v1 example
+$ yarn mint-nft:v1 {to} {tokenUri}
+```
 
 #### 1.1. Check TokenID on Polygonscan
 You have successfully minted an NFT, but where can you actually see this token on the chain? You can confirm this by scanning the transaction with Polygonscan, which is a website where you can explore all the transactions/blocks/accounts on a Polygon chain (in this case, Mumbai Testnet) with a hash/block number/address.
@@ -196,7 +208,7 @@ We will explain how to export your private key on Metamask.
 Set your private key to `WALLET_PRIVATE_KEY` in `.env`.
 
 ```bash
-#Private key for your account
+#Your wallet's private key. Refer to "Transfer an NFT" for details.
 WALLET_PRIVATE_KEY = "your-private-key"
 #API key for nft.storage
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
@@ -206,8 +218,10 @@ CONTRACT_NETWORK = "mumbai"
 HOKUSAI_API_KEY = "your-hokusai-api-key"
 #Hokusai Contract Version
 HOKUSAI_CONTRACT_VERSION = "your-contract-version"
-#Hokusai contract id
+#Hokusai contract ID
 HOKUSAI_CONTRACT_ID = "your-contract-id"
+#Hokusai Contract Address
+HOKUSAI_CONTRACT_ADDRESS = "your-contract-address"
 ```
 
 > If the wallet service is supported, there is no need to manage the private key of the sender's wallet.
