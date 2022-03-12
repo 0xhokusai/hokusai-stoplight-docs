@@ -209,8 +209,12 @@ NFTを送信するには送信元アカウントの署名が必要になりま�
 WALLET_PRIVATE_KEY = "your-private-key"
 #API key for nft.storage
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
+#Contract Network (this is mock, please set "mumbai")
+CONTRACT_NETWORK = "mumbai"
 #Hokusai API key
 HOKUSAI_API_KEY = "your-hokusai-api-key"
+#Hokusai Contract Version
+HOKUSAI_CONTRACT_VERSION = "your-contract-version"
 #Hokusai contract id
 HOKUSAI_CONTRACT_ID = "your-contract-id"
 ```
