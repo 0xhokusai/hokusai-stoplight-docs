@@ -39,7 +39,7 @@ You can easily test whether your contents and products are suitable for NFT busi
 
 1. _**Low implementation fee**_
 
-Businesses using this sales site do not need to purchase cryptographic assets to mint NFTs because Hokusai API covers it for you, resulting in lower implementation fees.
+Businesses using this sales site do not need to purchase cryptographic assets to mint NFTs because Hokusai covers it for you, resulting in lower implementation fees.
 
 - **How to Apply**
 

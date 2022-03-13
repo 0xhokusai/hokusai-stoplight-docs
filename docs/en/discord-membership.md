@@ -9,7 +9,7 @@ A few examples:
 
 ## Set up NFT
 
-More detailed steps to mint an NFT with Hokusai API are explained in the [tutorial](get-started.md).
+More detailed steps to mint an NFT with Hokusai are explained in the [tutorial](get-started.md).
 
 ### 1. Obtain API Key
 
@@ -22,7 +22,7 @@ Register an [nft.storage](http://nft.storage) account [here](https://nft.storage
 
 ### 3. Clone sample project
 
-To mint an NFT with Hokusai API, clone this sample repository.
+To mint an NFT with Hokusai, clone this sample repository.
 
 ```bash
 $ git clone https://github.com/0xhokusai/hokusai-get-started.git
@@ -88,7 +88,7 @@ $ yarn mint-nft {to} {tokenUri}
   txHash: '0x8765feaa11a7e0f9f4a84f21415434d80dd9be27728a8f6eff4d402e4d0c2766' # example Transaction Hash
 }
 ```
-Refer to our documentation [here](../../swagger.yaml#mint-a-new-nft) for parameter descriptions.
+Refer to our documentation [here](../../reference/swagger-v2.yaml#mint-a-new-nft) for parameter descriptions.
 
 ## Set up roles on Discord
 

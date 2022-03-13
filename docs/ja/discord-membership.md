@@ -9,7 +9,7 @@ NFTメンバーシップの例:
 
 ## NFTを発行する
 
-Hokusai APIを使ったNFT発行のより詳細な解説は[チュートリアル](get-started.md)をご覧ください。
+Hokusaiを使ったNFT発行のより詳細な解説は[チュートリアル](get-started.md)をご覧ください。
 
 ### 1. API Keyを取得する
 
@@ -23,7 +23,7 @@ Hokusai APIを使ったNFT発行のより詳細な解説は[チュートリア�
 
 ### 3. サンプルプロジェクトをクローンする
 
-Hokusai APIを使って簡単にNFTを発行するために、以下のコマンドでサンプルリポジトリをクローンしてください。
+Hokusaiを使って簡単にNFTを発行するために、以下のコマンドでサンプルリポジトリをクローンしてください。
 
 ```bash
 $ git clone https://github.com/0xhokusai/hokusai-get-started.git
@@ -91,7 +91,7 @@ $ yarn mint-nft {to} {tokenUri}
   txHash: '0x8765feaa11a7e0f9f4a84f21415434d80dd9be27728a8f6eff4d402e4d0c2766' # example Transaction Hash
 }
 ```
-引数の詳細については、[リファレンス](../../swagger.yaml#mint-a-new-nft) を参照してください。
+引数の詳細については、[リファレンス](../../reference/swagger-v2.yaml#mints-new-nft) を参照してください。
 
 ## Discordでroleを設定する
 

@@ -1,6 +1,6 @@
-## Hokusai APIを始める 🌊
+## Hokusaiを始める 🌊
 
-> このページでは Hokusai API を利用するためのチュートリアルを提供します。
+> このページでは Hokusai を利用するためのチュートリアルを提供します。
 [このリポジトリ](https://github.com/0xhokusai/hokusai-get-started)をローカルに clone して、以下のチュートリアルへお進みください。
 
 ## チュートリアル
@@ -103,9 +103,13 @@ $ cp .env.sample .env
 WALLET_PRIVATE_KEY = "your-private-key"
 #nft.storage API Keyを入力します。
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
+#ContractをデプロイしたNetworkを入力します(これはモックなので、"mumbai"と入力してください。)
+CONTRACT_NETWORK = "mumbai"
 #Hokusai API Keyを入力します。
 HOKUSAI_API_KEY = "your-hokusai-api-key"
 #Hokusai Contract IDを入力します。
+HOKUSAI_CONTRACT_VERSION = "your-contract-version"
+#Hokusai contract IDを入力します。
 HOKUSAI_CONTRACT_ID = "your-contract-id"
 #Hokusai Contract Addressを入力します。
 HOKUSAI_CONTRACT_ADDRESS = "your-contract-address"
@@ -139,9 +143,11 @@ $ curl https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2x
 }
 ```
 
-## 6. Hokusai API を動かす
+## 6. Hokusai を動かす
 
-Hokusai API を動かす準備が整いました。
+Hokusai を動かす準備が整いました。
+
+テストネットをご利用の場合は`src/getNft.ts`と`src/mintNft.ts`のbaseUrlを"https://mumbai.hokusai.app" に変更してください。
 
 ### 6.1. NFT を発行する
 
@@ -154,7 +160,15 @@ NFT を Mint してみましょう。
 $ yarn mint-nft {to} {tokenUri}
 ```
 
-パラメータの詳細については、[Hokusai API ドキュメント](../../swagger.yaml#mint-a-new-nft) を確認してください。
+パラメータの詳細については、[Hokusai ドキュメント](../../reference/swagger-v2.yaml#mints-new-nft) を確認してください。
+
+get-startedにおける全てのコマンドはデフォルトで Hokusai v2 を呼び出します。
+もし、Hokusai v1 を使用したい場合は、コマンド末尾に `:v1` を
+
+```bash
+# call Hokusai v1 example
+$ yarn mint-nft:v1 {to} {tokenUri}
+```
 
 #### 6.1.1. PolygonscanでTokenIDを確認する
 
@@ -203,14 +217,20 @@ NFTを送信するには送信元アカウントの署名が必要になりま�
 `.env`の`WALLET_PRIVATE_KEY`に取得した秘密鍵を設定してください。
 
 ```bash
-#Private key for your account
+#ウォレットの秘密鍵を入力します。詳しくは「6.3. NFTを送信する」を確認してください。
 WALLET_PRIVATE_KEY = "your-private-key"
-#API key for nft.storage
+#nft.storage API Keyを入力します。
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
-#Hokusai API key
+#ContractをデプロイしたNetworkを入力します(これはモックなので、"mumbai"と入力してください。)
+CONTRACT_NETWORK = "mumbai"
+#Hokusai API Keyを入力します。
 HOKUSAI_API_KEY = "your-hokusai-api-key"
-#Hokusai contract id
+#Hokusai Contract IDを入力します。
+HOKUSAI_CONTRACT_VERSION = "your-contract-version"
+#Hokusai contract IDを入力します。
 HOKUSAI_CONTRACT_ID = "your-contract-id"
+#Hokusai Contract Addressを入力します。
+HOKUSAI_CONTRACT_ADDRESS = "your-contract-address"
 ```
 
 > Metamask等ウォレットサービスに対応した場合は送信元ウォレットのprivate keyの管理をする必要がありません。
@@ -252,5 +272,5 @@ $ yarn burn-nft {tokenId}
 }
 ```
 
-これで、Hokusai API のチュートリアルは終了です。
-Hokusai API を利用して、NFT を楽しみましょう！
+これで、Hokusai のチュートリアルは終了です。
+Hokusai を利用して、NFT を楽しみましょう！

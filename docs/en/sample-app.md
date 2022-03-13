@@ -1,13 +1,13 @@
 ## Sample project: Implement Transfer
 
-In this tutorial, we will guide you through steps to implement transfer using Hokusai API. Transferring NFT with Hokusai API costs you no gas as we use meta transaction, where Hokusai pays the gas for you. After reading through this tutorial, you will be able to launch a service where the users do not need to pay gas to perform transfer. (i.e. You can build a NFT platform particularly for **users who do not own crypto assets!**)
+In this tutorial, we will guide you through steps to implement transfer using Hokusai. Transferring NFT with Hokusai costs you no gas as we use meta transaction, where Hokusai pays the gas for you. After reading through this tutorial, you will be able to launch a service where the users do not need to pay gas to perform transfer. (i.e. You can build a NFT platform particularly for **users who do not own crypto assets!**)
 
 In this tutorial, we will use a [sample app](https://github.com/0xhokusai/hokusai-api-client-sample) as a guide. You can find the running app [here](https://client.hokusai.app).
 
 ![sample-app.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/fWSLpOFidWE)
 
 ## Get an API Key
-Hokusai API offers a free API Key for Testnet use. Register for an API Key from [here](https://www.notion.so/0xhokusai/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0) and your API Key and Contract ID will be sent via email.
+Hokusai offers a free API Key for Testnet use. Register for an API Key from [here](https://www.notion.so/0xhokusai/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0) and your API Key and Contract ID will be sent via email.
 
 ## Integrate Metamask to your app
 In this tutorial, we will be using [Metamask](https://docs.metamask.io/guide/#why-metamask), one of the most standard wallet applications out there.
@@ -55,7 +55,7 @@ async function connectMetamask() {
 To transfer NFTs, you need to:
 1. create transaction data.
 2. sign the data with Metamask.
-3. post the data with signature to [`transfer`](../../swagger.yaml#transfer) endpoint.
+3. post the data with signature to [`transfer`](../../reference/swagger-v2.yaml#transfer) endpoint.
 
 The request body should include the following information:
 - `from`: sender address
@@ -238,8 +238,33 @@ const signature = await provider.send('eth_signTypedData_v4', [
 
 
 ### 3. Post!
-Finally, post `message` and `signature` to [`transfer`](../../swagger.yaml#transfer) endpoint. 
+Finally, post `message` and `signature` to [`transfer`](../../reference/swagger-v2.yaml#transfer) endpoint. 
 Set your own `contractId` and `apiKey`.
+
+<!--
+type: tab
+title: v2
+-->
+
+```typescript
+const contractVer = 'your-contract-version'
+const contractId = 'your-contract-id'
+const apiKey = 'your-api-key'
+
+result = await fetch(
+  `https://mumbai.hokusai.app/v2/nft/${contractVer}/${contractId}/transfer?key=${apiKey}`,
+  {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ request: { ...message, signature } }),
+  }
+).then((res) => res.json())
+```
+
+<!--
+type: tab
+title: v1
+-->
 
 ```typescript
 const contractId = 'your-contract-id'
@@ -255,9 +280,11 @@ result = await fetch(
 ).then((res) => res.json())
 ```
 
+<!-- type: tab-end -->
+
 ## Summary
-To perform transfer of NFTs with no gas payment using Hokusai API, you need to:
+To perform transfer of NFTs with no gas payment using Hokusai, you need to:
 
 1. create transaction data.
 2. sign the data with Metamask.
-3. post the data with signature to [`transfer`](../../swagger.yaml#transfer) endpoint.
+3. post the data with signature to [`transfer`](../../reference/swagger-v2.yaml#transfer) endpoint.

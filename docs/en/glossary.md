@@ -13,7 +13,7 @@ It is not an easy task for newcomers to accumulate enough ETH for the gas fee. A
 ### Meta Transactions
 
 Meta-transactions mean transactions that a third party (called a relayer) can send another user's transactions and pay themselves for the gas cost.
-By using Hokusai API, Users can easily use meta-transaction.
+By using Hokusai, Users can easily use meta-transaction.
 
 - [What is a Meta-transaction | OpenZepplin Docs](https://docs.openzeppelin.com/learn/sending-gasless-transactions#what-is-a-meta-tx)
 
@@ -26,7 +26,7 @@ Metadata is data that provides additional information about certain data. NFT me
 
 ### Contract ID
 
-Contract IDs are unique strings to identify a contract deployed by Hokusai API. Hokusai API finds from our database the contract address corresponding to the ID, and execute NFT operations such as mint and tranfer. Your contract ID is sent to you via email when your API Key is created. For the Polygon Mainnet plan, one contract (and contract ID) is created for each API Key issued. For the Mumbai Testnet plan, all the users share one contract.
+Contract IDs are unique strings to identify a contract deployed by Hokusai. Hokusai finds from our database the contract address corresponding to the ID, and execute NFT operations such as mint and tranfer. Your contract ID is sent to you via email when your API Key is created. For the Polygon Mainnet plan, one contract (and contract ID) is created for each API Key issued. For the Mumbai Testnet plan, all the users share one contract.
 
 ### Token ID
 
@@ -34,7 +34,7 @@ A Token ID is a unique string that identifies an NFT minted with an NFT contract
 
 ### API Key
 
-An API Key is a unique identifier used to authenticate a user, developer, or calling program to an API. Usually, users must register for a key to create one. Hokusai API will send you an email with your API Key along with your [Contract ID](./glossary.md#contract-id) after submitting your registration. If you register for a Polygon Mainnet key, a new contract will be deployed for the key.
+An API Key is a unique identifier used to authenticate a user, developer, or calling program to an API. Usually, users must register for a key to create one. Hokusai will send you an email with your API Key along with your [Contract ID](./glossary.md#contract-id) after submitting your registration. If you register for a Polygon Mainnet key, a new contract will be deployed for the key.
 
 ### Wallet
 

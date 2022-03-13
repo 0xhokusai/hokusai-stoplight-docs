@@ -19,7 +19,7 @@
         },
         {
           "type": "item",
-          "title": "Getting Started with Hokusai API 🏃",
+          "title": "Getting Started with Hokusai 🏃",
           "uri": "docs/en/get-started.md"
         },
         {
@@ -68,6 +68,11 @@
         },
         {
           "type": "item",
+          "title": "Network (Chain)",
+          "uri": "docs/en/network.md"
+        },
+        {
+          "type": "item",
           "title": "Metadata",
           "uri": "docs/en/metadata.md"
         },
@@ -97,8 +102,13 @@
         },
         {
           "type": "item",
-          "title": "Hokusai API v1",
-          "uri": "swagger.yaml"
+          "title": "Hokusai v1",
+          "uri": "./reference/swagger-v1.yaml"
+        },
+        {
+          "type": "item",
+          "title": "Hokusai v2",
+          "uri": "./reference/swagger-v2.yaml"
         }
       ]
     },
@@ -108,7 +118,7 @@
       "items": [
         {
           "type": "item",
-          "title": "Hokusai APIへようこそ 👋",
+          "title": "Hokusaiへようこそ 👋",
           "uri": "docs/ja/top.md"
         },
         {
@@ -166,6 +176,11 @@
         },
         {
           "type": "item",
+          "title": "ネットワーク（チェイン）",
+          "uri": "docs/ja/network.md"
+        },
+        {
+          "type": "item",
           "title": "メタデータ",
           "uri": "docs/ja/metadata.md"
         },
@@ -195,8 +210,13 @@
         },
         {
           "type": "item",
-          "title": "Hokusai API v1",
-          "uri": "swagger.yaml"
+          "title": "Hokusai v1",
+          "uri": "./reference/swagger-v1.yaml"
+        },
+        {
+          "type": "item",
+          "title": "Hokusai v2",
+          "uri": "./reference/swagger-v2.yaml"
         }
       ]
     }

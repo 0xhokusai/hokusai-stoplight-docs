@@ -1,6 +1,6 @@
 ## Transferを行うサンプル
 
-このページでは、Hokusai APIを利用して、ガス代なし（Meta Transaction）でNFTをTransferをするサンプルを紹介します。
+このページでは、Hokusaiを利用して、ガス代なし（Meta Transaction）でNFTをTransferをするサンプルを紹介します。
 この機能を実装すれば、実装したサービスを利用するユーザが、ガス代を負担することなく、サービスを利用することができるようになります。（つまり**暗号資産を持たないユーザ向けのサービスを展開**することができます）
 
 今回使うサンプルコードは[こちら](https://github.com/0xhokusai/hokusai-api-client-sample)となります。実際に動作しているアプリは[こちら](https://client.hokusai.app)からご利用できます。
@@ -9,7 +9,7 @@
 
 
 ## API Keyを発行する
-Hokusai APIではTestnet用のAPI Keyを無料で配布しています。
+HokusaiではTestnet用のAPI Keyを無料で配布しています。
 以下の[フォーム](https://www.notion.so/0xhokusai/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0)から利用申請を行うことができます。
 
 
@@ -59,16 +59,16 @@ async function connectMetamask() {
 }
 ```
 
-## Hokusai APIでNFTをTransferする
+## HokusaiでNFTをTransferする
 NFTをTransferする手順は以下の通りです。
 1. Transactionのデータを作成
 2. 1.のデータをMetamaskで署名
-3. 1.で作成したデータと2.で作成した署名をHokusai APIにPost
+3. 1.で作成したデータと2.で作成した署名をHokusaiにPost
 
-また、Hokusai APIででMeta Transactionを利用する際には、[`transfer`](../../swagger.yaml#transfer)エンドポイントを利用します。
+また、HokusaiでMeta Transactionを利用する際には、[`transfer`](../../reference/swagger-v2.yaml#transfer)エンドポイントを利用します。
 Bodyに必要なデータは、以下の通りです。
 - `from`: Transaction送信者のアドレス
-- `to`: Hokusai APIのNFTコントラクトのアドレス
+- `to`: HokusaiのNFTコントラクトのアドレス
 - `value`: 送金する金額（=0）
 - `gas`: ガス
 - `nonce`：Transaction送信者のNonce
@@ -250,8 +250,34 @@ const signature = await provider.send('eth_signTypedData_v4', [
 
 
 ### 3. Post!
-最後にHokusai APIに作成した`message`と`signature`をPostします。
+最後にHokusaiに作成した`message`と`signature`をPostします。
 `contractId`と`apiKey`は、ご自身のものを設定してください。
+
+<!--
+type: tab
+title: v2
+-->
+
+```typescript
+const contractVer = 'your-contract-version'
+const contractId = 'your-contract-id'
+const apiKey = 'your-api-key'
+
+result = await fetch(
+  `https://mumbai.hokusai.app/v2/nft/${contractVer}/${contractId}/transfer?key=${apiKey}`,
+  {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ request: { ...message, signature } }),
+  }
+).then((res) => res.json())
+```
+
+<!--
+type: tab
+title: v1
+-->
+
 ```typescript
 const contractId = 'your-contract-id'
 const apiKey = 'your-api-key'
@@ -266,9 +292,11 @@ result = await fetch(
 ).then((res) => res.json())
 ```
 
+<!-- type: tab-end -->
+
 ## まとめ
-Hokusai APIを利用して、ガス代なし（Meta Transaction）でNFTをTransferをするためには次の手順が必要です。
+Hokusaiを利用して、ガス代なし（Meta Transaction）でNFTをTransferをするためには次の手順が必要です。
 
 1. Transactionデータの作成
 2. 署名データの作成＆Metamaskでの署名
-3. Hokusai APIにPost
+3. HokusaiにPost

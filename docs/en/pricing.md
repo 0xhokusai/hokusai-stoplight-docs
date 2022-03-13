@@ -1,6 +1,6 @@
 # Pricing
 
-Hokusai API offers three different plans: Testnet, Business, and Enterprise.  
+Hokusai offers three different plans: Testnet, Business, and Enterprise.  
 Please compare the plans and choose the best one for your service.
 
  |  | **Testnet** | **Business** | **Enterprise** |

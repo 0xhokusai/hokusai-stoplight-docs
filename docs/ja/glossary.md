@@ -15,7 +15,7 @@ NFTを発行することをMintと表現します。 詳しくは [こちら](ht
 ### メタトランザクション
 
 メタトランザクションとは、第三者（リレーヤー)が他のユーザーの取引を送信して、ガス料金を自分で支払うことができる取引のことです。
-Hokusai APIでは、メタトランザクションを利用して送信機能を実装しているため、利用者がガス代を支払う必要がありません。
+Hokusaiでは、メタトランザクションを利用して送信機能を実装しているため、利用者がガス代を支払う必要がありません。
 新規参入者にとって、ガス代に十分なETHを保有ことは簡単なことではありません。そのためHokusaiではユーザーにガス代の負担をなくすために、メタトランザクションを利用しています。
 
 - [What is a Meta-transaction | OpenZepplin Docs](https://docs.openzeppelin.com/learn/sending-gasless-transactions#what-is-a-meta-tx)
@@ -29,15 +29,15 @@ Hokusai APIでは、メタトランザクションを利用して送信機能を
 
 ### Contract ID
 
-Contract IDとは、Hokusai APIが提供するコントラクトを一意に区別する識別子です。Hokusai APIは、このIDを使ってHokusaiのデータベースから対応するコントラクトアドレス照合し、NFTの発行や送信などの操作を実行します。Contract IDはHokusai API Key発行時にメールで通知されます。Polygon Mainnetでご利用の場合は、API Key1つにつき1つのコントラクトが作成されます。Mumbai Testnetをご利用の場合は、1つのコントラクトを共有します。
+Contract IDとは、Hokusaiが提供するコントラクトを一意に区別する識別子です。Hokusaiは、このIDを使ってHokusaiのデータベースから対応するコントラクトアドレス照合し、NFTの発行や送信などの操作を実行します。Contract IDはHokusai API Key発行時にメールで通知されます。Polygon Mainnetでご利用の場合は、API Key1つにつき1つのコントラクトが作成されます。Mumbai Testnetをご利用の場合は、1つのコントラクトを共有します。
 
 ### Token ID
 
-Token IDとは、あるNFTコントラクトが発行するトークンを一意に区別するための識別子です。Hokusai APIが提供するコントラクトでは、そのコントラクトを使って発行した何番目のトークンかを表す数字を使用しています。
+Token IDとは、あるNFTコントラクトが発行するトークンを一意に区別するための識別子です。Hokusaiが提供するコントラクトでは、そのコントラクトを使って発行した何番目のトークンかを表す数字を使用しています。
 
 ### API Key
 
-API Keyとは、通常Web APIの利用権を認証するための文字列です。ユーザーはAPIの利用登録をして、API Keyを取得します。Hokusai APIでは、利用登録後、[Contract ID](./glossary.md#contract-id)とともにメールで通知いたします。Polygon Mainnetでご利用の場合は、一つのAPI Keyにつき一つのContractがご使用いただけます。
+API Keyとは、通常Web APIの利用権を認証するための文字列です。ユーザーはAPIの利用登録をして、API Keyを取得します。Hokusaiでは、利用登録後、[Contract ID](./glossary.md#contract-id)とともにメールで通知いたします。Polygon Mainnetでご利用の場合は、一つのAPI Keyにつき一つのContractがご使用いただけます。
 
 ### ウォレット
 

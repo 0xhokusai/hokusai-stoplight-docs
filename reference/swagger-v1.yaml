@@ -2,10 +2,10 @@ swagger: '2.0'
 info:
   contact:
     email: command@hokusai.app
-    name: JapanMonoBundle
+    name: MonoBundle
     url: 'https://hokusai.app'
   description: The world’s most powerful and easy-to-use NFT APIs
-  title: Hokusai API
+  title: Hokusai
   version: 1.0.0
 host: polygon.hokusai.app
 basePath: /v1
@@ -67,6 +67,7 @@ paths:
           description: Success
           schema:
             $ref: '#/definitions/ResponseWithTxHash'
+          examples: {}
         '400':
           description: Bad Request
         '403':

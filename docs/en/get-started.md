@@ -1,13 +1,13 @@
-# Getting Started with Hokusai API 🌊
-> This document covers the setup and basic usages of Hokusai API. <br>
-> After completing this tutorial,  you'll be able to use Hokusai API and start integrating NFT on your website. 
+# Getting Started with Hokusai 🌊
+> This document covers the setup and basic usages of Hokusai. <br>
+> After completing this tutorial,  you'll be able to use Hokusai and start integrating NFT on your website. 
 > 
 ### Table of Contents
 **[Getting Started](#get-started)**<br>
-**[Using Hokusai API](#use-hokusai-api)**<br>
+**[Using Hokusai](#use-hokusai-api)**<br>
 
 ## Get Started
-To get started with Hokusai API, first, clone this repository and follow the below tutorial.
+To get started with Hokusai, first, clone this repository and follow the below tutorial.
 ```:bash
 git clone https://github.com/0xhokusai/hokusai-get-started.git
 ```
@@ -98,13 +98,17 @@ Edit `.env` and set the variables. Note you don't need to set the `WALLET_PRIVAT
 ```bash
 #Your wallet's private key. Refer to "Transfer an NFT" for details.
 WALLET_PRIVATE_KEY = "your-private-key"
-#Your nft.storage API Key.
+#API key for nft.storage
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
-#Your Hokusai API Key.
+#Contract Network (this is mock, please set "mumbai")
+CONTRACT_NETWORK = "mumbai"
+#Hokusai API key
 HOKUSAI_API_KEY = "your-hokusai-api-key"
-#Your Hokusai Contract ID.
+#Hokusai Contract Version
+HOKUSAI_CONTRACT_VERSION = "your-contract-version"
+#Hokusai contract ID
 HOKUSAI_CONTRACT_ID = "your-contract-id"
-#Your Hokusai Contract Address.
+#Hokusai Contract Address
 HOKUSAI_CONTRACT_ADDRESS = "your-contract-address"
 ```
 
@@ -136,8 +140,8 @@ $ curl https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2x
 }
 ```
 
-## Use Hokusai API
-Congratulations! You're ready to use Hokusai API. Now, let's try minting and getting an NFT. 
+## Use Hokusai
+Congratulations! You're ready to use Hokusai. Now, let's try minting and getting an NFT. 
 If you using the Mumbai testnet, change the baseUrl of src/getNft.ts and src/mintNft.ts's to https://mumbai.hokusai.app.
 
 ### 1. Mint an NFT
@@ -148,7 +152,15 @@ $ yarn mint-nft {to} {tokenUri}
   txHash: '0x8765feaa11a7e0f9f4a84f21415434d80dd9be27728a8f6eff4d402e4d0c2766' # example Transaction Hash
 }
 ```
-Refer to our documentation [here](../../swagger.yaml#mint-a-new-nft) for parameter descriptions.
+Refer to our documentation [here](../../reference/swagger-v2.yaml#mint-a-new-nft) for parameter descriptions.
+
+Hokusai v2 is the default for all command in get-started, including `mint-nft`.
+If you want to use Hokusai v1 API, use `:v1` suffix.
+
+```bash
+# call Hokusai v1 example
+$ yarn mint-nft:v1 {to} {tokenUri}
+```
 
 #### 1.1. Check TokenID on Polygonscan
 You have successfully minted an NFT, but where can you actually see this token on the chain? You can confirm this by scanning the transaction with Polygonscan, which is a website where you can explore all the transactions/blocks/accounts on a Polygon chain (in this case, Mumbai Testnet) with a hash/block number/address.
@@ -168,7 +180,7 @@ Now all the details about this transaction (minting), including the block, contr
 
 
 ### 2. Get an NFT
-`tokenId` issued by Hokusai API can be viewed via [polygonscan](https://mumbai.polygonscan.com). You can search by txHash received from minting. 
+`tokenId` issued by Hokusai can be viewed via [polygonscan](https://mumbai.polygonscan.com). You can search by txHash received from minting. 
 
 ```bash
 $ yarn get-nft {tokenId}
@@ -196,14 +208,20 @@ We will explain how to export your private key on Metamask.
 Set your private key to `WALLET_PRIVATE_KEY` in `.env`.
 
 ```bash
-#Private key for your account
+#Your wallet's private key. Refer to "Transfer an NFT" for details.
 WALLET_PRIVATE_KEY = "your-private-key"
 #API key for nft.storage
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
+#Contract Network (this is mock, please set "mumbai")
+CONTRACT_NETWORK = "mumbai"
 #Hokusai API key
 HOKUSAI_API_KEY = "your-hokusai-api-key"
-#Hokusai contract id
+#Hokusai Contract Version
+HOKUSAI_CONTRACT_VERSION = "your-contract-version"
+#Hokusai contract ID
 HOKUSAI_CONTRACT_ID = "your-contract-id"
+#Hokusai Contract Address
+HOKUSAI_CONTRACT_ADDRESS = "your-contract-address"
 ```
 
 > If the wallet service is supported, there is no need to manage the private key of the sender's wallet.
@@ -246,4 +264,4 @@ $ yarn burn-nft {tokenId}
 }
 ```
 
-So far, you have minted an NFT, got NFT info, and transferred an NFT via Hokusai API 🥳
+So far, you have minted an NFT, got NFT info, and transferred an NFT via Hokusai 🥳
