@@ -5,7 +5,7 @@ Include the name of the network where you created your contracts in the API path
 
 | `{network}` | Network Name    |
 |-------------|-----------------|
-| `polygon`   | Polygon Mainnet |
-| `mumbai`    | Polygon Testnet |
+| `polygon-mainnet`   | Polygon Mainnet |
+| `polygon-mumbai`    | Polygon Testnet |
 
 Other networks will be supported soon !

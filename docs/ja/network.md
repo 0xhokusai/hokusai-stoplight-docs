@@ -5,7 +5,7 @@ APIのパスパラメータに自身が発行したネットワーク名を含�
 
  | `{network}` | ネットワーク名  |
  |-------------|-----------------|
- | `polygon`   | Polygon Mainnet |
- | `mumbai`    | Polygon Testnet |
+ | `polygon-mainnet`   | Polygon Mainnet |
+ | `polygon-mumbai`    | Polygon Testnet |
 
 これら以外のネットワークにも近日対応予定です！
