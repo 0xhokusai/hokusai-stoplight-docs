@@ -389,6 +389,7 @@ func MintNft(
 ・Polygon メインネット：[https://polygonscan.com](https://polygonscan.com/)
 
 
+
 ![13B6F730-CD85-4BED-AFE9-6BB1023B4D13.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8257f0d6-804d-4382-b849-d7ecaf23dc5d/13B6F730-CD85-4BED-AFE9-6BB1023B4D13.jpeg)
 
 Polygonscanとは、Polygonネットワーク上に記録された全てのトランザクション、ブロック、アカウントの詳細を閲覧することができるウェブサイトです。
