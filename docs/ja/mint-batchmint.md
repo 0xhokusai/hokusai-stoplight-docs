@@ -27,10 +27,10 @@ version1ではNFTを１つずつしかMintできませんでした。しかしve
 ```json
 // mint.json
 [
-    {
-        "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
-        "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
-    }
+  {
+    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
+  }
 ]
 ```
 
@@ -39,18 +39,18 @@ version1ではNFTを１つずつしかMintできませんでした。しかしve
 ```json
 // mint.json
 [
-    {
-        "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
-        "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
-    },
-    {
-        "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
-        "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
-    },
-    {
-        "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
-        "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
-    }
+  {
+    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
+  },
+  {
+    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
+  },
+  {
+    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
+  }
 ]
 ```
 
@@ -84,12 +84,12 @@ const env = process.env
 const baseUrl = "https://mumbai.hokusai.app";
 const network = "mumbai" // or polygon
 mintNft(
-	baseUrl, 
-	network,
-	env.HOKUSAI_API_KEY, 
-	env.CONTRACT_VERSION,
-	env.HOKUSAI_CONTRACT_ID, 
-	mintBody
+  baseUrl, 
+  network,
+  env.HOKUSAI_API_KEY, 
+  env.CONTRACT_VERSION,
+  env.HOKUSAI_CONTRACT_ID, 
+  mintBody
 )
 .then((res) => {
   console.log(res);
@@ -105,42 +105,42 @@ mintNft(
 package main
 
 import (
-	"encoding/json"
-	"fmt"
-	"go-hokusai-mint-sample/mint" // mint package内でMintNft関数を作成する
-	"io/ioutil"
-	"os"
+  "encoding/json"
+  "fmt"
+  "go-hokusai-mint-sample/mint" // mint package内でMintNft関数を作成する
+  "io/ioutil"
+  "os"
 
-	"github.com/joho/godotenv"
+  "github.com/joho/godotenv"
 )
 
 func main() {
-	err := godotenv.Load(".env")
-	if err != nil {
-		fmt.Printf("読み込み出来ませんでした: %v", err)
-	}
-	apiKey := os.Getenv("HOKUSAI_API_KEY")
-	contractVer := os.Getenv("HOKUSAI_CONTRACT_VERSION")
-	contractId := os.Getenv("HOKUSAI_CONTRACT_ID")
-	baseUrl := "https://mumbai.hokusai.app"
-	network := "mumbai"
+  err := godotenv.Load(".env")
+  if err != nil {
+    fmt.Printf("読み込み出来ませんでした: %v", err)
+  }
+  apiKey := os.Getenv("HOKUSAI_API_KEY")
+  contractVer := os.Getenv("HOKUSAI_CONTRACT_VERSION")
+  contractId := os.Getenv("HOKUSAI_CONTRACT_ID")
+  baseUrl := "https://mumbai.hokusai.app"
+  network := "mumbai"
 
-	raw, err := ioutil.ReadFile("./batchmint.json")
-	if err != nil {
-		fmt.Println(err.Error())
-		os.Exit(1)
-	}
-	var mintJson []mint.MintBody
-	json.Unmarshal(raw, &mintJson)
+  raw, err := ioutil.ReadFile("./batchmint.json")
+  if err != nil {
+    fmt.Println(err.Error())
+    os.Exit(1)
+  }
+  var mintJson []mint.MintBody
+  json.Unmarshal(raw, &mintJson)
 
-	mint.MintNft(
-		baseUrl,
-		network,
-		apiKey,
-		contractVer,
-		contractId,
-		mintJson,
-	)
+  mint.MintNft(
+    baseUrl,
+    network,
+    apiKey,
+    contractVer,
+    contractId,
+    mintJson,
+  )
 }
 ```
 
@@ -154,18 +154,18 @@ func main() {
 
 ```tsx
 interface mintBody {
-    address: string;
-    tokenURI: string;
+  address: string;
+  tokenURI: string;
 }
 const mintNft = async (
-	baseUrl: string,
+  baseUrl: string,
   network: string,
   apiKey: string,
   contractVer: string,
   contractId: string,
-	body: mintBody[]
+  body: mintBody[]
 ) => {
-	// ここに処理を書いていく
+  // ここに処理を書いていく
 })
 ```
 
@@ -173,19 +173,19 @@ const mintNft = async (
 
 ```go
 type MintBody struct {
-	Address  string `json:"address"`
-	TokenURI string `json:"tokenURI"`
+  Address  string `json:"address"`
+  TokenURI string `json:"tokenURI"`
 }
 
 func MintNft(
-	baseUrl string,
-	network string,
-	apiKey string,
-	contractVer string,
-	contractId string,
-	body []MintBody,
+  baseUrl string,
+  network string,
+  apiKey string,
+  contractVer string,
+  contractId string,
+  body []MintBody,
 ) error {
-	// ここに処理を書いていく
+  // ここに処理を書いていく
 }
 ```
 
@@ -197,19 +197,19 @@ func MintNft(
 
 ```tsx
 interface mintBody {
-    address: string;
-    tokenURI: string;
+  address: string;
+  tokenURI: string;
 }
 const mintNft = async (
-	baseUrl: string,
+  baseUrl: string,
   network: string,
   apiKey: string,
   contractVer: string,
   contractId: string,
-	body: mintBody[]
+  body: mintBody[]
 ) => {
-	// リクエスト先URLを引数から生成
-	const path = `/v2/${network}/nft/${contractVer}/${contractId}/mint`;
+  // リクエスト先URLを引数から生成
+  const path = `/v2/${network}/nft/${contractVer}/${contractId}/mint`;
   const url = new URL(baseUrl + path);
 })
 ```
@@ -218,21 +218,21 @@ const mintNft = async (
 
 ```go
 type MintBody struct {
-	Address  string `json:"address"`
-	TokenURI string `json:"tokenURI"`
+  Address  string `json:"address"`
+  TokenURI string `json:"tokenURI"`
 }
 
 func MintNft(
-	baseUrl string,
-	network string,
-	apiKey string,
-	contractVer string,
-	contractId string,
-	body []MintBody,
+  baseUrl string,
+  network string,
+  apiKey string,
+  contractVer string,
+  contractId string,
+  body []MintBody,
 ) error {
-	// リクエスト先URLを引数から生成
-	path := "/v2/" + network + "/nft/" + contractVer + "/" + contractId + "/mint"
-	url := baseUrl + path
+  // リクエスト先URLを引数から生成
+  path := "/v2/" + network + "/nft/" + contractVer + "/" + contractId + "/mint"
+  url := baseUrl + path
 }
 ```
 
@@ -244,22 +244,22 @@ func MintNft(
 
 ```tsx
 interface mintBody {
-    address: string;
-    tokenURI: string;
+  address: string;
+  tokenURI: string;
 }
 const mintNft = async (
-	baseUrl: string,
+  baseUrl: string,
   network: string,
   apiKey: string,
   contractVer: string,
   contractId: string,	
-	body: mintBody[]
+  body: mintBody[]
 ) => {
-	const path = `/v2/${network}/nft/${contractVer}/${contractId}/mint`;
+  const path = `/v2/${network}/nft/${contractVer}/${contractId}/mint`;
   const url = new URL(baseUrl + path);
   // urlのパラメータに「?key=apiKey」を追加している。
-	const params = { key: apiKey };
-	url.search = new URLSearchParams(params).toString();
+  const params = { key: apiKey };
+  url.search = new URLSearchParams(params).toString();
 }
 ```
 
@@ -269,28 +269,28 @@ const mintNft = async (
 
 ```go
 type MintBody struct {
-	Address  string `json:"address"`
-	TokenURI string `json:"tokenURI"`
+  Address  string `json:"address"`
+  TokenURI string `json:"tokenURI"`
 }
 
 func MintNft(
-	baseUrl string,
-	network string,
-	apiKey string,
-	contractVer string,
-	contractId string,
-	body []MintBody,
+  baseUrl string,
+  network string,
+  apiKey string,
+  contractVer string,
+  contractId string,
+  body []MintBody,
 ) error {
-	path := "/v2/" + network + "/nft/" + contractVer + "/" + contractId + "/mint"
-	url := baseUrl + path
-	req, newReqErr := http.NewRequest(/* ここの引数は次の手順で指定します */)
-	if newReqErr != nil {
-		return newReqErr
-	}
-// urlのパラメータに「?key=apiKey」を追加している。
-	q := req.URL.Query()
-	q.Add("key", apiKey)
-	req.URL.RawQuery = q.Encode()
+  path := "/v2/" + network + "/nft/" + contractVer + "/" + contractId + "/mint"
+  url := baseUrl + path
+  req, newReqErr := http.NewRequest(/* ここの引数は次の手順で指定します */)
+  if newReqErr != nil {
+	  return newReqErr
+  }
+  // urlのパラメータに「?key=apiKey」を追加している。
+  q := req.URL.Query()
+  q.Add("key", apiKey)
+  req.URL.RawQuery = q.Encode()
 }
 ```
 
@@ -304,33 +304,33 @@ func MintNft(
 
 ```tsx
 interface mintBody {
-    address: string;
-    tokenURI: string;
+  address: string;
+  tokenURI: string;
 }
 const mintNft = async (
-	baseUrl: string,
+  baseUrl: string,
   network: string,
   apiKey: string,
   contractVer: string,
   contractId: string,
-	body: mintBody[]
+  body: mintBody[]
 ) => {
-	const path = `/v2/${network}/nft/${contractVer}/${contractId}/mint`;
+  const path = `/v2/${network}/nft/${contractVer}/${contractId}/mint`;
   const url = new URL(baseUrl + path);
-	const params = { key: apiKey };
-	url.search = new URLSearchParams(params).toString();
-	// 以下でPOST処理を行う
-	const res = await fetch(url.toString(), {
+  const params = { key: apiKey };
+  url.search = new URLSearchParams(params).toString();
+  // 以下でPOST処理を行う
+  const res = await fetch(url.toString(), {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),
   });
-	// 失敗したときにエラーを返すようにしている。
-	if (res.status != 200) {
+  // 失敗したときにエラーを返すようにしている。
+  if (res.status != 200) {
     console.log(res.status);
     throw new Error(await res.text());
   }
-	return res.json();
+  return res.json();
 })
 ```
 
@@ -338,43 +338,43 @@ const mintNft = async (
 
 ```go
 type MintBody struct {
-	Address  string `json:"address"`
-	TokenURI string `json:"tokenURI"`
+  Address  string `json:"address"`
+  TokenURI string `json:"tokenURI"`
 }
 
 func MintNft(
-	baseUrl string,
-	network string,
-	apiKey string,
-	contractVer string,
-	contractId string,
-	body []MintBody,
+  baseUrl string,
+  network string,
+  apiKey string,
+  contractVer string,
+  contractId string,
+  body []MintBody,
 ) error {
-	path := "/v2/" + network + "/nft/" + contractVer + "/" + contractId + "/mint"
-	url := baseUrl + path
+  path := "/v2/" + network + "/nft/" + contractVer + "/" + contractId + "/mint"
+  url := baseUrl + path
 // 構造体のbodyをjsonに変換
-	jsonString, marshalErr := json.Marshal(body)
-	if marshalErr != nil {
-		return marshalErr
-	}
+  jsonString, marshalErr := json.Marshal(body)
+  if marshalErr != nil {
+	  return marshalErr
+  }
 // 引数にbodyをjsonで指定
-	req, newReqErr := http.NewRequest("POST", url, bytes.NewBuffer(jsonString))
-	if newReqErr != nil {
-		return newReqErr
-	}
+  req, newReqErr := http.NewRequest("POST", url, bytes.NewBuffer(jsonString))
+  if newReqErr != nil {
+	  return newReqErr
+  }
 // jsonでリクエストするためにCotent-Typeを指定
-	req.Header.Add("Cotent-Type", `application/json"`)
-	q := req.URL.Query()
-	q.Add("key", apiKey)
-	req.URL.RawQuery = q.Encode()
+  req.Header.Add("Cotent-Type", `application/json"`)
+  q := req.URL.Query()
+  q.Add("key", apiKey)
+  req.URL.RawQuery = q.Encode()
 // リクエスト送信のためのClientを生成＆実行
-	var client *http.Client = &http.Client{}
-	res, err := client.Do(req)
-	if err != nil {
-		log.Fatalln(err)
-	}
-	fmt.Println("res >>>>", res)
-	return res
+  var client *http.Client = &http.Client{}
+  res, err := client.Do(req)
+  if err != nil {
+	  log.Fatalln(err)
+  }
+  fmt.Println("res >>>>", res)
+  return res
 }
 ```
 
