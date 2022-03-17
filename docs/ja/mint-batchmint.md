@@ -388,14 +388,12 @@ func MintNft(
 
 ・Polygon メインネット：[https://polygonscan.com](https://polygonscan.com/)
 
-
-
-![13B6F730-CD85-4BED-AFE9-6BB1023B4D13.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8257f0d6-804d-4382-b849-d7ecaf23dc5d/13B6F730-CD85-4BED-AFE9-6BB1023B4D13.jpeg)
+![13B6F730-CD85-4BED-AFE9-6BB1023B4D13_1_105_c.jpeg](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/GTUknOfQXT8)
 
 Polygonscanとは、Polygonネットワーク上に記録された全てのトランザクション、ブロック、アカウントの詳細を閲覧することができるウェブサイトです。
 
 mintのレスポンスとして返却された`txHash`をサーチボックスにコピーしエンターを押すと、MintしたNFTの情報をみることができます。
 
-![68297651-E651-4780-90D7-DC71A01DB9E5.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7ec12c78-e7aa-4682-8702-f308eb4cec57/68297651-E651-4780-90D7-DC71A01DB9E5.jpeg)
+![68297651-E651-4780-90D7-DC71A01DB9E5_1_105_c.jpeg](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/LgN6lZxTjA8)
 
 [こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#611-polygonscan%E3%81%A7tokenid%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B)も参考にしてください。
