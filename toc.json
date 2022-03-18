@@ -103,7 +103,7 @@
         {
           "type": "item",
           "title": "Hokusai v1",
-          "uri": "swagger.yaml"
+          "uri": "swagger-v1.yaml"
         }
       ]
     },
@@ -206,7 +206,7 @@
         {
           "type": "item",
           "title": "Hokusai v1",
-          "uri": "swagger.yaml"
+          "uri": "swagger-v1.yaml"
         }
       ]
     }
