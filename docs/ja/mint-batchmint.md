@@ -72,7 +72,7 @@ CONTRACT_VERSION = ""
 
 MintするデータはJSONで指定したものを読み込みます。
 
-networkの指定は自身の選択したものにしてください。[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjQ1MjUwNjM2-)から確認できます。ここではテストネットの方の`mumbai`を指定します。
+networkの指定は自身の選択したものにしてください。[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjQ1MjUwNjM2-)から確認できます。ここではテストネットの方の`polygon-mumbai`を指定します。
 
 **Typescript**
 
@@ -82,7 +82,7 @@ import mintBody from "./mint.json";
 require("dotenv").config();
 const env = process.env
 const baseUrl = "https://mumbai.hokusai.app";
-const network = "mumbai" // or polygon
+const network = "polygon-mumbai" // or polygon-mainnet
 mintNft(
   baseUrl, 
   network,
@@ -123,7 +123,7 @@ func main() {
   contractVer := os.Getenv("HOKUSAI_CONTRACT_VERSION")
   contractId := os.Getenv("HOKUSAI_CONTRACT_ID")
   baseUrl := "https://mumbai.hokusai.app"
-  network := "mumbai"
+  network := "polygon-mumbai"
 
   raw, err := ioutil.ReadFile("./batchmint.json")
   if err != nil {
