@@ -211,12 +211,12 @@
         {
           "type": "item",
           "title": "Hokusai v1",
-          "uri": "./reference/swagger-v1.yaml"
+          "uri": "reference/swagger-v1.yaml"
         },
         {
           "type": "item",
           "title": "Hokusai v2",
-          "uri": "./reference/swagger-v2.yaml"
+          "uri": "reference/swagger-v2.yaml"
         }
       ]
     }
