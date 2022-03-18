@@ -14,7 +14,7 @@ title: v2
 -->
 
 ```:bash
-https://api.hokusai.app/v2/nft/{contractVersion/{contractAddress}/mint?key={apiKey}
+https://api.hokusai.app/v2/{network}/nft/{contractVersion/{contractAddress}/mint?key={apiKey}
 ```
 
 <!--
