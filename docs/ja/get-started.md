@@ -103,8 +103,8 @@ $ cp .env.sample .env
 WALLET_PRIVATE_KEY = "your-private-key"
 #nft.storage API Keyを入力します。
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
-#ContractをデプロイしたNetworkを入力します(これはモックなので、"mumbai"と入力してください。)
-CONTRACT_NETWORK = "mumbai"
+#ContractをデプロイしたNetworkを入力します(これはモックなので、"polygon-mumbai"と入力してください。)
+CONTRACT_NETWORK = "polygon-mumbai"
 #Hokusai API Keyを入力します。
 HOKUSAI_API_KEY = "your-hokusai-api-key"
 #Hokusai Contract IDを入力します。
@@ -221,8 +221,8 @@ NFTを送信するには送信元アカウントの署名が必要になりま�
 WALLET_PRIVATE_KEY = "your-private-key"
 #nft.storage API Keyを入力します。
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
-#ContractをデプロイしたNetworkを入力します(これはモックなので、"mumbai"と入力してください。)
-CONTRACT_NETWORK = "mumbai"
+#ContractをデプロイしたNetworkを入力します(これはモックなので、"polygon-mumbai"と入力してください。)
+CONTRACT_NETWORK = "polygon-mumbai"
 #Hokusai API Keyを入力します。
 HOKUSAI_API_KEY = "your-hokusai-api-key"
 #Hokusai Contract IDを入力します。
