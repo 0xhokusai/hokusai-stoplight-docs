@@ -17,7 +17,8 @@ paths:
       produces:
         - application/json
       summary: Health Check
-      tags: []
+      tags: 
+        - status
       responses:
         '200':
           description: OK
@@ -320,6 +321,8 @@ securityDefinitions:
 security:
   - ApiKeyAuth: []
 tags:
+  - description: Get Status
+    name: status
   - description: Manage NFTs
     name: NFT
   - description: Manage Royalty
