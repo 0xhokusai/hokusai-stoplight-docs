@@ -10,20 +10,19 @@ The code shown below is based on v2 of get-started from [here](https://github.co
 
 ## Publish NFT metadata
 
-[here](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#5-nft%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B)for reference. Also, note the URL of the published metadata.
+[here](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#5-nft%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B) for reference. Also, note the URL of the published metadata.
 
 ## Create the data needed for Mint/BatchMint in JSON
 
 The `address` should be a wallet address that can be verified from your own Metamask.
 
-If you have not yet set up Metamask[here](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#2-%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%82%92%E7%94%A8%E6%84%8F%E3%81%99%E3%82%8B)
+If you have not yet set up Metamask [here](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#2-%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%82%92%E7%94%A8%E6%84%8F%E3%81%99%E3%82%8B)
 
 In the `tokenURI` field, paste the URL that was issued when you published the NFT metadata in advance.
 
 When only one（**Mint**）
-
+`mint.json`
 ```json
-// mint.json
 [
   {
     "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
@@ -33,9 +32,8 @@ When only one（**Mint**）
 ```
 
 Multiple cases（**BatchMint**）
-
+`mint.json`
 ```json
-// mint.json
 [
   {
     "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
@@ -54,7 +52,7 @@ Multiple cases（**BatchMint**）
 
 ## Set other necessary values
 
-Important values to be used as arguments are set in the .env file.
+Important values to be used as arguments are set in the `.env` file.
 
 How to get `HOKUSAI_API_KEY`, `HOKUSAI_CONTRACT_ID` and `CONTRACT_VERSION` is [here](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#1-api-key%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B). You will find this information in the email you receive.
 
@@ -236,7 +234,7 @@ func MintNft(
 
 ### Assign URL parameters
 
-Added process to grant 「?key=apiKey」 to `baseUrl`+`/v2/${network}/nft/${contractVer}/${contractId}/mint`.
+Added process to grant `?key=apiKey` to `baseUrl`+`/v2/${network}/nft/${contractVer}/${contractId}/mint`.
 
 **Typescript**
 
@@ -382,9 +380,9 @@ The NFT issued this time should be on either of the following networks.
 
 Select the URL of the one you have chosen and fly to the Polygonscan website.
 
-・Mumbai testnet：[https://mumbai.polygonscan.com](https://mumbai.polygonscan.com/)
+- Mumbai testnet：[https://mumbai.polygonscan.com](https://mumbai.polygonscan.com/)
 
-・Polygon mainnet：[https://polygonscan.com](https://polygonscan.com/)
+- Polygon mainnet：[https://polygonscan.com](https://polygonscan.com/)
 
 ![13B6F730-CD85-4BED-AFE9-6BB1023B4D13_1_105_c.jpeg](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/GTUknOfQXT8)
 

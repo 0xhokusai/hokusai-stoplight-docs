@@ -23,9 +23,8 @@ version1ではNFTを１つずつしかMintできませんでした。しかしve
 `tokenURI`には事前にNFTメタデータを公開した際に発行されたURLを貼り付けてください。
 
 ひとつだけの場合（**Mint**）
-
+`mint.json`
 ```json
-// mint.json
 [
   {
     "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
@@ -35,9 +34,8 @@ version1ではNFTを１つずつしかMintできませんでした。しかしve
 ```
 
 複数の場合（**BatchMint**）
-
+`mint.json`
 ```json
-// mint.json
 [
   {
     "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
@@ -56,7 +54,7 @@ version1ではNFTを１つずつしかMintできませんでした。しかしve
 
 ## その他必要な値の設定
 
-引数として使用したい重要な値は.envファイルで設定をしておきます。
+引数として使用したい重要な値は`.env`ファイルで設定をしておきます。
 
 `HOKUSAI_API_KEY`と`HOKUSAI_CONTRACT_ID`と`CONTRACT_VERSION`の取得方法は[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#1-api-key%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B)を参照してください。送られてくるメールに記載されています。
 
@@ -238,7 +236,7 @@ func MintNft(
 
 ### URLパラメータの付与
 
-「?key=apiKey」を`baseUrl`+`/v2/${network}/nft/${contractVer}/${contractId}/mint`に付与するための処理を追加。
+`?key=apiKey`を`baseUrl`+`/v2/${network}/nft/${contractVer}/${contractId}/mint`に付与するための処理を追加。
 
 **Typescript**
 
@@ -257,7 +255,7 @@ const mintNft = async (
 ) => {
   const path = `/v2/${network}/nft/${contractVer}/${contractId}/mint`;
   const url = new URL(baseUrl + path);
-  // urlのパラメータに「?key=apiKey」を追加している。
+  // urlのパラメータに ?key=apiKey を追加している。
   const params = { key: apiKey };
   url.search = new URLSearchParams(params).toString();
 }
@@ -287,7 +285,7 @@ func MintNft(
   if newReqErr != nil {
 	  return newReqErr
   }
-  // urlのパラメータに「?key=apiKey」を追加している。
+  // urlのパラメータに ?key=apiKey を追加している。
   q := req.URL.Query()
   q.Add("key", apiKey)
   req.URL.RawQuery = q.Encode()
@@ -384,9 +382,9 @@ func MintNft(
 
 自分で選んだ方のURLを選択してPolygonscanのwebサイトに飛んでください。
 
-・Mumbai テストネット：[https://mumbai.polygonscan.com](https://mumbai.polygonscan.com/)
+- Mumbai テストネット：[https://mumbai.polygonscan.com](https://mumbai.polygonscan.com/)
 
-・Polygon メインネット：[https://polygonscan.com](https://polygonscan.com/)
+- Polygon メインネット：[https://polygonscan.com](https://polygonscan.com/)
 
 ![13B6F730-CD85-4BED-AFE9-6BB1023B4D13_1_105_c.jpeg](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/GTUknOfQXT8)
 
