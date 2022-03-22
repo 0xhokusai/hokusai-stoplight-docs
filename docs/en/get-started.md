@@ -100,8 +100,8 @@ Edit `.env` and set the variables. Note you don't need to set the `WALLET_PRIVAT
 WALLET_PRIVATE_KEY = "your-private-key"
 #API key for nft.storage
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
-#Contract Network (this is mock, please set "mumbai")
-CONTRACT_NETWORK = "mumbai"
+#Contract Network (this is mock, please set "polygon-mumbai")
+CONTRACT_NETWORK = "polygon-mumbai"
 #Hokusai API key
 HOKUSAI_API_KEY = "your-hokusai-api-key"
 #Hokusai Contract Version
@@ -212,8 +212,8 @@ Set your private key to `WALLET_PRIVATE_KEY` in `.env`.
 WALLET_PRIVATE_KEY = "your-private-key"
 #API key for nft.storage
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
-#Contract Network (this is mock, please set "mumbai")
-CONTRACT_NETWORK = "mumbai"
+#Contract Network (this is mock, please set "polygon-mumbai")
+CONTRACT_NETWORK = "polygon-mumbai"
 #Hokusai API key
 HOKUSAI_API_KEY = "your-hokusai-api-key"
 #Hokusai Contract Version

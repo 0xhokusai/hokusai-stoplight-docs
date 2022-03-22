@@ -14,7 +14,7 @@ title: v2
 -->
 
 ```:bash
-https://api.hokusai.app/v2/nft/{contractVersion/{contractAddress}/mint?key={apiKey}
+https://mumbai.hokusai.app/v2/{network}/nft/{contractVersion/{contractId}/mint?key={apiKey}
 ```
 
 <!--
@@ -23,10 +23,11 @@ title: v1
 -->
 
 ```:bash
-https://api.hokusai.app/v1/nfts/{contractAddress}/mint?key={apiKey}
+https://mumbai.hokusai.app/v1/nfts/{contractId}/mint?key={apiKey}
 ```
 
 <!-- type: tab-end -->
 
 
 このように、全てのエンドポイントには、API Key を値として持つ `key` パラメータの指定が必要となります。
+エンドポイントの詳細については[エンドポイント](endpoint.md)をご覧ください。
