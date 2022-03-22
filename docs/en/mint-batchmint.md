@@ -1,7 +1,3 @@
----
-internal: true
----
-
 # Sample to implement Mint/BatchMint
 
 This section describes an example implementation of Mint/BatchMint, an API for minting NFTs on a network.
@@ -22,6 +18,7 @@ In the `tokenURI` field, paste the URL that was issued when you published the NF
 
 When only one（**Mint**）
 `mint.json`
+
 ```json
 [
   {
@@ -33,6 +30,7 @@ When only one（**Mint**）
 
 Multiple cases（**BatchMint**）
 `mint.json`
+
 ```json
 [
   {
