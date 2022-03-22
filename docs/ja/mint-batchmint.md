@@ -1,7 +1,3 @@
----
-internal: true
----
-
 # Mint/BatchMintの実装を行うサンプル
 
 ここでは、NFTをネットワーク上にMintするためのAPIであるMint/BatchMintの実装例について解説していきます。
@@ -24,6 +20,7 @@ version1ではNFTを１つずつしかMintできませんでした。しかしve
 
 ひとつだけの場合（**Mint**）
 `mint.json`
+
 ```json
 [
   {
@@ -35,6 +32,7 @@ version1ではNFTを１つずつしかMintできませんでした。しかしve
 
 複数の場合（**BatchMint**）
 `mint.json`
+
 ```json
 [
   {
