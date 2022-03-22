@@ -13,7 +13,7 @@ title: v2
 -->
 
 ```:bash
-https://api.hokusai.app/v2/{network}/nft/{contractVersion/{contractAddress}/mint?key={apiKey}
+https://mumbai.hokusai.app/v2/{network}/nft/{contractVersion/{contractAddress}/mint?key={apiKey}
 ```
 
 <!--
@@ -22,9 +22,10 @@ title: v1
 -->
 
 ```:bash
-https://api.hokusai.app/v1/nfts/{contractAddress}/mint?key={apiKey}
+https://mumbai.hokusai.app/v1/nfts/{contractAddress}/mint?key={apiKey}
 ```
 
 <!-- type: tab-end -->
 
 All endpoints must include the `key` parameter with the API key.
+See [Endpoint](endpoint.md) for more information on Endpoints.
