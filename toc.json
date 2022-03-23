@@ -24,6 +24,11 @@
         },
         {
           "type": "item",
+          "title": "Sample Project: Mint / BatchMint",
+          "uri": "docs/en/mint-batchmint.md"
+        },
+        {
+          "type": "item",
           "title": "Sample Project: Transfer",
           "uri": "docs/en/sample-app.md"
         },
@@ -129,6 +134,11 @@
           "type": "item",
           "title": "チュートリアル 🏃",
           "uri": "docs/ja/get-started.md"
+        },
+        {
+          "type": "item",
+          "title": "サンプル：Mint / BatchMint",
+          "uri": "docs/ja/mint-batchmint.md"
         },
         {
           "type": "item",
