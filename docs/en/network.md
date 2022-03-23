@@ -11,12 +11,12 @@ Include the name of the network where you created your contracts in the API path
 | `polygon-mumbai`    | Polygon Testnet                    |
 | `binance-mainnet`   | Binance Mainnet                    |
 | `binance-testnet`   | Binance Testnet                    |
-| `aster-aster`       | Aster Mainnet (connedted Polkadot) |
-| `aster-shiden`      | Aster Mainnet (connected Kusama)   |
-| `aster-shibuya`     | Aster Testnet (connected Tokyo)    |
+| `astar-astar`       | Astar Mainnet (connedted Polkadot) |
+| `astar-shiden`      | Astar Mainnet (connected Kusama)   |
+| `astar-shibuya`     | Astar Testnet (connected Tokyo)    |
 | `avalanche-mainnet` | Avalanche Mainnet                  |
 | `avalanche-fuji`    | Avalanche Testnet                  |
 | `arbitrum-mainnet`  | Arbitrum Mainnet                   |
 | `arbitrum-rinkeby`  | Arbitrum Testnet                   |
 
-Other networks will be supported soon !
+Other networks will be supported in the future !

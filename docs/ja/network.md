@@ -11,12 +11,12 @@ APIのパスパラメータに自身が発行したネットワーク名を含�
 | `polygon-mumbai`    | Polygon Testnet                    |
 | `binance-mainnet`   | Binance Mainnet                    |
 | `binance-testnet`   | Binance Testnet                    |
-| `aster-aster`       | Aster Mainnet (connedted Polkadot) |
-| `aster-shiden`      | Aster Mainnet (connected Kusama)   |
-| `aster-shibuya`     | Aster Testnet (connected Tokyo)    |
+| `astar-astar`       | Astar Mainnet (connedted Polkadot) |
+| `astar-shiden`      | Astar Mainnet (connected Kusama)   |
+| `astar-shibuya`     | Astar Testnet (connected Tokyo)    |
 | `avalanche-mainnet` | Avalanche Mainnet                  |
 | `avalanche-fuji`    | Avalanche Testnet                  |
 | `arbitrum-mainnet`  | Arbitrum Mainnet                   |
 | `arbitrum-rinkeby`  | Arbitrum Testnet                   |
 
-これら以外のネットワークにも近日対応予定です！
+将来的には、これら以外のネットワークにも対応予定です！
