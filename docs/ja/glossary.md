@@ -2,7 +2,7 @@
 
 ### ミント
 
-NFTを発行することをMintと表現します。 詳しくは [こちら](https://help.foundation.app/en/articles/4742869-a-complete-guide-to-minting-an-nft).
+NFTを発行することをMintと表現します。
 
 ### ガス代
 
