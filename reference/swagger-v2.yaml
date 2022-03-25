@@ -301,7 +301,7 @@ definitions:
         to:
           type: string
           description: Address to mint the NFT to
-        tokenUri:
+        tokenURI:
           type: string
           description: Metadata URI
   TransferNFT:
