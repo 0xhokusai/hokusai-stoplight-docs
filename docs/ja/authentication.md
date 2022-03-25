@@ -14,7 +14,7 @@ title: v2
 -->
 
 ```:bash
-https://mumbai.hokusai.app/v2/{network}/nft/{contractVersion/{contractId}/mint?key={apiKey}
+https://api.hokusai.app/v2/{network}/nft/{contractVersion/{contractId}/mint?key={apiKey}
 ```
 
 <!--
@@ -23,7 +23,7 @@ title: v1
 -->
 
 ```:bash
-https://mumbai.hokusai.app/v1/nfts/{contractId}/mint?key={apiKey}
+https://api.hokusai.app/v1/nfts/{contractId}/mint?key={apiKey}
 ```
 
 <!-- type: tab-end -->

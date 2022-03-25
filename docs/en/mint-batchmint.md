@@ -77,8 +77,8 @@ import fetch from "node-fetch";
 import mintBody from "./mint.json";
 require("dotenv").config();
 const env = process.env
-const baseUrl = "https://mumbai.hokusai.app";
-const network = "polygon-mumbai" // or polygon-mainnet
+const baseUrl = "https://api.hokusai.app";
+const network = "polygon-mumbai" // or other networks
 mintNft(
   baseUrl, 
   network,
@@ -118,7 +118,7 @@ func main() {
   apiKey := os.Getenv("HOKUSAI_API_KEY")
   contractVer := os.Getenv("HOKUSAI_CONTRACT_VERSION")
   contractId := os.Getenv("HOKUSAI_CONTRACT_ID")
-  baseUrl := "https://mumbai.hokusai.app"
+  baseUrl := "https://api.hokusai.app"
   network := "polygon-mumbai"
 
   raw, err := ioutil.ReadFile("./batchmint.json")
@@ -376,13 +376,9 @@ func MintNft(
 
 ## Verify that the issued NFT is on the network
 
-The NFT issued this time should be on either of the following networks.
+You can check the NFT issued this time from Block Explorer.
 
-Select the URL of the one you have chosen and fly to the Polygonscan website.
-
-- Mumbai testnet：[https://mumbai.polygonscan.com](https://mumbai.polygonscan.com/)
-
-- Polygon mainnet：[https://polygonscan.com](https://polygonscan.com/)
+If you are using `polygon-mumbai` as sampled, you can check [Polygonscan](https://mumbai.polygonscan.com/) (Mumbai).
 
 ![13B6F730-CD85-4BED-AFE9-6BB1023B4D13_1_105_c.jpeg](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/GTUknOfQXT8)
 

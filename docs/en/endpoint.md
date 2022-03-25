@@ -1,18 +1,10 @@
 # Endpoint
-Hokusai is sending requests to the following endpoint. The base endpoint is:
+Hokusai is sending requests to the following endpoint. The base domain is:
 ```
-testnet: https://mumbai.hokusai.app  
-mainnet: https://polygon.hokusai.app  
+https://api.hokusai.app  
 ```
 
 Currently the Hokusai provides the following endpoints.
-
-If you using the Mumbai testnet, change the baseUrl of `src/getNft.ts` and `src/mintNft.ts`'s to "https://mumbai.hokusai.app".
-
-
-```
-https://mumbai.hokusai.app
-```
 
 The endpoint varies from version to version and the current default is v2.  
 The supported version differs for each smart contract, please check the version information on the email sent when the smart contract was created.

@@ -43,6 +43,8 @@ Edit `.env` and set the variables. Note you **don't** need to set the `WALLET_PR
 WALLET_PRIVATE_KEY = ""
 # Your nft.storage API Key.
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
+#Contract Network
+CONTRACT_NETWORK = "the-network-your-deployed-contract"
 # Your Hokusai API Key.
 HOKUSAI_API_KEY = "your-hokusai-api-key"
 # Your Hokusai Contract ID.

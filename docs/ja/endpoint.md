@@ -2,17 +2,10 @@
 Hokusai では以下のベース URL に対してリクエストを送信します。
 
 ```
-testnet: https://mumbai.hokusai.app  
-mainnet: https://polygon.hokusai.app  
+https://api.hokusai.app  
 ```
 
 また、Hokusai では現在、以下のようなエンドポイントを提供しています。
-
-テストネットをご利用の場合は`src/getNft.ts`と`src/mintNft.ts`のbaseUrlを"https://mumbai.hokusai.app" に変更してください。
-
-```
-https://mumbai.hokusai.app
-```
 
 エンドポイントはバージョンごとに異なり、現在のデフォルトはv2です。  
 コントラクトごとに対応しているバージョンが異なるため、コントラクト作成時に送られてくるemailに記載されるバージョン情報をご確認ください。

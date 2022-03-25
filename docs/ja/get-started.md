@@ -103,7 +103,7 @@ $ cp .env.sample .env
 WALLET_PRIVATE_KEY = "your-private-key"
 #nft.storage API Keyを入力します。
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
-#ContractをデプロイしたNetworkを入力します(これはモックなので、"polygon-mumbai"と入力してください。)
+#ContractをデプロイしたNetworkを入力します（今回は "polygon-mumbai" です)
 CONTRACT_NETWORK = "polygon-mumbai"
 #Hokusai API Keyを入力します。
 HOKUSAI_API_KEY = "your-hokusai-api-key"
@@ -146,8 +146,6 @@ $ curl https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2x
 ## 6. Hokusai を動かす
 
 Hokusai を動かす準備が整いました。
-
-テストネットをご利用の場合は`src/getNft.ts`と`src/mintNft.ts`のbaseUrlを"https://mumbai.hokusai.app" に変更してください。
 
 ### 6.1. NFT を発行する
 
@@ -221,7 +219,7 @@ NFTを送信するには送信元アカウントの署名が必要になりま�
 WALLET_PRIVATE_KEY = "your-private-key"
 #nft.storage API Keyを入力します。
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
-#ContractをデプロイしたNetworkを入力します(これはモックなので、"polygon-mumbai"と入力してください。)
+#ContractをデプロイしたNetworkを入力します(今回は "polygon-mumbai" です)
 CONTRACT_NETWORK = "polygon-mumbai"
 #Hokusai API Keyを入力します。
 HOKUSAI_API_KEY = "your-hokusai-api-key"

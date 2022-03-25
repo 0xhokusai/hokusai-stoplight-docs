@@ -259,12 +259,13 @@ title: v2
 -->
 
 ```typescript
+const network = 'polygon-mumbai' // polygon testnet
 const contractVer = 'your-contract-version'
 const contractId = 'your-contract-id'
 const apiKey = 'your-api-key'
 
 result = await fetch(
-  `https://mumbai.hokusai.app/v2/nft/${contractVer}/${contractId}/transfer?key=${apiKey}`,
+  `https://api.hokusai.app/v2/${network}/nft/${contractVer}/${contractId}/transfer?key=${apiKey}`,
   {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
