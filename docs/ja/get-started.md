@@ -107,7 +107,7 @@ NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
 CONTRACT_NETWORK = "polygon-mumbai"
 #Hokusai API Keyを入力します。
 HOKUSAI_API_KEY = "your-hokusai-api-key"
-#Hokusai Contract IDを入力します。
+#Hokusai Contract Versionを入力します。
 HOKUSAI_CONTRACT_VERSION = "your-contract-version"
 #Hokusai contract IDを入力します。
 HOKUSAI_CONTRACT_ID = "your-contract-id"
@@ -225,7 +225,7 @@ NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
 CONTRACT_NETWORK = "polygon-mumbai"
 #Hokusai API Keyを入力します。
 HOKUSAI_API_KEY = "your-hokusai-api-key"
-#Hokusai Contract IDを入力します。
+#Hokusai Contract Versionを入力します。
 HOKUSAI_CONTRACT_VERSION = "your-contract-version"
 #Hokusai contract IDを入力します。
 HOKUSAI_CONTRACT_ID = "your-contract-id"
