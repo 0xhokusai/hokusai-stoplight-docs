@@ -12,7 +12,7 @@ version1ではNFTを１つずつしかMintできませんでした。しかしve
 
 ## Mint/BatchMintに必要なデータをJSONで作成する
 
-`address`には自身のmetamaskから確認できるウォレットアドレスを指定してください。
+`to`には自身のmetamaskから確認できるウォレットアドレスを指定してください。
 
 （Metamaskの設定がまだの場合[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#2-%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%82%92%E7%94%A8%E6%84%8F%E3%81%99%E3%82%8B)の対応をお願いいたします）
 
@@ -29,7 +29,7 @@ title: Mint
 ```json
 [
   {
-    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "to": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
     "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
   }
 ]
@@ -45,15 +45,15 @@ title: BatchMint
 ```json
 [
   {
-    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "to": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
     "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
   },
   {
-    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "to": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
     "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
   },
   {
-    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "to": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
     "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
   }
 ]
@@ -180,7 +180,7 @@ title: Typescript
 
 ```tsx
 interface mintBody {
-  address: string;
+  to: string;
   tokenURI: string;
 }
 const mintNft = async (
@@ -202,7 +202,7 @@ title: Golang
 
 ```go
 type MintBody struct {
-  Address  string `json:"address"`
+  to  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -230,7 +230,7 @@ title: Typescript
 
 ```tsx
 interface mintBody {
-  address: string;
+  to: string;
   tokenURI: string;
 }
 const mintNft = async (
@@ -254,7 +254,7 @@ title: Golang
 
 ```go
 type MintBody struct {
-  Address  string `json:"address"`
+  to  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -284,7 +284,7 @@ title: Typescript
 
 ```tsx
 interface mintBody {
-  address: string;
+  to: string;
   tokenURI: string;
 }
 const mintNft = async (
@@ -312,7 +312,7 @@ title: Golang
 
 ```go
 type MintBody struct {
-  Address  string `json:"address"`
+  to  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -351,7 +351,7 @@ title: Typescript
 
 ```tsx
 interface mintBody {
-  address: string;
+  to: string;
   tokenURI: string;
 }
 const mintNft = async (
@@ -388,7 +388,7 @@ title: Golang
 
 ```go
 type MintBody struct {
-  Address  string `json:"address"`
+  to  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 

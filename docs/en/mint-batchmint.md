@@ -10,7 +10,7 @@ The code shown below is based on v2 of get-started from [here](https://github.co
 
 ## Create the data needed for Mint/BatchMint in JSON
 
-The `address` should be a wallet address that can be verified from your own Metamask.
+The `to` should be a wallet to that can be verified from your own Metamask.
 
 If you have not yet set up Metamask [here](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#2-%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%82%92%E7%94%A8%E6%84%8F%E3%81%99%E3%82%8B)
 
@@ -26,7 +26,7 @@ When only one（**Mint**）
 ```json
 [
   {
-    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "to": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
     "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
   }
 ]
@@ -42,15 +42,15 @@ Multiple cases（**BatchMint**）
 ```json
 [
   {
-    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "to": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
     "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
   },
   {
-    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "to": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
     "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
   },
   {
-    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "to": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
     "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
   }
 ]
@@ -167,7 +167,7 @@ title: Typescript
 
 ```tsx
 interface mintBody {
-  address: string;
+  to: string;
   tokenURI: string;
 }
 const mintNft = async (
@@ -189,7 +189,7 @@ title: Golang
 
 ```go
 type MintBody struct {
-  Address  string `json:"address"`
+  to  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -217,7 +217,7 @@ title: Typescript
 
 ```tsx
 interface mintBody {
-  address: string;
+  to: string;
   tokenURI: string;
 }
 const mintNft = async (
@@ -241,7 +241,7 @@ title: Golang
 
 ```go
 type MintBody struct {
-  Address  string `json:"address"`
+  to  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -271,7 +271,7 @@ title: Typescript
 
 ```tsx
 interface mintBody {
-  address: string;
+  to: string;
   tokenURI: string;
 }
 const mintNft = async (
@@ -299,7 +299,7 @@ The `http.NewRequest` function creates the request object first, but the content
 
 ```go
 type MintBody struct {
-  Address  string `json:"address"`
+  to  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -338,7 +338,7 @@ title: Typescript
 
 ```tsx
 interface mintBody {
-  address: string;
+  to: string;
   tokenURI: string;
 }
 const mintNft = async (
@@ -375,7 +375,7 @@ title: Golang
 
 ```go
 type MintBody struct {
-  Address  string `json:"address"`
+  to  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
