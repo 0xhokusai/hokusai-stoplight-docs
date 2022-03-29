@@ -8,7 +8,7 @@ version1ではNFTを１つずつしかMintできませんでした。しかしve
 
 ## NFTメタデータを公開する
 
-[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#5-nft%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B)を参考に事前にNFTメタデータを公開しておいてください。また、公開したメタデータのURLはメモしておきます。
+[こちら](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDI0-#5-nft%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B)を参考に事前にNFTメタデータを公開しておいてください。また、公開したメタデータのURLはメモしておきます。
 
 ## Mint/BatchMintに必要なデータをJSONで作成する
 
@@ -16,7 +16,7 @@ version1ではNFTを１つずつしかMintできませんでした。しかしve
 
 （Metamaskの設定がまだの場合[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#2-%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%82%92%E7%94%A8%E6%84%8F%E3%81%99%E3%82%8B)の対応をお願いいたします）
 
-`tokenURI`には事前にNFTメタデータを公開した際に発行されたURLを貼り付けてください。
+`tokenURI`には事前に[NFTメタデータを公開](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDI0-#5-nft%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B)した際に発行されたURLを貼り付けてください。
 
 <!--
 type: tab
@@ -65,7 +65,10 @@ title: BatchMint
 
 引数として使用したい重要な値は`.env`ファイルで設定をしておきます。
 
-`HOKUSAI_API_KEY`と`HOKUSAI_CONTRACT_ID`と`CONTRACT_VERSION`の取得方法は[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#1-api-key%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B)を参照してください。送られてくるメールに記載されています。
+- `HOKUSAI_API_KEY`
+- `HOKUSAI_CONTRACT_ID`
+- `CONTRACT_VERSION`
+取得方法は[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#1-api-key%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B)を参照してください。送られてくるメールに記載されています。
 
 ```
 HOKUSAI_API_KEY = ""
@@ -80,6 +83,8 @@ CONTRACT_VERSION = ""
 MintするデータはJSONで指定したものを読み込みます。
 
 networkの指定は自身の選択したものにしてください。[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjQ1MjUwNjM2-)から確認できます。ここではテストネットの方の`polygon-mumbai`を指定します。
+
+次の章からは`mintNft（）`の実装の説明をしていきます。
 
 <!--
 type: tab
@@ -164,7 +169,9 @@ func main() {
 
 まずは`mintNft`関数を定義します。
 
-ここでは処理に必要な値を引数で定義するところまで行います。
+次の章では実際にひとつずつ処理を関数内に追記していきます。
+
+`mintBody`をinterfaceとして定義しているのはどういった形式でリクエストをなげればいいのかをわかりやすくするためです。
 
 <!--
 type: tab
