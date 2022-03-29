@@ -16,6 +16,10 @@ If you have not yet set up Metamask [here](https://docs.hokusai.app/docs/hokusai
 
 In the `tokenURI` field, paste the URL that was issued when you published the NFT metadata in advance.
 
+<!--
+type: tab
+title: Mint
+-->
 When only one（**Mint**）
 `mint.json`
 
@@ -28,6 +32,10 @@ When only one（**Mint**）
 ]
 ```
 
+<!--
+type: tab
+title: BatchMint
+-->
 Multiple cases（**BatchMint**）
 `mint.json`
 
@@ -47,6 +55,7 @@ Multiple cases（**BatchMint**）
   }
 ]
 ```
+<!-- type: tab-end -->
 
 ## Set other necessary values
 
@@ -68,7 +77,10 @@ The data to be minted is read as specified in JSON.
 
 The network designation should be your own choice. You can check it [here](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjQ1MjUwNjM2-). Here we specify `polygon-mumbai` for the test net.
 
-**Typescript**
+<!--
+type: tab
+title: Typescript
+-->
 
 ```tsx
 import fetch from "node-fetch";
@@ -93,7 +105,10 @@ mintNft(
 });
 ```
 
-**Golang**
+<!--
+type: tab
+title: Golang
+-->
 
 ```go
 package main
@@ -137,6 +152,7 @@ func main() {
   )
 }
 ```
+<!-- type: tab-end -->
 
 ### **Define Mint Execution Functions**
 
@@ -144,7 +160,10 @@ First, define the `mintNft` function.
 
 This section goes as far as defining the values needed for processing with arguments.
 
-**Typescript**
+<!--
+type: tab
+title: Typescript
+-->
 
 ```tsx
 interface mintBody {
@@ -163,7 +182,10 @@ const mintNft = async (
 })
 ```
 
-**Golang**
+<!--
+type: tab
+title: Golang
+-->
 
 ```go
 type MintBody struct {
@@ -182,12 +204,16 @@ func MintNft(
   // I'll write the process here.
 }
 ```
+<!-- type: tab-end -->
 
 ### Setting the URL to request
 
 Define the URL to make the request (POST) using `baseUrl` and `contractId` as the `url` variable.
 
-**Typescript**
+<!--
+type: tab
+title: Typescript
+-->
 
 ```tsx
 interface mintBody {
@@ -208,7 +234,10 @@ const mintNft = async (
 })
 ```
 
-**Golang**
+<!--
+type: tab
+title: Golang
+-->
 
 ```go
 type MintBody struct {
@@ -229,12 +258,16 @@ func MintNft(
   url := baseUrl + path
 }
 ```
+<!-- type: tab-end -->
 
 ### Assign URL parameters
 
 Added process to grant `?key=apiKey` to `baseUrl`+`/v2/${network}/nft/${contractVer}/${contractId}/mint`.
 
-**Typescript**
+<!--
+type: tab
+title: Typescript
+-->
 
 ```tsx
 interface mintBody {
@@ -257,7 +290,10 @@ const mintNft = async (
 }
 ```
 
-**Golang**
+<!--
+type: tab
+title: Golang
+-->
 
 The `http.NewRequest` function creates the request object first, but the contents are specified in the following steps.
 
@@ -287,6 +323,7 @@ func MintNft(
   req.URL.RawQuery = q.Encode()
 }
 ```
+<!-- type: tab-end -->
 
 ### Implementation of POST request processing
 
@@ -294,7 +331,10 @@ POST passing `body` argument.
 
 Now that you've implemented this far, all you need to do is to run it with the appropriate values in the arguments, and you can already issue (**Mint**) the NFT!
 
-**Typescript**
+<!--
+type: tab
+title: Typescript
+-->
 
 ```tsx
 interface mintBody {
@@ -328,7 +368,10 @@ const mintNft = async (
 })
 ```
 
-**Golang**
+<!--
+type: tab
+title: Golang
+-->
 
 ```go
 type MintBody struct {
@@ -371,6 +414,7 @@ func MintNft(
   return res
 }
 ```
+<!-- type: tab-end -->
 
 ## Verify that the issued NFT is on the network
 
