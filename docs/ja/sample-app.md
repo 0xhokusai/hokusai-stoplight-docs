@@ -20,6 +20,7 @@ HokusaiではTestnet用のAPI Keyを無料で配布しています。
 ### ネットワーク設定
 今回はPolygonのTestnetであるMumbaiを利用するので、以下のようにネットワークを設定します。
 ```Typescript
+// src/context/WalletProvider.tsx
 const networkParam = {
   chainId: '0x13881',
   chainName: 'Mumbai Testnet',
@@ -36,9 +37,10 @@ const networkParam = {
 続いて、Metamaskを接続しProviderを取得する関数を定義します。
 `wallet_addEthereumChain`メソッドを利用することで、ネットワーク切り替えのモーダルを表示させることができます（ユーザがそのネットワークをMetamaskに登録してない場合、同時にネットワークを登録させることができます。）
 ```Typescript
+// src/context/WalletProvider.tsx
 import { ethers } from 'ethers';
 
-async function connectMetamask() {
+async function connectWalletMetamask() {
   // Initialize Metamask
   const provider = await window.ethereum
     .request({
@@ -105,8 +107,11 @@ Transactionのデータ構造は以下の通りです。
 まず初めに、`data`に入れるNFTのコントラクトで実行したい関数のデータを作成します
 ABIは[こちら](https://github.com/0xhokusai/hokusai-api-client-sample/blob/main/src/abis/ERC721WithRoyaltyMetaTx.json)のものを使います。
 
+SolidityのDocumentにABIの説明があるので理解しておくと実装のイメージが湧きやすくなります。[ABIとは？](https://solidity-jp.readthedocs.io/ja/latest/abi-spec.html)
+
 
 ```typescript
+// src/component/TransferForm.tsx
 import { ethers } from 'ethers';
 // https://github.com/0xhokusai/hokusai-api-client-sample/blob/main/src/abis/ERC721WithRoyaltyMetaTx.json
 import HokusaiAbi from '../abis/ERC721WithRoyaltyMetaTx.json';
@@ -135,6 +140,7 @@ const data = hokusaiInterface.encodeFunctionData('transferFrom', [
 
 続いて他のパラメータを設定します。
 ```typescript
+// src/component/TransferForm.tsx
 import ForwarderAbi from '../abis/MinimalForwarder.json';
 
 type Message = {
@@ -188,6 +194,7 @@ address | Mumbai Testnet | Polygon Mainnet
 
 署名データを作成する関数`createTypedDataV4()`を定義します。
 ```typescript
+// src/utils/TypedData.ts
 const EIP712DomainType = [
   { name: 'name', type: 'string' },
   { name: 'version', type: 'string' },
@@ -231,6 +238,7 @@ export function createTypedDataV4(
 次に、`createTypedDataV4()`を利用して、署名データを作成します。
 `message`は1つ前で作成した`message`となります。
 ```typescript
+// src/component/TransferForm.tsx
 const { chainId } = await provider.getNetwork();
 
 const typedData = createTypedDataV4(
@@ -242,6 +250,7 @@ const typedData = createTypedDataV4(
 #### Metamaskの署名モーダルを表示し、ユーザに署名させる
 署名したデータを`signature`という変数に格納しています。
 ```typescript
+// src/component/TransferForm.tsx
 const signature = await provider.send('eth_signTypedData_v4', [
   from,
   JSON.stringify(typedData),
@@ -259,6 +268,7 @@ title: v2
 -->
 
 ```typescript
+// src/component/TransferForm.tsx
 const contractVer = 'your-contract-version'
 const contractId = 'your-contract-id'
 const apiKey = 'your-api-key'
