@@ -15,6 +15,7 @@ In this tutorial, we will be using [Metamask](https://docs.metamask.io/guide/#wh
 ### Set up network
 We will be using Mumbai which is a testnet for Polygon. Configure network information as follows.
 ```Typescript
+// src/context/WalletProvider.tsx
 const networkParam = {
   chainId: '0x13881',
   chainName: 'Mumbai Testnet',
@@ -28,9 +29,10 @@ Note that `chainId` must be given as a **hexadecimal string**, not in decimals. 
 ### Connect with Metamask
 Next, we will define a function to connect with Metamask and get the `Proivder` instance. You can notify the user with a modal to switch the network by calling `wallet_addEthereumChain`. If the network does not exist, calling this method will add the network to the Metamask's network list.
 ```Typescript
+// src/context/WalletProvider.tsx
 import { ethers } from 'ethers';
 
-async function connectMetamask() {
+async function connectWalletMetamask() {
   // Initialize Metamask
   const provider = await window.ethereum
     .request({
@@ -93,7 +95,11 @@ Transaction data looks like:
 
 Firstly, prepare and encode the transaction data with the [ABI](https://github.com/0xhokusai/hokusai-api-client-sample/blob/main/src/abis/ERC721WithRoyaltyMetaTx.json).
 
+Solidity's Document has an explanation of the ABI, so understanding it will help you visualize the implementation.
+What is [ABI?](https://solidity-jp.readthedocs.io/ja/latest/abi-spec.html)
+
 ```typescript
+// src/component/TransferForm.tsx
 import { ethers } from 'ethers';
 // https://github.com/0xhokusai/hokusai-api-client-sample/blob/main/src/abis/ERC721WithRoyaltyMetaTx.json
 import HokusaiAbi from '../abis/ERC721WithRoyaltyMetaTx.json';
@@ -120,6 +126,7 @@ Arguments for `encodeFunctionData` represent:
 
 Then, set up other parameters.
 ```typescript
+// src/component/TransferForm.tsx
 import ForwarderAbi from '../abis/MinimalForwarder.json';
 
 type Message = {
@@ -176,6 +183,7 @@ Create [`signTypedData_v4`](https://docs.metamask.io/guide/signing-data.html#sig
 
 Define a fucntion `createTypedDataV4()` as follows.
 ```typescript
+// src/utils/TypedData.ts
 const EIP712DomainType = [
   { name: 'name', type: 'string' },
   { name: 'version', type: 'string' },
@@ -218,6 +226,7 @@ export function createTypedDataV4(
 
 Then, call `createTypedDataV4()` to create signed data.
 ```typescript
+// src/component/TransferForm.tsx
 const { chainId } = await provider.getNetwork();
 
 const typedData = createTypedDataV4(
@@ -230,6 +239,7 @@ const typedData = createTypedDataV4(
 
 Signature data is stored as `signature`.
 ```typescript
+// src/component/TransferForm.tsx
 const signature = await provider.send('eth_signTypedData_v4', [
   from,
   JSON.stringify(typedData),
@@ -247,6 +257,7 @@ title: v2
 -->
 
 ```typescript
+// src/component/TransferForm.tsx
 const contractVer = 'your-contract-version'
 const contractId = 'your-contract-id'
 const apiKey = 'your-api-key'
@@ -267,6 +278,7 @@ title: v1
 -->
 
 ```typescript
+// src/component/TransferForm.tsx
 const contractId = 'your-contract-id'
 const apiKey = 'your-api-key'
 
