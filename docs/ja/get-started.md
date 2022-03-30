@@ -57,15 +57,8 @@ NFTを管理するためには、トークンを保持するアカウントが�
     
     ![custom_rpc.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/h0BhERcxMwI)
     
-3. それぞれのボックスに以下のように情報を入力してください。`新規 RPC URL`は、テーブルに記載のURLを一つ選んで入力してください。選択したURLでネットワークの接続に失敗した場合、別のURLを使ってみてください。
+3. それぞれのボックスに以下のように情報を入力してください。これらの情報は[ネットワーク（チェイン）](network.md##rpc接続情報)のページに掲載されています。<br>`新規 RPC URL`は、テーブルに記載のRPC URLを一つ選んで入力してください。選択したURLでネットワークの接続に失敗した場合、別のURLを使ってみてください。<br>今回は、`polygon-mumbai`の情報を使用します。
 
-    Property | Polygon Mainnet | Mumbai Testnet
-    ---------|----------|---------
-    ネットワーク名 | Polygon Mainnet | Mumbai Testnet
-    新規 RPC URL | https://polygon-rpc.com | https://rpc-mumbai.matic.today or <br>https://matic-mumbai.chainstacklabs.com or <br> https://rpc-mumbai.maticvigil.com or <br> https://matic-testnet-archive-rpc.bwarelabs.com
-    チェーン ID | 137 | 80001
-    通貨記号(オプション) | MATIC | MATIC
-    ブロックエクスプローラーのURL(オプション) | https://polygonscan.com | https://mumbai.polygonscan.com
     
     ![new_network_mainnet.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/unc7jEAbkIo)
     
