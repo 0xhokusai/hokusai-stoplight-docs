@@ -202,7 +202,7 @@ title: Golang
 
 ```go
 type MintBody struct {
-  to  string `json:"to"`
+  To  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -254,7 +254,7 @@ title: Golang
 
 ```go
 type MintBody struct {
-  to  string `json:"to"`
+  To  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -312,7 +312,7 @@ title: Golang
 
 ```go
 type MintBody struct {
-  to  string `json:"to"`
+  To  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -388,7 +388,7 @@ title: Golang
 
 ```go
 type MintBody struct {
-  to  string `json:"to"`
+  To  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 

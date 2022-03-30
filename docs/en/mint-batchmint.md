@@ -189,7 +189,7 @@ title: Golang
 
 ```go
 type MintBody struct {
-  to  string `json:"to"`
+  To  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -241,7 +241,7 @@ title: Golang
 
 ```go
 type MintBody struct {
-  to  string `json:"to"`
+  To  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -299,7 +299,7 @@ The `http.NewRequest` function creates the request object first, but the content
 
 ```go
 type MintBody struct {
-  to  string `json:"to"`
+  To  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -375,7 +375,7 @@ title: Golang
 
 ```go
 type MintBody struct {
-  to  string `json:"to"`
+  To  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
