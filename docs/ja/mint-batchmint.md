@@ -8,15 +8,20 @@ version1ではNFTを１つずつしかMintできませんでした。しかしve
 
 ## NFTメタデータを公開する
 
-[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#5-nft%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B)を参考に事前にNFTメタデータを公開しておいてください。また、公開したメタデータのURLはメモしておきます。
+[こちら](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDI0-#5-nft%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B)を参考に事前にNFTメタデータを公開しておいてください。また、公開したメタデータのURLはメモしておきます。
 
 ## Mint/BatchMintに必要なデータをJSONで作成する
 
-`address`には自身のmetamaskから確認できるウォレットアドレスを指定してください。
+`to`には自身のmetamaskから確認できるウォレットアドレスを指定してください。
 
 （Metamaskの設定がまだの場合[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#2-%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%82%92%E7%94%A8%E6%84%8F%E3%81%99%E3%82%8B)の対応をお願いいたします）
 
-`tokenURI`には事前にNFTメタデータを公開した際に発行されたURLを貼り付けてください。
+`tokenURI`には事前に[NFTメタデータを公開](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDI0-#5-nft%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B)した際に発行されたURLを貼り付けてください。
+
+<!--
+type: tab
+title: Mint
+-->
 
 ひとつだけの場合（**Mint**）
 `mint.json`
@@ -24,11 +29,15 @@ version1ではNFTを１つずつしかMintできませんでした。しかしve
 ```json
 [
   {
-    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "to": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
     "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
   }
 ]
 ```
+<!--
+type: tab
+title: BatchMint
+-->
 
 複数の場合（**BatchMint**）
 `mint.json`
@@ -36,25 +45,30 @@ version1ではNFTを１つずつしかMintできませんでした。しかしve
 ```json
 [
   {
-    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "to": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
     "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
   },
   {
-    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "to": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
     "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
   },
   {
-    "address": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
+    "to": "0x11aaa11AAa111aa1a11111111A1111A11111111A",
     "tokenURI": "https://dweb.link/ipfs/xxxxxxxxxxxxxxxxxxxxxxxxxxx/metadata.json"
   }
 ]
 ```
+<!-- type: tab-end -->
+
 
 ## その他必要な値の設定
 
 引数として使用したい重要な値は`.env`ファイルで設定をしておきます。
 
-`HOKUSAI_API_KEY`と`HOKUSAI_CONTRACT_ID`と`CONTRACT_VERSION`の取得方法は[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#1-api-key%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B)を参照してください。送られてくるメールに記載されています。
+- `HOKUSAI_API_KEY`
+- `HOKUSAI_CONTRACT_ID`
+- `CONTRACT_VERSION`
+取得方法は[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#1-api-key%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B)を参照してください。送られてくるメールに記載されています。
 
 ```
 HOKUSAI_API_KEY = ""
@@ -70,7 +84,12 @@ MintするデータはJSONで指定したものを読み込みます。
 
 networkの指定は自身の選択したものにしてください。[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjQ1MjUwNjM2-)から確認できます。ここではテストネットの方の`polygon-mumbai`を指定します。
 
-**Typescript**
+次の章からは`mintNft（）`の実装の説明をしていきます。
+
+<!--
+type: tab
+title: Typescript
+-->
 
 ```tsx
 import fetch from "node-fetch";
@@ -95,7 +114,10 @@ mintNft(
 });
 ```
 
-**Golang**
+<!--
+type: tab
+title: Golang
+-->
 
 ```go
 package main
@@ -140,17 +162,25 @@ func main() {
 }
 ```
 
+<!-- type: tab-end -->
+
+
 ### **Mint実行関数の定義**
 
 まずは`mintNft`関数を定義します。
 
-ここでは処理に必要な値を引数で定義するところまで行います。
+次の章では実際にひとつずつ処理を関数内に追記していきます。
 
-**Typescript**
+`mintBody`をinterfaceとして定義しているのはどういった形式でリクエストをなげればいいのかをわかりやすくするためです。
+
+<!--
+type: tab
+title: Typescript
+-->
 
 ```tsx
 interface mintBody {
-  address: string;
+  to: string;
   tokenURI: string;
 }
 const mintNft = async (
@@ -165,11 +195,14 @@ const mintNft = async (
 })
 ```
 
-**Golang**
+<!--
+type: tab
+title: Golang
+-->
 
 ```go
 type MintBody struct {
-  Address  string `json:"address"`
+  To  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -184,16 +217,20 @@ func MintNft(
   // ここに処理を書いていく
 }
 ```
+<!-- type: tab-end -->
 
 ### リクエスト先URLの設定
 
 `baseUrl`と`contractId`を利用してリクエスト(POST)を行うURLを`url`変数として定義する。
 
-**Typescript**
+<!--
+type: tab
+title: Typescript
+-->
 
 ```tsx
 interface mintBody {
-  address: string;
+  to: string;
   tokenURI: string;
 }
 const mintNft = async (
@@ -210,11 +247,14 @@ const mintNft = async (
 })
 ```
 
-**Golang**
+<!--
+type: tab
+title: Golang
+-->
 
 ```go
 type MintBody struct {
-  Address  string `json:"address"`
+  To  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -231,16 +271,20 @@ func MintNft(
   url := baseUrl + path
 }
 ```
+<!-- type: tab-end -->
 
 ### URLパラメータの付与
 
 `?key=apiKey`を`baseUrl`+`/v2/${network}/nft/${contractVer}/${contractId}/mint`に付与するための処理を追加。
 
-**Typescript**
+<!--
+type: tab
+title: Typescript
+-->
 
 ```tsx
 interface mintBody {
-  address: string;
+  to: string;
   tokenURI: string;
 }
 const mintNft = async (
@@ -259,13 +303,16 @@ const mintNft = async (
 }
 ```
 
-**Golang**
+<!--
+type: tab
+title: Golang
+-->
 
 `http.NewRequest`関数で先にリクエストオブジェクトを生成しているが内容は次の手順で指定する。
 
 ```go
 type MintBody struct {
-  Address  string `json:"address"`
+  To  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -289,6 +336,7 @@ func MintNft(
   req.URL.RawQuery = q.Encode()
 }
 ```
+<!-- type: tab-end -->
 
 ### POSTリクエスト処理の実装
 
@@ -296,11 +344,14 @@ func MintNft(
 
 ここまで実装して、あとは引数に適当な値を入れて実行すればNFTをもう発行（**Mint**）できます！
 
-**Typescript**
+<!--
+type: tab
+title: Typescript
+-->
 
 ```tsx
 interface mintBody {
-  address: string;
+  to: string;
   tokenURI: string;
 }
 const mintNft = async (
@@ -330,11 +381,14 @@ const mintNft = async (
 })
 ```
 
-**Golang**
+<!--
+type: tab
+title: Golang
+-->
 
 ```go
 type MintBody struct {
-  Address  string `json:"address"`
+  To  string `json:"to"`
   TokenURI string `json:"tokenURI"`
 }
 
@@ -373,6 +427,7 @@ func MintNft(
   return res
 }
 ```
+<!-- type: tab-end -->
 
 ## 発行されたNFTがネットワーク上にあるのを確認する
 
