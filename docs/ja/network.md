@@ -11,6 +11,10 @@ APIのパスパラメータに自身が発行したネットワーク名を含�
 | `polygon-mumbai`    | Polygon Testnet                    |
 | `arbitrum-mainnet`  | Arbitrum Mainnet                   |
 | `arbitrum-rinkeby`  | Arbitrum Testnet                   |
+
+### 近日対応予定
+| `{network}`         | ネットワーク名                         |
+|---------------------|------------------------------------|
 | `binance-mainnet`   | Binance Mainnet                    |
 | `binance-testnet`   | Binance Testnet                    |
 | `astar-astar`       | Astar Mainnet (connedted Polkadot) |
