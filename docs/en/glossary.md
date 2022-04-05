@@ -20,7 +20,6 @@ By using Hokusai, Users can easily use meta-transaction.
 ### Metadata
 
 Metadata is data that provides additional information about certain data. NFT metadata typically has properties like name, description and image to represent the token itself, but the minter can add any arbitrary data if necessary. Metadata standards are held for NFT market platforms like [Opensea](https://opensea.io).
-メタデータとは、あるデータに付随する付加的な情報のことを指します。NFTの場合、そのトークンが表す名前、説明、画像データなどが一般的ですが、発行者が必要だと考えればどのような情報を付加することもできます。[Opensea](https://opensea.io)のようなNFTマーケットプレイスでは、以下のようなメタデータの規格が定められています。
 
 - [Metadata Standards | Opensea](https://docs.opensea.io/docs/metadata-standards)
 
