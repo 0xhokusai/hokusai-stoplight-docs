@@ -96,8 +96,8 @@ import fetch from "node-fetch";
 import mintBody from "./mint.json";
 require("dotenv").config();
 const env = process.env
-const baseUrl = "https://mumbai.hokusai.app";
-const network = "polygon-mumbai" // or polygon-mainnet
+const baseUrl = "https://api.hokusai.app";
+const network = "polygon-mumbai" // or other networks
 mintNft(
   baseUrl, 
   network,
@@ -140,7 +140,7 @@ func main() {
   apiKey := os.Getenv("HOKUSAI_API_KEY")
   contractVer := os.Getenv("HOKUSAI_CONTRACT_VERSION")
   contractId := os.Getenv("HOKUSAI_CONTRACT_ID")
-  baseUrl := "https://mumbai.hokusai.app"
+  baseUrl := "https://api.hokusai.app"
   network := "polygon-mumbai"
 
   raw, err := ioutil.ReadFile("./batchmint.json")
@@ -431,13 +431,9 @@ func MintNft(
 
 ## 発行されたNFTがネットワーク上にあるのを確認する
 
-今回発行したNFTは、以下のどちらかのネットワーク上にあるはずです。
+今回発行したNFTは、ブロックエクスプローラーから確認できます。
 
-自分で選んだ方のURLを選択してPolygonscanのwebサイトに飛んでください。
-
-- Mumbai テストネット：[https://mumbai.polygonscan.com](https://mumbai.polygonscan.com/)
-
-- Polygon メインネット：[https://polygonscan.com](https://polygonscan.com/)
+サンプルの通り `polygon-mumbai` を指定した場合は、[こちら](https://mumbai.polygonscan.com/)になります。
 
 ![13B6F730-CD85-4BED-AFE9-6BB1023B4D13_1_105_c.jpeg](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/GTUknOfQXT8)
 

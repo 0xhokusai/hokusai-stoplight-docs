@@ -44,13 +44,18 @@ $ cp .env.sample .env
 WALLET_PRIVATE_KEY = ""
 # nft.storage API Keyを入力します。
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
+# ContractをデプロイしたNetworkを入力します（今回は "polygon-mumbai" です)
+CONTRACT_NETWORK = "polygon-mumbai"
 # Hokusai API Keyを入力します。
 HOKUSAI_API_KEY = "your-hokusai-api-key"
+# Hokusai Contract IDを入力します。
+HOKUSAI_CONTRACT_VERSION = "your-contract-version"
 # Hokusai Contract IDを入力します。
 HOKUSAI_CONTRACT_ID = "your-contract-id"
 # Hokusai Contract Addressを入力します。
 HOKUSAI_CONTRACT_ADDRESS = "your-contract-address"
 ```
+
 
 ### 5. 必要なパッケージをインストールする
 

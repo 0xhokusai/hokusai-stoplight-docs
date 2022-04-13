@@ -57,15 +57,8 @@ NFTを管理するためには、トークンを保持するアカウントが�
     
     ![custom_rpc.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/h0BhERcxMwI)
     
-3. それぞれのボックスに以下のように情報を入力してください。`新規 RPC URL`は、テーブルに記載のURLを一つ選んで入力してください。選択したURLでネットワークの接続に失敗した場合、別のURLを使ってみてください。
+3. それぞれのボックスに以下のように情報を入力してください。これらの情報は[ネットワーク（チェイン）](network.md##rpc接続情報)のページに掲載されています。<br>`新規 RPC URL`は、テーブルに記載のRPC URLを一つ選んで入力してください。選択したURLでネットワークの接続に失敗した場合、別のURLを使ってみてください。<br>今回は、`polygon-mumbai`の情報を使用します。
 
-    Property | Polygon Mainnet | Mumbai Testnet
-    ---------|----------|---------
-    ネットワーク名 | Polygon Mainnet | Mumbai Testnet
-    新規 RPC URL | https://polygon-rpc.com | https://rpc-mumbai.matic.today or <br>https://matic-mumbai.chainstacklabs.com or <br> https://rpc-mumbai.maticvigil.com or <br> https://matic-testnet-archive-rpc.bwarelabs.com
-    チェーン ID | 137 | 80001
-    通貨記号(オプション) | MATIC | MATIC
-    ブロックエクスプローラーのURL(オプション) | https://polygonscan.com | https://mumbai.polygonscan.com
     
     ![new_network_mainnet.png](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/unc7jEAbkIo)
     
@@ -103,7 +96,7 @@ $ cp .env.sample .env
 WALLET_PRIVATE_KEY = "your-private-key"
 #nft.storage API Keyを入力します。
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
-#ContractをデプロイしたNetworkを入力します(これはモックなので、"polygon-mumbai"と入力してください。)
+#ContractをデプロイしたNetworkを入力します（今回は "polygon-mumbai" です)
 CONTRACT_NETWORK = "polygon-mumbai"
 #Hokusai API Keyを入力します。
 HOKUSAI_API_KEY = "your-hokusai-api-key"
@@ -146,8 +139,6 @@ $ curl https://dweb.link/ipfs/bafyreieaaqfof34kfqyvwe4arta6jsuwuauim4d24qo22ct2x
 ## 6. Hokusai を動かす
 
 Hokusai を動かす準備が整いました。
-
-テストネットをご利用の場合は`src/getNft.ts`と`src/mintNft.ts`のbaseUrlを"https://mumbai.hokusai.app" に変更してください。
 
 ### 6.1. NFT を発行する
 
@@ -221,7 +212,7 @@ NFTを送信するには送信元アカウントの署名が必要になりま�
 WALLET_PRIVATE_KEY = "your-private-key"
 #nft.storage API Keyを入力します。
 NFT_STORAGE_API_KEY = "your-nft-storage-api-key"
-#ContractをデプロイしたNetworkを入力します(これはモックなので、"polygon-mumbai"と入力してください。)
+#ContractをデプロイしたNetworkを入力します(今回は "polygon-mumbai" です)
 CONTRACT_NETWORK = "polygon-mumbai"
 #Hokusai API Keyを入力します。
 HOKUSAI_API_KEY = "your-hokusai-api-key"

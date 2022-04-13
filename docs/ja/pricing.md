@@ -3,27 +3,4 @@
 Hokusai では、テストネット・事業者向け・エンタープライズの３つのプランをご利用いただけます。  
 プランを比較して、サービスに最適なプランを選択してください。
 
- |  | **テストネット** | **事業者向け** | **エンタープライズ** |
-| --- | --- | --- | --- |
-| **ガス代(ネットワーク手数料)** | 無料 | 無料 | 無料 |
-| **独自コントラクト発行料** | 無料 | 無料 | お問い合わせください |
-| **NFTの送信** | 無料 | $0.8/件 | $0.8/件 |
-| **NFTの消却** | 無料 | $0.8/件 | $0.8/件 |
-| **NFTの発行** | 無料 | $8.0/件 | $8.0/件 |
-| **NFTの発行上限** | 無制限 | 無制限 | 無制限 |
-| **NFTの送信上限** | 無制限 | 無制限 | 無制限 |
-| **対応チェーン** | Polygon(Testnet) | Polygon(Mainnet) | Polygon(Mainnet) |
-| | [**無料で始める**](https://0xhokusai.notion.site/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0)| [**登録する**](https://0xhokusai.notion.site/Hokusai-API-API-Key-Registration-Form-API-a6d8118d416b41d88632396e3156cddb) | [**問い合わせる**](https://hokusai.app/contact) |
-
-## テストネット
-
-テストネット版はサービスの検証・テストに適しています。 すべての機能が無料でご利用いただけます。 ご利用いただけるチェーンはPolygon Testnetです。 
-ご利用のお申込みは[**こちら**](https://0xhokusai.notion.site/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0)
-
-## 事業者向け
-事業者向けプランは、事業化に向けて一般公開前の成長段階にあるサービスに適しています。ご利用いただけるチェーンはPolygon Mainnetです。   
-ご利用のお申込みは[**こちら**](https://0xhokusai.notion.site/Plolygon-Testnet-42bda92114ef4c28833e38fbc6fa04e0)
-
-## エンタープライズ
-エンタープライズ版は、ボリュームディスカウント・カスタムプランがございます。また、企画・技術・法務 のワンストップサービスを提供しています。まずは[**こちら**](https://hokusai.app/contact)からお問い合わせください。
-
+料金に関しては、[こちら](https://hokusai.app/jp/pricing)をご覧ください。
