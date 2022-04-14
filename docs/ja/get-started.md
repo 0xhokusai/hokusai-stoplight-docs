@@ -147,6 +147,8 @@ NFT を Mint してみましょう。
 
 {to}には発行したNFTを受け取るウォレットアドレスを指定します。このチュートリアルでは自分のウォレットアドレスを指定しましょう。
 
+{tokenUri}には事前に[NFTメタデータを公開](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDI0-#5-nft%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B)した際に発行されたURLを貼り付けてください。
+
 ```bash
 $ yarn mint-nft {to} {tokenUri}
 ```
