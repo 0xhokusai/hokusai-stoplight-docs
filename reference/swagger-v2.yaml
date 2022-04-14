@@ -7,7 +7,7 @@ info:
   description: The world’s most powerful and easy-to-use NFT APIs
   title: Hokusai
   version: 2.0.0
-host: polygon.hokusai.app
+host: api.hokusai.app
 basePath: /v2
 schemes:
   - https
@@ -44,7 +44,7 @@ paths:
       description: Check health status of API.
       parameters: []
       security: []
-  '/nft/{contractVer}/{contractId}/mint':
+  '/{network}/nft/{contractVer}/{contractId}/mint':
     post:
       consumes:
         - application/json
@@ -86,6 +86,10 @@ paths:
       summary: Mints new NFT.
     parameters:
       - type: string
+        name: network
+        in: path
+        required: true
+      - type: string
         name: contractVer
         in: path
         required: true
@@ -93,7 +97,7 @@ paths:
         name: contractId
         in: path
         required: true
-  '/nft/{contractVer}/{contractId}/{tokenId}':
+  '/{network}/nft/{contractVer}/{contractId}/{tokenId}':
     get:
       produces:
         - application/json
@@ -129,6 +133,10 @@ paths:
       summary: Get information of the NFT.
     parameters:
       - type: string
+        name: network
+        in: path
+        required: true
+      - type: string
         name: contractVer
         in: path
         required: true
@@ -140,7 +148,7 @@ paths:
         name: tokenId
         in: path
         required: true
-  '/nft/{contractVer}/{contractId}/transfer':
+  '/{network}/nft/{contractVer}/{contractId}/transfer':
     post:
       consumes:
         - application/json
@@ -178,6 +186,10 @@ paths:
       summary: Transfer a NFT with meta transaction.
     parameters:
       - type: string
+        name: network
+        in: path
+        required: true
+      - type: string
         name: contractVer
         in: path
         required: true
@@ -185,7 +197,7 @@ paths:
         name: contractId
         in: path
         required: true
-  '/nft/{contractVer}/{contractId}/{tokenId}/royalty':
+  '/{network}/nft/{contractVer}/{contractId}/{tokenId}/royalty':
     get:
       consumes:
         - application/json
@@ -269,6 +281,10 @@ paths:
       operationId: setRoyalty
       summary: Set royalty to the NFT.
     parameters:
+      - type: string
+        name: network
+        in: path
+        required: true
       - type: string
         name: contractVer
         in: path
