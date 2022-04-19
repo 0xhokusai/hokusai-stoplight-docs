@@ -2,17 +2,17 @@
 
 This section describes an example implementation of Mint/BatchMint, an API for minting NFTs on a network.
 
-The code shown below is based on v2 of get-started from [here](https://github.com/0xhokusai/hokusai-get-started/blob/main/src/v2/mintNft.ts)
+The code shown below is based on v2 of get-started from [Github](https://github.com/0xhokusai/hokusai-get-started/blob/main/src/v2/mintNft.ts)
 
 ## Publish NFT metadata
 
-[here](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDEx-getting-started-with-hokusai#3-obtain-an-nftstorage-api-key) for reference. Also, note the URL of the published metadata.
+[5. Publish NFT metadata](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDEx-getting-started-with-hokusai#5-publish-nft-metadata) for reference. Also, note the URL of the published metadata.
 
 ## Create the data needed for Mint/BatchMint in JSON
 
 The `to` should be a wallet to that can be verified from your own Metamask.
 
-If you have not yet set up Metamask [here](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDEx-getting-started-with-hokusai#2-prepare-a-wallet)
+If you have not yet set up Metamask [2. Prepare a wallet](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDEx-getting-started-with-hokusai#2-prepare-a-wallet)
 
 In the `tokenURI` field, paste the URL that was issued when you published the NFT metadata in advance.
 
@@ -61,7 +61,7 @@ Multiple cases（**BatchMint**）
 
 Important values to be used as arguments are set in the `.env` file.
 
-How to get `HOKUSAI_API_KEY`, `HOKUSAI_CONTRACT_ID` and `CONTRACT_VERSION` is [here](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDEx-getting-started-with-hokusai#1-obtain-your-api-key). You will find this information in the email you receive.
+How to get `HOKUSAI_API_KEY`, `HOKUSAI_CONTRACT_ID` and `CONTRACT_VERSION` is [1. Obtain your API key](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDEx-getting-started-with-hokusai#1-obtain-your-api-key). You will find this information in the email you receive.
 
 ```
 HOKUSAI_API_KEY = ""
@@ -75,7 +75,7 @@ Here we would like to be able to use the values set above to finally execute Min
 
 The data to be minted is read as specified in JSON.
 
-The network designation should be your own choice. You can check it [here](https://docs.hokusai.app/docs/hokusai/ZG9jOjQ1MjUwNjM1-network-chain). Here we specify `polygon-mumbai` for the test net.
+The network designation should be your own choice. You can check it [Network (chain)](https://docs.hokusai.app/docs/hokusai/ZG9jOjQ1MjUwNjM1-network-chain). Here we specify `polygon-mumbai` for the test net.
 
 <!--
 type: tab
