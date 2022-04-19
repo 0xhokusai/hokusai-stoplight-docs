@@ -4,19 +4,19 @@
 
 version1ではNFTを１つずつしかMintできませんでした。しかしversion2では複数のメタデータを同時にMintできるように機能が拡張されました。このような拡張版のMintをBatchMintと呼んでいます。こちらではversion2の説明を行います。
 
-以下に示すコードは[こちら](https://github.com/0xhokusai/hokusai-get-started/blob/main/src/v2/mintNft.ts)のget-startedのv2を参考にしています。
+以下に示すコードは[Github](https://github.com/0xhokusai/hokusai-get-started/blob/main/src/v2/mintNft.ts)のget-startedのv2を参考にしています。
 
 ## NFTメタデータを公開する
 
-[こちら](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDI0-#5-nft%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B)を参考に事前にNFTメタデータを公開しておいてください。また、公開したメタデータのURLはメモしておきます。
+[5. NFTのメタデータを公開する](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDI0-hokusai#5-nft%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B)を参考に事前にNFTメタデータを公開しておいてください。また、公開したメタデータのURLはメモしておきます。
 
 ## Mint/BatchMintに必要なデータをJSONで作成する
 
 `to`には自身のmetamaskから確認できるウォレットアドレスを指定してください。
 
-（Metamaskの設定がまだの場合[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#2-%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%82%92%E7%94%A8%E6%84%8F%E3%81%99%E3%82%8B)の対応をお願いいたします）
+（Metamaskの設定がまだの場合[2. ウォレットを用意する](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDI0-hokusai#2-ウォレットを用意する)より対応をお願いいたします）
 
-`tokenURI`には事前に[NFTメタデータを公開](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDI0-#5-nft%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B)した際に発行されたURLを貼り付けてください。
+`tokenURI`には事前に[NFTメタデータを公開](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDI0-hokusai#5-nftのメタデータを公開する)した際に発行されたURLを貼り付けてください。
 
 <!--
 type: tab
@@ -68,7 +68,7 @@ title: BatchMint
 - `HOKUSAI_API_KEY`
 - `HOKUSAI_CONTRACT_ID`
 - `CONTRACT_VERSION`
-取得方法は[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#1-api-key%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B)を参照してください。送られてくるメールに記載されています。
+取得方法は[1. API Keyを取得する](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDI0-hokusai#1-api-key%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B)を参照してください。送られてくるメールに記載されています。
 
 ```
 HOKUSAI_API_KEY = ""
@@ -82,7 +82,7 @@ CONTRACT_VERSION = ""
 
 MintするデータはJSONで指定したものを読み込みます。
 
-networkの指定は自身の選択したものにしてください。[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjQ1MjUwNjM2-)から確認できます。ここではテストネットの方の`polygon-mumbai`を指定します。
+networkの指定は自身の選択したものにしてください。[ネットワーク（チェイン）](https://docs.hokusai.app/docs/hokusai/ZG9jOjQ1MjUwNjM2-)から確認できます。ここではテストネットの方の`polygon-mumbai`を指定します。
 
 次の章からは`mintNft（）`の実装の説明をしていきます。
 
@@ -443,4 +443,4 @@ mintのレスポンスとして返却された`txHash`をサーチボックス�
 
 ![68297651-E651-4780-90D7-DC71A01DB9E5_1_105_c.jpeg](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/LgN6lZxTjA8)
 
-[こちら](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#611-polygonscan%E3%81%A7tokenid%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B)も参考にしてください。
+[Hokusaiを始める](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDI0-hokusai)も参考にしてください。

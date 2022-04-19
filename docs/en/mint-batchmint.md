@@ -2,17 +2,17 @@
 
 This section describes an example implementation of Mint/BatchMint, an API for minting NFTs on a network.
 
-The code shown below is based on v2 of get-started from [here](https://github.com/0xhokusai/hokusai-get-started/blob/main/src/v2/mintNft.ts)
+The code shown below is based on v2 of get-started from [Github](https://github.com/0xhokusai/hokusai-get-started/blob/main/src/v2/mintNft.ts)
 
 ## Publish NFT metadata
 
-[here](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#5-nft%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B) for reference. Also, note the URL of the published metadata.
+[5. Publish NFT metadata](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDEx-getting-started-with-hokusai#5-publish-nft-metadata) for reference. Also, note the URL of the published metadata.
 
 ## Create the data needed for Mint/BatchMint in JSON
 
 The `to` should be a wallet to that can be verified from your own Metamask.
 
-If you have not yet set up Metamask [here](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#2-%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%82%92%E7%94%A8%E6%84%8F%E3%81%99%E3%82%8B)
+If you have not yet set up Metamask [2. Prepare a wallet](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDEx-getting-started-with-hokusai#2-prepare-a-wallet)
 
 In the `tokenURI` field, paste the URL that was issued when you published the NFT metadata in advance.
 
@@ -61,7 +61,7 @@ Multiple cases（**BatchMint**）
 
 Important values to be used as arguments are set in the `.env` file.
 
-How to get `HOKUSAI_API_KEY`, `HOKUSAI_CONTRACT_ID` and `CONTRACT_VERSION` is [here](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#1-api-key%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B). You will find this information in the email you receive.
+How to get `HOKUSAI_API_KEY`, `HOKUSAI_CONTRACT_ID` and `CONTRACT_VERSION` is [1. Obtain your API key](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDEx-getting-started-with-hokusai#1-obtain-your-api-key). You will find this information in the email you receive.
 
 ```
 HOKUSAI_API_KEY = ""
@@ -75,7 +75,7 @@ Here we would like to be able to use the values set above to finally execute Min
 
 The data to be minted is read as specified in JSON.
 
-The network designation should be your own choice. You can check it [here](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjQ1MjUwNjM2-). Here we specify `polygon-mumbai` for the test net.
+The network designation should be your own choice. You can check it [Network (chain)](https://docs.hokusai.app/docs/hokusai/ZG9jOjQ1MjUwNjM1-network-chain). Here we specify `polygon-mumbai` for the test net.
 
 <!--
 type: tab
@@ -430,4 +430,4 @@ Copy the `txHash` returned as a mint response into the search box and press ente
 
 ![68297651-E651-4780-90D7-DC71A01DB9E5_1_105_c.jpeg](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/LgN6lZxTjA8)
 
-Please refer to [here](https://docs.hokusai.app/docs/hokusai-api/ZG9jOjIyMDIxMDI0-#611-polygonscan%E3%81%A7tokenid%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B)
+Please refer to [Getting Started with Hokusai](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDEx-getting-started-with-hokusai)
