@@ -11,11 +11,6 @@ Include the name of the network where you created your contracts in the API path
 | `polygon-mumbai`    | Polygon Testnet                    |
 | `arbitrum-mainnet`  | Arbitrum Mainnet                   |
 | `arbitrum-rinkeby`  | Arbitrum Testnet                   |
-
-
-### To be determined
-| `{network}`         | Network Name                       |
-|---------------------|------------------------------------|
 | `binance-mainnet`   | Binance Mainnet                    |
 | `binance-testnet`   | Binance Testnet                    |
 | `astar-astar`       | Astar Mainnet (connedted Polkadot) |

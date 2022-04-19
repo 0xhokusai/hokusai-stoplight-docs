@@ -11,7 +11,7 @@ type: tab
 title: v2
 -->
 
-[`POST /v2/nft/{contractVer}/{contractId}/{tokenId}/royalty`](../../reference/swagger-v2.yaml#set-royalty-to-the-NFT) 
+[`POST /v2/{network}/nft/{contractVer}/{contractId}/{tokenId}/royalty`](../../reference/swagger-v2.yaml#set-royalty-to-the-NFT) 
 
 <!--
 type: tab
