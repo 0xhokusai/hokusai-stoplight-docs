@@ -447,4 +447,4 @@ mintのレスポンスとして返却された`txHash`をサーチボックス�
 
 ![68297651-E651-4780-90D7-DC71A01DB9E5_1_105_c.jpeg](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/LgN6lZxTjA8)
 
-[こちら](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDI0-#611-polygonscan%E3%81%A7tokenid%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B)も参考にしてください。
+[Hokusaiを始める](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDI0-hokusai)も参考にしてください。

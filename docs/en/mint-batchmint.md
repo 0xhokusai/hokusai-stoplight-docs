@@ -434,4 +434,4 @@ Copy the `txHash` returned as a mint response into the search box and press ente
 
 ![68297651-E651-4780-90D7-DC71A01DB9E5_1_105_c.jpeg](https://stoplight.io/api/v1/projects/cHJqOjg0NjEy/images/LgN6lZxTjA8)
 
-Please refer to [here](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDI0-#611-polygonscan%E3%81%A7tokenid%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B)
+Please refer to [Getting Started with Hokusai](https://docs.hokusai.app/docs/hokusai/ZG9jOjIyMDIxMDEx-getting-started-with-hokusai)
