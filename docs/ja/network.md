@@ -3,14 +3,16 @@
 Hokusai v2では、以下のネットワークに対応しています。  
 APIのパスパラメータに自身が発行したネットワーク名を含めてください。
 
-| `{network}`         | ネットワーク名                         |
+| `{network}`         | Network Name                       |
 |---------------------|------------------------------------|
 | `ethereum-mainnet`  | Ethereum Mainnet                   |
-| `ethereum-rinkeby`  | Ethereum Testnet                   |
+| `ethereum-rinkeby`  | Ethereum Testnet (Deprecated)      |
+| `ethereum-goerli`   | Ethereum Testnet                   |
 | `polygon-mainnet`   | Polygon Mainnet                    |
 | `polygon-mumbai`    | Polygon Testnet                    |
 | `arbitrum-mainnet`  | Arbitrum Mainnet                   |
-| `arbitrum-rinkeby`  | Arbitrum Testnet                   |
+| `arbitrum-rinkeby`  | Arbitrum Testnet (Deprecated)      |
+| `arbitrum-goerli`   | Arbitrum Testnet                   |
 | `binance-mainnet`   | Binance Mainnet                    |
 | `binance-testnet`   | Binance Testnet                    |
 | `astar-astar`       | Astar Mainnet (connedted Polkadot) |
@@ -34,6 +36,7 @@ title: Ethereum
 |------------------|------------------------------|----------|----------|------------------------------|
 | Ethereum Mainnet | https://mainnet.infura.io/v3 | 1        | ETH      | https://etherscan.io	       |
 | Ethereum Rinkeby | https://rinkeby.infura.io/v3 | 4        | ETH      | https://rinkeby.etherscan.io |
+| Ethereum Goerli  | https://goerli.infura.io/v3  | 5        | ETH      | https://goerli.etherscan.io  |
 
 <!--
 type: tab
@@ -50,10 +53,11 @@ type: tab
 title: Arbitrum
 -->
 
-| ネットワーク名       | RPC URL                         | チェーンID | 通貨記号   | ブロックエクスプローラのURL       |
-|------------------|---------------------------------|----------|----------|-----------------------------|
-| Arbitrum Mainnet | https://arb1.arbitrum.io/rpc	   | 42161    | ETH      | https://arbiscan.io         |
-| Arbitrum Rinkeby | https://rinkeby.arbitrum.io/rpc | 421611   | ETH      | https://testnet.arbiscan.io |
+| ネットワーク名       | RPC URL                                      | チェーンID | 通貨記号   | ブロックエクスプローラのURL       |
+|------------------|---------------------------------------------------|----------|----------|-----------------------------|
+| Arbitrum Mainnet | https://arb1.arbitrum.io/rpc	                   | 42161    | ETH      | https://arbiscan.io         |
+| Arbitrum Rinkeby | https://rinkeby.arbitrum.io/rpc                   | 421611   | ETH      | https://testnet.arbiscan.io |
+| Arbitrum Goerli  | https://arb-mainnet.g.alchemy.com/v2/your-api-key | 421611   | AETH     | https://goerli.arbiscan.io  |
 
 <!--
 type: tab
